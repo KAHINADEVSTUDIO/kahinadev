@@ -1,0 +1,14 @@
+// POSITION
+
+.position-absolute-right {
+    top: $initial;
+    right: $initial;
+    position: $absolute;
+}
+
+// DISPLAY 
+
+.display-space {
+    display: $display-flex; 
+    justify-content: $space-between;
+}

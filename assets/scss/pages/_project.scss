@@ -1,0 +1,65 @@
+.hero-project,
+.universe {
+    padding: $initial $simple-value;
+
+    @media screen and (max-width: $mobile) {
+        padding: $simple-value $initial;
+    }
+}
+
+.hero-project {
+
+    h1 {
+        font-size: 160px;
+        @media screen and (max-width: $mobile) {
+            font-size: 90px !important;
+        }
+    }
+
+    .infos-project {
+        margin-top: $initial;
+
+        span {
+            @media screen and (max-width: $mobile) {
+                font-size: 16px !important;
+            }
+        }
+    }
+
+    p {
+        margin: $simple-value $initial;
+    }
+
+    img {
+        height: 100vh;
+    }
+
+    .img {
+        padding: $initial $initial $initial $simple-value;
+
+        @media screen and (max-width: $mobile) {
+            margin: $simple-value $initial;
+            padding: $initial !important;
+        }
+    }
+}
+
+.content-project {
+    margin: $simple-value $initial;
+    padding: $simple-value $initial;
+    border-top: 1px solid map-get(map-get($themes, dark), text);
+    border-bottom: 1px solid map-get(map-get($themes, dark), text);
+}
+
+.branding-project,
+.other-images {
+    .col-md-6 {
+        padding: $initial !important;
+    }
+}
+
+.other-projects {
+    .btn {
+        margin-top: $simple-value;
+    }
+}

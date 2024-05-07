@@ -1,0 +1,45 @@
+.btn {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 500;
+    border: $display-none;
+    font-family: $font-base;
+    padding: 15px 20px;
+    border-radius: $initial;
+    text-transform: $uppercase;
+
+    &:hover,
+    &:focus,
+    &:active {
+        transition: $transition-two;
+        background-color: transparent !important;
+    }
+}
+
+.btn-dark {
+    color: map-get(map-get($themes, dark), background);
+    background-color: map-get(map-get($themes, dark), text);
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: map-get(map-get($themes, dark), text);
+        border-bottom: 2px solid map-get(map-get($themes, dark), text);
+    }
+}
+
+.btn-secondary {
+    color: map-get(map-get($themes, dark), text);
+    background-color: map-get(map-get($themes, dark), secondary);
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: map-get(map-get($themes, dark), secondary);
+        border-bottom: 2px solid map-get(map-get($themes, dark), secondary);
+    }
+}
+
+.btn-max {
+    width: $max;
+}

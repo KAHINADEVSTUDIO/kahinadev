@@ -1,0 +1,105 @@
+.hero-about {
+    padding-top: $simple-value;
+
+    @media screen and (max-width: $tablet) {
+        padding-top: $other-simple-value;
+    }
+
+    h1 {
+        font-size: 320px;
+        line-height: 0.8;
+
+        @media screen and (max-width: $mobile) {
+            font-size: 160px !important;
+        }
+
+        @media screen and (max-width: $tablet) {
+            font-size: 280px;
+        }
+    }
+
+    img {
+        width: 40%;
+        height: 700px;
+        margin-top: -10%;
+
+        @media screen and (max-width: $mobile) {
+            width: 80% !important;
+            height: 475px !important;
+            margin-top: -30% !important;
+        }
+
+        @media screen and (max-width: $tablet) {
+            width: 80%;
+            margin-top: -20%;
+        } 
+    }
+}
+
+.moving-about {
+    padding: $initial !important;
+
+    h2 {
+        color: map-get(map-get($themes, dark), accent);
+    }
+
+    .second {
+        @media screen and (max-width: $mobile) {
+            display: $display-none;
+        }
+    }
+}
+
+.about {
+    img {
+        width: 25%;
+        height: 702px;
+        z-index: 3;
+        position: $absolute;
+
+        @media screen and (max-width: $mobile) {
+            height: 400px !important;
+        }
+
+        @media screen and (max-width: $tablet) {
+            width: $max;
+            height: 600px;
+            position: $relative !important;
+        }
+    }
+
+    .image-one {
+        left: $initial;
+    }
+
+    .image-two {
+        right: $initial;
+    }
+
+    h3 {
+        margin-top: $medium-value;
+
+        @media screen and (max-width: $mobile) {
+            margin: $simple-value $initial !important;
+        }
+    }
+
+    .content {
+        padding: $simple-value $big-value;
+
+        
+        @media screen and (max-width: $mobile) {
+            padding: $simple-value $initial !important;
+        }
+
+        @media screen and (max-width: $tablet) {
+            padding: $simple-value;
+        }
+    }
+}
+
+.other-infos {
+    .btn {
+        margin-bottom: $simple-value;
+    }
+}

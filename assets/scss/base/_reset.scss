@@ -1,0 +1,24 @@
+@import "../base/typography.scss";
+
+* {
+    margin: $initial;
+    padding: $initial;
+    user-select: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font-base;
+    color: map-get(map-get($themes, dark), text);
+    background-color: map-get(map-get($themes, dark), background);
+
+    img {
+        width: $max;
+        object-fit: $cover;
+    }
+
+    section {
+        padding: 5rem 0;
+    }
+}

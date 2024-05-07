@@ -1,0 +1,55 @@
+// FONTS 
+
+$font-base: "Rajdhani", sans-serif;
+$font-primary: "Bebas Neue", sans-serif;
+$font-secondary: "Roboto Mono", monospace;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include heading;
+    color: map-get(map-get($themes, dark), text);
+}
+
+h1 {
+    font-size: 220px;
+
+    @media screen and (max-width: $mobile) {
+        font-size: 100px !important;
+    }
+
+    @media screen and (max-width: $tablet) {
+        font-size: 160px;
+    }
+}
+
+h2,
+h3 {
+    font-size: 160px;
+
+    @media screen and (max-width: $mobile) {
+        font-size: 95px !important;
+    }
+
+    @media screen and (max-width: $tablet) {
+        font-size: 140px;
+    }
+}
+
+p {
+    @include text;
+    text-align: justify;
+}
+
+
+.subtitle {
+    font-size: 22px;
+    @include font-secondary;
+
+    @media screen and (max-width: $mobile) {
+        font-size: 20px !important;
+    }
+}

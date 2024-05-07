@@ -1,0 +1,24 @@
+.hero-portfolio {
+    .category-list {
+        display: $display-flex;
+
+        @media screen and (max-width: $mobile) {
+            display: grid !important;
+        }
+
+        .name-category {
+            width: 33.33%;
+            margin: $initial $simple-value;
+            padding: $small-value;
+            border-radius: 0.350rem;
+            text-align: $center;
+            font-family: $font-secondary;
+            border: 1px solid map-get(map-get($themes, dark), text);
+
+            @media screen and (max-width: $mobile) {
+                width: $max !important;
+                margin: $small-value $initial !important;
+            }
+        }
+    }
+}

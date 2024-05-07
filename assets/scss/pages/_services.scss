@@ -1,0 +1,39 @@
+.development,
+.design,
+.redesign {
+
+    .subtitle {
+        color: map-get(map-get($themes, dark), primary);
+    }
+
+    h1,
+    h2,
+    h3 {
+        padding-bottom: $other-simple-value;
+        border-bottom: 1px solid map-get(map-get($themes, dark), text);
+        margin-top: $other-simple-value;
+
+        @media screen and (max-width: $mobile) {
+            font-size: 60px !important;
+            line-height: 4rem !important;
+            margin-top: $small-value !important;
+            padding-bottom: $small-value;
+        }
+
+        @media screen and (max-width: $tablet) {
+            font-size: 120px;
+        }
+    }
+
+    p {
+        margin-top: $other-simple-value;
+
+        @media screen and (max-width: $mobile) {
+            margin-top: $small-value !important;
+        }
+    }
+}
+
+.development {
+    padding-bottom: $large-value;
+}

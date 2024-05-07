@@ -1,0 +1,194 @@
+$themes: (
+    light: (text: #0e100e,
+        background: #edefed,
+        primary: #92b592,
+        secondary: #79906a,
+        accent: #45402b,
+    ),
+    dark: (text: #eff1ef,
+        background: #1e241e,
+        primary: #4a6d4a,
+        secondary: #7e956f,
+        accent: #d4cfba,
+    ),
+);
+
+// THEMES
+
+.theme-dark {
+    @include change-theme(dark);
+
+    .btn-change {
+        color: map-get(map-get($themes, dark), text);
+        background-color: map-get(map-get($themes, dark), background) !important;
+    }
+}
+
+.theme-light {
+    @include change-theme(light);
+
+    .btn-change {
+        color: map-get(map-get($themes, light), text) !important;
+        background-color: map-get(map-get($themes, light), background) !important;
+    }
+
+    #logo-dark,
+    .sun {
+        display: $display-none !important;
+    }
+
+    #logo-light,
+    .moon {
+        display: $display-block !important;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .name-website {
+        color: map-get(map-get($themes, light), text) !important;
+    }
+
+    .btn-dark {
+        color: map-get(map-get($themes, light), background);
+        background-color: map-get(map-get($themes, light), text);
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: map-get(map-get($themes, light), text);
+            background-color: map-get(map-get($themes, light), background) !important;
+            border-bottom: 2px solid map-get(map-get($themes, light), text);
+        }
+    }
+
+    .btn-secondary {
+        color: map-get(map-get($themes, light), background);
+        background-color: map-get(map-get($themes, light), secondary);
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: map-get(map-get($themes, light), secondary);
+            border-bottom: 2px solid map-get(map-get($themes, light), secondary);
+        }
+    }
+
+    .footer {
+        color: map-get(map-get($themes, light), background);
+        background: map-get(map-get($themes, light), text);
+
+        .hire-me {
+            border: 2px solid map-get(map-get($themes, light), background);
+            background: map-get(map-get($themes, light), background);
+
+            &:hover,
+            &:focus,
+            &:active {
+                border: 2px solid map-get(map-get($themes, light), text);
+                background: map-get(map-get($themes, light), text);
+            }
+        }
+
+        h6,
+        .copy {
+            color: map-get(map-get($themes, light), background) !important;
+        }
+
+
+        h5 {
+            color: $tertiary !important;
+        }
+    }
+
+    .card {
+        .subtitle {
+            color: $tertiary !important;
+        }
+
+        .line {
+            background-color: map-get(map-get($themes, light), text);
+        }
+
+        p {
+            color: map-get(map-get($themes, light), text);
+        }
+    }
+
+    .card-service {
+        border: 1px solid map-get(map-get($themes, light), text);
+    }
+
+    .button-canvas {
+        .btn {
+            @media screen and (max-width: $tablet) {
+                .icon {
+                    color: map-get(map-get($themes, light), text) !important;
+                }
+            }
+        }
+    }
+
+    .name-category {
+        border: 1px solid map-get(map-get($themes, light), text) !important;
+    }
+
+    .modal {
+        .modal-header {
+
+            h4,
+            .btn {
+                color: map-get(map-get($themes, light), background) !important;
+            }
+        }
+
+        .modal-body {
+
+            p,
+            .subtitle {
+                font-size: 20px !important;
+                color: map-get(map-get($themes, light), text);
+            }
+        }
+
+        .modal-content-secondary {
+            background-color: map-get(map-get($themes, light), secondary);
+        }
+    }
+
+    .moving-about {
+        h2 {
+            color: map-get(map-get($themes, light), accent);
+        }
+    }
+
+    .development,
+    .design,
+    .redesign {
+        .subtitle {
+            color: map-get(map-get($themes, light), primary);
+        }
+
+        h1,
+        h2,
+        h3 {
+            border-bottom: 1px solid map-get(map-get($themes, light), text);
+        }
+    }
+
+    #theme-toggle {
+        background-color:  map-get(map-get($themes, light), background) !important;
+    }
+
+    .content-project {
+        border-top: 1px solid map-get(map-get($themes, light), text);
+        border-bottom: 1px solid map-get(map-get($themes, light), text);
+    }
+}
+
+.btn-change {
+    transition: background-color 0.3s ease;
+}
