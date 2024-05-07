@@ -18,7 +18,7 @@ h1 {
     font-size: 220px;
 
     @media screen and (max-width: $mobile) {
-        font-size: 100px !important;
+        font-size: 80px !important;
     }
 
     @media screen and (max-width: $tablet) {
@@ -31,7 +31,7 @@ h3 {
     font-size: 160px;
 
     @media screen and (max-width: $mobile) {
-        font-size: 95px !important;
+        font-size: 75px !important;
     }
 
     @media screen and (max-width: $tablet) {
