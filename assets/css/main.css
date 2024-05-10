@@ -559,16 +559,17 @@ footer .copy {
     font-size: 100px !important;
   }
 }
-.hero-portfolio .category-list {
+
+.category-list {
   display: flex;
   margin-bottom: 1rem;
 }
 @media screen and (max-width: 576px) {
-  .hero-portfolio .category-list {
+  .category-list {
     display: grid !important;
   }
 }
-.hero-portfolio .category-list .name-category {
+.category-list .name-category {
   width: 33.33%;
   margin: 0 2rem;
   padding: 1rem;
@@ -578,10 +579,67 @@ footer .copy {
   border: 1px solid #0e100e;
 }
 @media screen and (max-width: 576px) {
-  .hero-portfolio .category-list .name-category {
+  .category-list .name-category {
     width: 100% !important;
     margin: 1rem 0 !important;
   }
+}
+
+.hero-project {
+  padding-bottom: 0;
+}
+.hero-project h1 {
+  font-size: 250px;
+  margin: 2rem 0;
+}
+@media screen and (max-width: 576px) {
+  .hero-project h1 {
+    font-size: 80px !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .hero-project h1 {
+    font-size: 150px;
+  }
+}
+.hero-project h1 br {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .hero-project h1 br {
+    display: block !important;
+  }
+}
+.hero-project a:hover, .hero-project a:focus, .hero-project a:active {
+  color: #959895;
+}
+
+.text-project {
+  padding: 2rem;
+}
+@media screen and (max-width: 576px) {
+  .text-project {
+    padding: 2rem 0 !important;
+  }
+}
+
+.first-images img,
+.branding-project img,
+.other-images img {
+  height: 100%;
+}
+
+.branding-project img,
+.other-images img {
+  margin-top: 2rem;
+}
+
+.other-projects .subtitle {
+  color: #959895;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  border-top: 1px solid #959895;
+  border-bottom: 1px solid #959895;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,70 +1,66 @@
+.hero-project {
+    padding-bottom: $initial;
 
-// .hero-project,
-// .universe {
-//     padding: $initial $simple-value;
+    h1 {
+        font-size: 250px;
+        margin: $simple-value $initial;
 
-//     @media screen and (max-width: $mobile) {
-//         padding: $simple-value $initial;
-//     }
-// }
+        @media screen and (max-width: $mobile) {
+            font-size: 80px !important;
+        }
 
-// .hero-project {
+        @media screen and (max-width: $tablet) {
+            font-size: 150px;
+        }
 
-//     h1 {
-//         font-size: 160px;
-//         @media screen and (max-width: $mobile) {
-//             font-size: 90px !important;
-//         }
-//     }
+        br {
+            display: $display-none;
 
-//     .infos-project {
-//         margin-top: $initial;
+            @media screen and (max-width: $mobile) {
+                display: $display-block !important;
+            }
+        }
+    }
 
-//         span {
-//             @media screen and (max-width: $mobile) {
-//                 font-size: 16px !important;
-//             }
-//         }
-//     }
+    a {
 
-//     p {
-//         margin: $simple-value $initial;
-//     }
+        &:hover,
+        &:focus,
+        &:active {
+            color: $tertiary;
+        }
+    }
+}
 
-//     img {
-//         height: 100vh;
-//     }
+.text-project {
+    padding: $simple-value;
 
-//     .img {
-//         padding: $initial $initial $initial $simple-value;
+    @media screen and (max-width: $mobile) {
+        padding: $simple-value $initial !important;
+    }
+}
 
-//         @media screen and (max-width: $mobile) {
-//             margin: $simple-value $initial;
-//             padding: $initial !important;
-//         }
-//     }
+.first-images,
+.branding-project,
+.other-images {
+    img {
+        height: $max;
+    }
+}
 
-//     .btn-secondary {
-//         margin-top: $small-value;
-//     }
-// }
+.branding-project,
+.other-images {
+    img {
+        margin-top: $simple-value;
+    }
+}
 
-// .content-project {
-//     margin: $simple-value $initial;
-//     padding: $simple-value $initial;
-//     border-top: 1px solid map-get(map-get($themes, dark), text);
-//     border-bottom: 1px solid map-get(map-get($themes, dark), text);
-// }
-
-// .branding-project,
-// .other-images {
-//     .col-md-6 {
-//         padding: $initial !important;
-//     }
-// }
-
-// .other-projects {
-//     .btn {
-//         margin-top: $simple-value;
-//     }
-// }
+.other-projects {
+    .subtitle {
+        color: $tertiary;
+        padding: $simple-value $initial;
+        margin-bottom: $simple-value;
+        border-top: 1px solid $tertiary;
+        border-bottom: 1px solid $tertiary;
+    }
+}
