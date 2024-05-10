@@ -1,45 +1,56 @@
 .btn {
-    text-align: center;
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 500;
     border: $display-none;
-    font-family: $font-base;
+    overflow: $hidden;
+    position: $relative;
     padding: 15px 20px;
-    border-radius: $initial;
+    transition: $transition-two !important;
     text-transform: $uppercase;
+    margin-top: $simple-value;
+
+    @media screen and (max-width: $mobile) {
+        margin-top: $small-value;
+    }
 
     &:hover,
     &:focus,
     &:active {
-        transition: $transition-two;
-        background-color: transparent !important;
+        border-radius: 50px;
+        transition: $transition-two !important;
     }
 }
 
 .btn-dark {
-    color: map-get(map-get($themes, dark), background);
-    background-color: map-get(map-get($themes, dark), text);
+    color: $primary;
+    background-color: $text !important;
 
     &:hover,
     &:focus,
     &:active {
-        color: map-get(map-get($themes, dark), text);
-        border-bottom: 2px solid map-get(map-get($themes, dark), text);
+        color: $text;
+        background-color: $primary !important;
     }
 }
 
-.btn-secondary {
-    color: map-get(map-get($themes, dark), text);
-    background-color: map-get(map-get($themes, dark), secondary);
+.btn-primary {
+    color: $text;
+    background-color: $primary !important;
 
     &:hover,
     &:focus,
     &:active {
-        color: map-get(map-get($themes, dark), secondary);
-        border-bottom: 2px solid map-get(map-get($themes, dark), secondary);
+        color: $primary;
+        background-color: $text !important;
     }
 }
 
 .btn-max {
     width: $max;
+}
+
+.btn-language {
+    background-color: $background;
+    border-top-left-radius: $initial !important;
+    border-bottom-left-radius: $initial !important;
 }

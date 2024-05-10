@@ -9,16 +9,17 @@
 }
 
 body {
+    color: $text;
     font-family: $font-base;
-    color: map-get(map-get($themes, dark), text);
-    background-color: map-get(map-get($themes, dark), background);
+    background-color: $background;
 
     img {
         width: $max;
+        border-radius: $radius;
         object-fit: $cover;
     }
 
     section {
-        padding: 5rem 0;
+        padding: 140px 0;
     }
 }

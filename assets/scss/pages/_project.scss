@@ -1,65 +1,70 @@
-.hero-project,
-.universe {
-    padding: $initial $simple-value;
 
-    @media screen and (max-width: $mobile) {
-        padding: $simple-value $initial;
-    }
-}
+// .hero-project,
+// .universe {
+//     padding: $initial $simple-value;
 
-.hero-project {
+//     @media screen and (max-width: $mobile) {
+//         padding: $simple-value $initial;
+//     }
+// }
 
-    h1 {
-        font-size: 160px;
-        @media screen and (max-width: $mobile) {
-            font-size: 90px !important;
-        }
-    }
+// .hero-project {
 
-    .infos-project {
-        margin-top: $initial;
+//     h1 {
+//         font-size: 160px;
+//         @media screen and (max-width: $mobile) {
+//             font-size: 90px !important;
+//         }
+//     }
 
-        span {
-            @media screen and (max-width: $mobile) {
-                font-size: 16px !important;
-            }
-        }
-    }
+//     .infos-project {
+//         margin-top: $initial;
 
-    p {
-        margin: $simple-value $initial;
-    }
+//         span {
+//             @media screen and (max-width: $mobile) {
+//                 font-size: 16px !important;
+//             }
+//         }
+//     }
 
-    img {
-        height: 100vh;
-    }
+//     p {
+//         margin: $simple-value $initial;
+//     }
 
-    .img {
-        padding: $initial $initial $initial $simple-value;
+//     img {
+//         height: 100vh;
+//     }
 
-        @media screen and (max-width: $mobile) {
-            margin: $simple-value $initial;
-            padding: $initial !important;
-        }
-    }
-}
+//     .img {
+//         padding: $initial $initial $initial $simple-value;
 
-.content-project {
-    margin: $simple-value $initial;
-    padding: $simple-value $initial;
-    border-top: 1px solid map-get(map-get($themes, dark), text);
-    border-bottom: 1px solid map-get(map-get($themes, dark), text);
-}
+//         @media screen and (max-width: $mobile) {
+//             margin: $simple-value $initial;
+//             padding: $initial !important;
+//         }
+//     }
 
-.branding-project,
-.other-images {
-    .col-md-6 {
-        padding: $initial !important;
-    }
-}
+//     .btn-secondary {
+//         margin-top: $small-value;
+//     }
+// }
 
-.other-projects {
-    .btn {
-        margin-top: $simple-value;
-    }
-}
+// .content-project {
+//     margin: $simple-value $initial;
+//     padding: $simple-value $initial;
+//     border-top: 1px solid map-get(map-get($themes, dark), text);
+//     border-bottom: 1px solid map-get(map-get($themes, dark), text);
+// }
+
+// .branding-project,
+// .other-images {
+//     .col-md-6 {
+//         padding: $initial !important;
+//     }
+// }
+
+// .other-projects {
+//     .btn {
+//         margin-top: $simple-value;
+//     }
+// }

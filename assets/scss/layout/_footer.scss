@@ -1,7 +1,7 @@
 footer {
-    color: map-get(map-get($themes, dark), background);
+    color: $background;
     padding: $medium-value;
-    background-color: map-get(map-get($themes, dark), text);
+    background-color: $text;
 
     @media screen and (max-width: $mobile) {
         padding: $other-simple-value !important;
@@ -22,7 +22,7 @@ footer {
 
     h6 {
         margin: $other-simple-value $initial;
-        color: map-get(map-get($themes, dark), background);
+        color: $background;
         font-size: $big-value;
         line-height: 13rem;
 
@@ -46,8 +46,8 @@ footer {
         position: $absolute;
         border-radius: 200px;
         text-align: $center;
-        border: 2px solid map-get(map-get($themes, dark), text);
-        background: map-get(map-get($themes, dark), text);
+        border: 2px solid $text;
+        background: $text;
         transition: $transition-two;
 
         @media screen and (max-width: $mobile) {
@@ -63,7 +63,7 @@ footer {
         }
 
         a {
-            color: map-get(map-get($themes, dark), background);;
+            color: $background;
             text-transform: $uppercase;
             font-family: $font-secondary;
         }
@@ -72,16 +72,16 @@ footer {
         &:focus,
         &:active {
             border: $display-none;
-            background-color: map-get(map-get($themes, dark), background);;
+            background-color: $background;
 
             a {
-                color: map-get(map-get($themes, dark), text);
+                color: $text;
             }
         }
     }
 
     .copy {
-        color: map-get(map-get($themes, dark), background);
+        color: $background;
         margin-top: $simple-value;
     }
 }

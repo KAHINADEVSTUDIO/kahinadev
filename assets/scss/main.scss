@@ -1,9 +1,6 @@
 @import "utils/variables.scss";
 @import "utils/helpers.scss";
-@import "utils/animations.scss";
 @import "utils/mixins.scss";
-
-@import "themes/themes.scss";
 
 @import "base/reset.scss";
 @import "base/typography.scss";
@@ -13,12 +10,12 @@
 @import "layout/offcanvas.scss";
 
 @import "components/buttons.scss";
-@import "components/change.scss";
 @import "components/cards.scss";
-@import "components/modal.scss";
+@import "components/accordion.scss";
+// @import "components/modal.scss";
 
 @import "pages/home.scss";
-@import "pages/about.scss";
-@import "pages/services.scss";
-@import "pages/portfolio.scss";
-@import "pages/project.scss";
+// @import "pages/about.scss";
+// @import "pages/services.scss";
+// @import "pages/portfolio.scss";
+// @import "pages/project.scss";

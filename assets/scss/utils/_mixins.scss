@@ -1,21 +1,16 @@
-@mixin change-theme($theme) {
-    color: map-get(map-get($themes, $theme), text);
-    background-color: map-get(map-get($themes, $theme), background);
-}
-
 @mixin heading {
-    font-weight: 700;
+    font-weight: 500;
     line-height: $heading-line-height;
     text-transform: $uppercase;
     font-family: $font-primary;
 }
 
 @mixin text {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-family: $font-base;
 
     @media screen and (max-width: $mobile) {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 }
 

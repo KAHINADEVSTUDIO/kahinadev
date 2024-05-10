@@ -1,9 +1,12 @@
 .header {
     z-index: 10;
+    top: $initial;
     padding: $initial;
-    position: relative;
+    position: $fixed;
+    width: $max;
+    background-color: $background;
 
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: $tablet) {
         padding: 10px $initial !important;
     }
 
@@ -18,11 +21,11 @@
                     font-size: 20px;
                     margin-top: 5px;
                     font-weight: 600;
+                    color: $text;
                     position: relative;
                     letter-spacing: 1px;
                     text-transform: $uppercase;
                     font-family: $font-secondary;
-                    color: map-get(map-get($themes, dark), text);
                 }
             }
 
@@ -47,10 +50,12 @@
                 display: $display-none;
 
                 @media screen and (max-width: $mobile) {
+                    top: -10px !important;
                     right: 10px !important;
                 }
 
                 @media screen and (max-width: $tablet) {
+                    top: -25px;
                     right: 15px;
                     z-index: 8;
                     position: $absolute;
@@ -64,7 +69,7 @@
                         font-size: 23px;
 
                         .icon {
-                            color: map-get(map-get($themes, dark), text);
+                            color: $text;
                         }
                     }
                 }

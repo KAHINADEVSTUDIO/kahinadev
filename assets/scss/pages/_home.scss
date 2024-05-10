@@ -1,92 +1,63 @@
-.home {
-    padding-top: $simple-value;
-    
-    img {
-        height: 115vh;
-        width: 67%;
-        opacity: 0.8 !important;
-        margin-left: -25%;
-        margin-top: -7%;
-
-        @media screen and (max-width: $mobile) {
-            height: 100vh !important;
-        }
-
-        @media screen and (max-width: $tablet) {
-            height: 106vh;
-            width: $max;
-        }
-    }
+.home-intro {
 
     h1 {
+        font-size: 330px;
+        line-height: 0.8;
+
         @media screen and (max-width: $mobile) {
-            font-size: 90px !important;
-            margin-top: $simple-value !important;
+            font-size: 148px !important;
         }
 
         @media screen and (max-width: $tablet) {
-            margin-top: $medium-value;
-        }
-    }
-}
-
-.text-moving {
-    padding: 10rem 0;
-    overflow-x: hidden;
-
-    @media screen and (max-width: $mobile) {
-        padding: $big-value $initial $large-value $initial !important;
-    }
-
-    .text-horizontal {
-        display: $display-flex;
-        width: 100%;
-        animation-name: infiniteText;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-
-        h2 {
-            font-size: 80px;
-            white-space: nowrap;
-            color: $tertiary;
-
-            @media screen and (max-width: $mobile) {
-                font-size: 60px !important;
-            }
-        }
-
-        .second {
-            padding-left: 15px;
+            font-size: 270px;
         }
     }
 
-    .content {
-        margin: $medium-value $initial;
+    .container-images {
+        height: 300px;
+        margin-bottom: 22%;
+        position: $relative;
 
         @media screen and (max-width: $mobile) {
-            margin: $simple-value $initial !important;
+            margin-bottom: 32%;
         }
 
-        .btn {
+        img {
+            width: 50%;
+            height: 80vh;
+            margin-top: -15%;
+            margin-left: 0%;
+
             @media screen and (max-width: $mobile) {
-                margin-bottom: $small-value;
+                height: 62vh !important;
+                margin-top: -23% !important;
+            }
+
+            @media screen and (max-width: $tablet) {
+                width: 80%;
+                height: 50vh;
+                margin-top: -20%;
             }
         }
     }
-}
 
-.whatido,
-.projects-selection {
-    h2 {
-        margin-bottom: $other-simple-value;
+    .subtitle {
+        font-size: 2.2rem;
     }
 }
 
-.projects-selection,
+.about {
+    p {
+        margin-top: $simple-value;
+
+        @media screen and (max-width: $mobile) {
+            margin-top: $small-value;
+        }
+    }
+}
+
 .projects {
-    img {
-        width: $max;
-        height: 80vh;
+    .name-project {
+        margin: $small-value $initial;
     }
 }

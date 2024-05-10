@@ -1,69 +1,49 @@
 .offcanvas {
     border: $display-none;
     height: $max !important;
-    background-color: map-get(map-get($themes, dark), background);
+    background-color: $text !important;
 
     .offcanvas-header {
         .btn {
-            top: 20px;
+            top: $initial;
+            font-size: 25px;
+            color: $secondary;
             right: 25px;
-            font-size: 30px;
-            position: $absolute;
             padding: $initial !important;
-            color: map-get(map-get($themes, dark), text);
-
-            @media screen and (max-width: $mobile) {
-                top: 20px;
-                right: 15px !important;
-            }
+            position: $absolute !important;
         }
     }
 
-
     .offcanvas-body {
-        padding: 120px 0 0;
-        text-align: $center !important;
+        padding: 120px $initial $initial;
 
         @media screen and (max-width: $mobile) {
-            padding: 30px 0 0;
-            text-align: $left !important;
+            padding: 50px $initial !important;
         }
 
-        .nav-link {
-            font-size: 4rem;
-            font-weight: 400 !important;
-            transition: $transition-two;
-            @include font-secondary;
-            color: map-get(map-get($themes, dark), text);
+        .list-unstyled {
+            text-align: $center;
 
-            @media screen and (max-width: $mobile) {
-                font-size: $simple-value !important;
-            }
+            .nav-link {
+                font-size: 3rem;
+                color: $background;
+                font-weight: 400 !important;
+                @include font-secondary;
 
-            &:hover,
-            &:focus,
-            &:active {
-                color: map-get(map-get($themes, dark), secondary);
-                padding-left: 21px;
-            }
-        }
+                @media screen and (max-width: $mobile) {
+                    font-size: 2.6rem !important;
+                }
 
-        .nav-link,
-        .reseaux,
-        .greetings-copy {
-            @media screen and (max-width: $mobile) {
-                margin: $initial 3% !important;
+                &:hover,
+                &:focus,
+                &::active {
+                    font-weight: 700;
+                }
             }
         }
-
 
         .reseaux {
-            margin: $other-simple-value $initial;
-
-            @media screen and (max-width: $mobile) {
-                justify-content: $left !important;
-                bottom: 170px;
-            }
+            margin: $simple-value $initial;
 
             a {
                 font-size: 25px;
@@ -72,31 +52,11 @@
         }
 
         .greetings-copy {
-            font-size: 16px;
+            color: $primary;
 
-            @media screen and (max-width: $mobile) {
-                margin-top: $small-value !important;
-                bottom: 20px;
-            }
-
-            .greet {
-                margin-bottom: $initial;
-            }
-
-            p {
-                font-size: 1.3rem !important;
-                color: map-get(map-get($themes, dark), text);
-
-                @media screen and (max-width: $mobile) {
-                    text-align: $left !important;
-                }
-            }
-        }
-
-        .reseaux,
-        .greetings-copy {
-            @media screen and (max-width: $mobile) {
-                position: $absolute !important;
+            .greet,
+            .copy {
+                font-size: 16px !important;
             }
         }
     }

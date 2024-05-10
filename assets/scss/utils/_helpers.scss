@@ -6,6 +6,12 @@
     position: $absolute;
 }
 
+.position-fixed-left {
+    left: $initial;
+    bottom: $initial;
+    position: $fixed;
+}
+
 // DISPLAY 
 
 .display-space {
