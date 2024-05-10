@@ -1,6 +1,15 @@
 .hero-portfolio {
+    padding-bottom: $initial;
+
+    h1 {
+        @media screen and (max-width: $mobile) {
+            font-size: 100px !important;
+        }
+    }
+
     .category-list {
         display: $display-flex;
+        margin-bottom: $small-value;
 
         @media screen and (max-width: $mobile) {
             display: grid !important;
@@ -10,10 +19,10 @@
             width: 33.33%;
             margin: $initial $simple-value;
             padding: $small-value;
-            border-radius: 0.350rem;
+            border-radius: $radius;
             text-align: $center;
             font-family: $font-secondary;
-            border: 1px solid map-get(map-get($themes, dark), text);
+            border: 1px solid $text;
 
             @media screen and (max-width: $mobile) {
                 width: $max !important;

@@ -48,12 +48,17 @@
                     <div class="menu-one">
                         <ul class="list-unstyled">
                             <li class="nav-item">
-                                <a href="about.html" class="nav-link">
-                                    About me
+                                <a href="#intro" class="nav-link">
+                                    Intro
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="services.html" class="nav-link">
+                                <a href="#about" class="nav-link">
+                                    About
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#services" class="nav-link">
                                     Services
                                 </a>
                             </li>
@@ -67,8 +72,13 @@
                     <div class="menu-one">
                         <ul class="list-unstyled">
                             <li class="nav-item">
-                                <a href="portfolio.html" class="nav-link">
-                                    Portfolio
+                                <a href="#projects" class="nav-link">
+                                    Projects
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#skills" class="nav-link">
+                                    Skills
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -97,21 +107,33 @@
                             <div class="menu" role="navigation" aria-label="main navigation">
                                 <ul class="list-unstyled">
                                     <li class="nav-item">
-                                        <a href="about.html" 
+                                        <a href="#intro" 
                                         class="nav-link">
-                                            About me
+                                            Introduction
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="services.html" 
+                                        <a href="#about" 
+                                        class="nav-link">
+                                            About
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#services" 
                                         class="nav-link">
                                             Services
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="portfolio.html" 
+                                        <a href="#projects" 
                                         class="nav-link">
-                                            Portfolio
+                                            Projects
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#skills" 
+                                        class="nav-link">
+                                            Skills
                                         </a>
                                     </li>
                                     <li class="nav-item">
@@ -138,7 +160,7 @@
                             <div class="greetings-copy">
                                 <p class="greet text-center">Salut, Hello, Hola, 안녕하세요, سلام</p>
                                 <p class="copy text-center">
-                                    &copy;2023 KahinaDev - All rights reserved
+                                    &copy;2023 KahinaDev - Tous droits réservés
                                 </p>
                             </div>
                         </div>
@@ -149,150 +171,270 @@
     </header>
 
     <main class="main" id="main" role="main" aria-label="Main">
-        <section class="home">
+        <section class="home-intro" id="intro">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h1 class="aos-init aos-animation" data-aos="fade-in" 
-                                data-aos-delay="300">Welcome <br> to my <br> portfolio</h1>
-                            </div>
-                            <div class="col-md-12 text-center">
-                                <img src="../assets/img/me/pic-of-me.png" 
-                                class="position-absolute-right" alt="Pic of me">
-                            </div>
+                    <div class="col-md-12 text-center">
+                        <h1 class="aos-init aos-animation" data-aos="zoom-in" 
+                        data-aos-delay="300">Ouali Kahina</h1>
+                        <div class="container-images">
+                            <img src="../assets/img/me/pic-of-me-two.png" 
+                            class="image-one aos-init aos-animation" 
+                            data-aos="fade-up" data-aos-delay="400" alt="Pic of me">
                         </div>
+                        <div class="greetings aos-init aos-animation" data-aos="fade-up" 
+                        data-aos-delay="400">
+                            <span class="subtitle">
+                                Salut, Hello, Hola, 안녕하세요, سلام
+                            </span>
+                        </div>
+                        <a href="#about" 
+                        class="btn btn-dark btn-max aos-init aos-animation" 
+                        data-aos="zoom-in" data-aos-delay="600">
+                            About me
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="text-moving">
-            <div class="text-horizontal">
-                <h2>Application developer php/symfony looking for apprenticeship  *</h2> 
-                <h2 class="second">Application developer php/symfony looking for apprenticeship</h2> 
-            </div>
+        <section class="about" id="about">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-4"></div>
-                    <div class="col-lg-6 col-md-12">
-                        <div class="content">
-                            <p class="aos-init aos-animation" data-aos="flip-up" data-aos-delay="300">
-                                For some time now, I have made the decision to resume my studies in order 
-                                to specialize in a field that fascinates me such as development.
+                    <div class="col-md-12 text-center">
+                        <h2 class="aos-init aos-animation" data-aos="fade-down" 
+                        data-aos-delay="300">About me</h2>
+                        <span class="subtitle aos-init aos-animation" data-aos="fade-down" 
+                        data-aos-delay="400">
+                            * Application developer php/symfony looking for an apprenticeship *
+                        </span>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="text-container">
+                            <p class="aos-init aos-animation" data-aos="fade-in" data-aos-delay="500">
+                                I am a young web developer of 24 years, passionate about technologies, 
+                                I wonder how and how they can be useful to us without being harmful. 
+                                The field of web development and web design allows me to give free rein 
+                                to my ideas and make them live by creating intuitive and aesthetic interfaces.
                                 <br>
-                                I am excited to explore new technologies and enjoy the freedom to create, 
-                                bringing my ideas to life. 
+                                I am reviewing and improving several projects that I have already created 
+                                and others that are still under development.
+                                <br>
+                                <br>
+                                <strong>Stay tuned!</strong>
                             </p>
-                            <a href="about.html" 
-                            class="btn btn-dark aos-init aos-animation" data-aos="flip-up" data-aos-delay="400">
-                                Discover me
+                            <a href="../assets/pdf/php symfony application developer - Kahina Ouali.pdf" 
+                            class="btn btn-dark btn-max aos-init aos-animation" 
+                            data-aos="fade-down" data-aos-delay="600">
+                                Resume
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="text-horizontal">
-                <h2>Application developer php/symfony looking for apprenticeship *</h2> 
-                <h2 class="second">Application developer php/symfony looking for apprenticeship</h2> 
-            </div>
         </section>
-        <section class="whatido">
+        <section class="services" id="services">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="aos-init aos-animation" data-aos="fade-down" 
-                        data-aos-delay="300">What I do</h2>
+                    <div class="col-md-12 text-center">
+                        <h3 class="aos-init aos-animation" data-aos="zoom-in" 
+                        data-aos-delay="300">What I do</h3>
                     </div>
                     <div class="col-md-12">
-                        <div class="card card-service aos-init aos-animation" data-aos="fade-down" data-aos-delay="400">
-                            <span class="subtitle">
-                                01 - Web development
-                                <span class="line"></span>
-                            </span>
-                            <div class="content">
-                                <p>
-                                    For the creation of a website, it is essential to perform a technical needs analysis, 
-                                    design models in accordance with the specifications, and ensue the proper functioning 
-                                    of the site. 
-                                </p>
+                        <div class="accordion aos-init aos-animation" data-aos="zoom-in" 
+                        data-aos-delay="400" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item">
+                                <h4 class="accordion-header">
+                                    <span class="accordion-button subtitle" type="button" 
+                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" 
+                                    aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                        Web development
+                                    </span>
+                                </h4>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Web development is essential for the creation, maintenance and improvement of websites. 
+                                            It includes the integration of programming, visual design and interactive features. 
+                                            Through web development, companies can establish an online presence, provide services 
+                                            and products to these customers and interact effectively.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card card-service aos-init aos-animation" data-aos="fade-down" data-aos-delay="400">
-                            <span class="subtitle">
-                                02 - Web design
-                                <span class="line"></span>
-                            </span>
-                            <div class="content">
-                                <p>
-                                    Develop and implement the visual identity it is necessary to take into account various 
-                                    elements, such as the graphic center, images, organization of pages, according the 
-                                    requests.
-                                </p>
+                            <div class="accordion-item">
+                                <h4 class="accordion-header">
+                                    <span class="accordion-button subtitle" type="button" 
+                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" 
+                                    aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                                        Web design
+                                    </span>
+                                </h4>
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Web design is the art of creating visual and interactive experiences on the Web. 
+                                            This involves designing and implementing attractive, functional and intuitive user 
+                                            interfaces, while taking into account user needs, business objectives and aesthetic trends.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card card-service aos-init aos-animation" data-aos="fade-down" data-aos-delay="400">
-                            <span class="subtitle">
-                                03 - Redesign of website
-                                <span class="line"></span>
-                            </span>
-                            <div class="content">
-                                <p>
-                                    Site redesign involves making a site modification in depth, both in terms of this 
-                                    visual appearance and this technical and structural functioning.
-                                </p>
+                            <div class="accordion-item">
+                                <h4 class="accordion-header">
+                                    <span class="accordion-button subtitle" type="button" 
+                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" 
+                                    aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
+                                        Redesign of website
+                                    </span>
+                                </h4>
+                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Website redesign is used to update, improve and optimize an existing website. 
+                                            This can be driven by different factors, such as changing business needs, 
+                                            technological changes, or adapting to design and user experience trends.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="projects-selection">
+        <section class="projects" id="projects">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h3 class="aos-init aos-animation" data-aos="fade-up" 
+                        data-aos-delay="300">Selection of the projects</h3>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="../projects/romanum-en.html" 
+                        class="text-decoration-none aos-init aos-animation" data-aos="fade-up" 
+                        data-aos-delay="400">
+                            <img src="../assets/img/projects/romanum/romanum.png" alt="Romanum">
+                            <div class="name-project aos-init aos-animation" data-aos="fade-up" 
+                            data-aos-delay="400">
+                                <span class="subtitle">
+                                    Romanum * 2024
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="../projects/kanirgarden-en.html" 
+                        class="text-decoration-none aos-init aos-animation" data-aos="fade-up" 
+                        data-aos-delay="400">
+                            <img src="../assets/img/projects/kanirgarden/kanirgarden.png" alt="KanirGarden">
+                            <div class="name-project aos-init aos-animation" data-aos="fade-up" 
+                            data-aos-delay="400">
+                                <span class="subtitle">
+                                    KanirGarden * 2024
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="../projects/venirtransport-en.html" 
+                        class="text-decoration-none aos-init aos-animation" data-aos="fade-up" 
+                        data-aos-delay="400">
+                            <img src="../assets/img/projects/venirtransport/venirtransport.png" alt="VenirTransport">
+                            <div class="name-project aos-init aos-animation" data-aos="fade-up" 
+                            data-aos-delay="400">
+                                <span class="subtitle">
+                                    VenirTransport * 2024
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <a href="portfolio.html" 
+                        class="btn btn-dark aos-init aos-animation" data-aos="fade-up" 
+                        data-aos-delay="400">
+                            View all projects
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="other-infos" id="skills">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <h3 class="aos-init aos-animation" data-aos="flip-up" 
-                        data-aos-delay="300">Projects</h3>
+                    <div class="col-md-12 text-center">
+                        <h3 class="aos-init aos-animation" data-aos="zoom-in" data-aos-delay="300">Skills</h3>
                     </div>
                     <div class="col-md-12">
-                        <div class="card card-project-select aos-init aos-animation" data-aos="fade-up" 
-                        data-aos-delay="300">
-                            <div class="row align-items-center">
-                                <div class="col-md-8">
-                                    <a href="../projects/romanum-en.html" class="text-decoration-none">
-                                        <img src="../assets/img/projects/romanum/romanum.png" alt="Romanum">
-                                        <div class="infos-projects">
-                                            <span class="subtitle">Romanum * 2024</span>
-                                        </div>
-                                    </a>
+                        <div class="accordion aos-init aos-animation" data-aos="zoom-in" 
+                        data-aos-delay="300" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item">
+                                <h4 class="accordion-header">
+                                    <span class="accordion-button subtitle" type="button" 
+                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" 
+                                    aria-expanded="true" aria-controls="panelsStayOpen-collapseFour">
+                                        Web development 
+                                    </span>
+                                </h4>
+                                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                        <p>
+                                            - Programming: <strong>Html, Css, Javascript, PHP</strong>
+                                            <br>
+                                            - Preprocessors: <strong>SASS</strong>
+                                            <br>
+                                            - Frameworks: <strong>Symfony, Bootstrap</strong>
+                                            <br>
+                                            - Database: <strong>MySQL</strong>
+                                            <br>
+                                            - Development tools: <strong>Github</strong>
+                                            <br>
+                                            - Methodology: <strong>Agile</strong>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card card-project-select aos-init aos-animation" data-aos="fade-up" 
-                        data-aos-delay="300">
-                            <div class="row align-items-center">
-                                <div class="col-md-4">
-                                </div>
-                                <div class="col-md-8">
-                                    <a href="../projects/kanirgarden-en.html" class="text-decoration-none">
-                                        <img src="../assets/img/projects/kanirgarden/kanirgarden.png" alt="KanirGarden">
-                                        <div class="infos-projects">
-                                            <span class="subtitle">KanirGarden * 2024</span>
-                                        </div>
-                                    </a>
+                            <div class="accordion-item">
+                                <h4 class="accordion-header">
+                                    <span class="accordion-button subtitle" type="button" 
+                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" 
+                                    aria-expanded="true" aria-controls="panelsStayOpen-collapseFive">
+                                        Web design
+                                    </span>
+                                </h4>
+                                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <p>
+                                            - Figma : <strong>in progress</strong>
+                                            <br>
+                                            - Illustrator : <strong>in progress</strong>
+                                            <br>
+                                            - Photoshop : <strong>in progress</strong>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card card-project-select aos-init aos-animation" data-aos="fade-up" 
-                        data-aos-delay="300">
-                            <div class="row align-items-center">
-                                <div class="col-md-8">
-                                    <a href="../projects/venirtransport-en.html" class="text-decoration-none">
-                                        <img src="../assets/img/projects/venirtransport/venirtransport.png" alt="VenirTransport">
-                                        <div class="infos-projects">
-                                            <span class="subtitle">VenirTransport * 2024</span>
-                                        </div>
-                                    </a>
+                            <div class="accordion-item">
+                                <h4 class="accordion-header">
+                                    <span class="accordion-button subtitle" type="button" 
+                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" 
+                                    aria-expanded="true" aria-controls="panelsStayOpen-collapseSix">
+                                        Languages
+                                    </span>
+                                </h4>
+                                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <p>
+                                            - French: <strong>Native language</strong>
+                                            <br>
+                                            - English: <strong>Intermediate</strong>
+                                            <br>
+                                            - Arabic: <strong>Beginner</strong>
+                                            <br>
+                                            - Korean: <strong>Beginner</strong>
+                                            <br>
+                                            - Spanish: <strong>Beginner</strong>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -346,21 +488,10 @@
         </div>
     </footer>
 
-    <div class="languages">
-        <a href="../index.html" class="btn btn-change btn-language">
+    <div class="languages position-fixed-left">
+        <a href="../index.html" class="btn btn-language">
             Fr
         </a>
-    </div>
-
-    <div class="button-change">
-        <button type="button" class="btn btn-change btn-theme" id="theme-toggle">
-            <span class="moon">
-                <i class="fa-solid fa-moon"></i> Sombre
-            </span>
-            <span class="sun">
-                <i class="fa-solid fa-sun"></i> Clair
-            </span>
-        </button>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 

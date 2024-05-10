@@ -28,16 +28,17 @@ h6 {
 }
 
 h1 {
-  font-size: 220px;
+  font-size: 330px;
+  line-height: 0.8;
 }
 @media screen and (max-width: 576px) {
   h1 {
-    font-size: 80px !important;
+    font-size: 148px !important;
   }
 }
 @media screen and (max-width: 1024px) {
   h1 {
-    font-size: 160px;
+    font-size: 270px;
   }
 }
 
@@ -86,7 +87,6 @@ p {
 * {
   margin: 0;
   padding: 0;
-  user-select: none;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -118,16 +118,17 @@ h6 {
 }
 
 h1 {
-  font-size: 220px;
+  font-size: 330px;
+  line-height: 0.8;
 }
 @media screen and (max-width: 576px) {
   h1 {
-    font-size: 80px !important;
+    font-size: 148px !important;
   }
 }
 @media screen and (max-width: 1024px) {
   h1 {
-    font-size: 160px;
+    font-size: 270px;
   }
 }
 
@@ -373,7 +374,7 @@ footer .copy {
 }
 @media screen and (max-width: 576px) {
   .offcanvas .offcanvas-body {
-    padding: 50px 0 !important;
+    padding: 30px 0 !important;
   }
 }
 .offcanvas .offcanvas-body .list-unstyled {
@@ -548,6 +549,39 @@ footer .copy {
 
 .projects .name-project {
   margin: 1rem 0;
+}
+
+.hero-portfolio {
+  padding-bottom: 0;
+}
+@media screen and (max-width: 576px) {
+  .hero-portfolio h1 {
+    font-size: 100px !important;
+  }
+}
+.hero-portfolio .category-list {
+  display: flex;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 576px) {
+  .hero-portfolio .category-list {
+    display: grid !important;
+  }
+}
+.hero-portfolio .category-list .name-category {
+  width: 33.33%;
+  margin: 0 2rem;
+  padding: 1rem;
+  border-radius: 0.735rem;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  border: 1px solid #0e100e;
+}
+@media screen and (max-width: 576px) {
+  .hero-portfolio .category-list .name-category {
+    width: 100% !important;
+    margin: 1rem 0 !important;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
