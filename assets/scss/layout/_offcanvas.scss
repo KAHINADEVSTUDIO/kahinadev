@@ -18,7 +18,7 @@
         padding: 120px $initial $initial;
 
         @media screen and (max-width: $mobile) {
-            padding: 30px $initial !important;
+            padding: 50px $initial !important;
         }
 
         .list-unstyled {
@@ -31,7 +31,7 @@
                 @include font-secondary;
 
                 @media screen and (max-width: $mobile) {
-                    font-size: 2.6rem !important;
+                    font-size: 2.1rem !important;
                 }
 
                 &:hover,

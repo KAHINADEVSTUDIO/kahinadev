@@ -1,4 +1,6 @@
 .accordion {
+    background-color: $background !important;
+
     .accordion-item {
         border: $display-none !important;
         margin-bottom: $small-value;
@@ -21,10 +23,14 @@
     }
 
     .accordion-body {
-        padding-top: $small-value;
+        padding: $small-value $initial $initial !important;
 
         p {
-            font-size: 1.6rem !important;
+            font-size: 1.4rem;
+
+            @media screen and (max-width: $mobile) {
+                font-size: 1.2rem !important;
+            }
         }
     }
 }

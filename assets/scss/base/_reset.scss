@@ -11,7 +11,12 @@
 body {
     color: $text;
     font-family: $font-base;
+    padding-left: $medium-value;
     background-color: $background;
+
+    @media screen and (max-width: $mobile) {
+        padding-left: 4rem;
+    }
 
     img {
         width: $max;
@@ -20,6 +25,10 @@ body {
     }
 
     section {
-        padding: 140px 0;
+        padding: 140px $initial;
+
+        @media screen and (max-width: $mobile) {
+            padding: 120px $initial $initial $initial;
+        }
     }
 }

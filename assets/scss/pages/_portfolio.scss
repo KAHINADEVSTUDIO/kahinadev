@@ -1,9 +1,10 @@
 .hero-portfolio {
+    padding-top: 180px;
     padding-bottom: $initial;
 
     h1 {
         @media screen and (max-width: $mobile) {
-            font-size: 100px !important;
+            font-size: 80px !important;
         }
     }
 }
@@ -12,7 +13,7 @@
     display: $display-flex;
     margin-bottom: $small-value;
 
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: $tablet) {
         display: grid !important;
     }
 
@@ -25,7 +26,7 @@
         font-family: $font-secondary;
         border: 1px solid $text;
 
-        @media screen and (max-width: $mobile) {
+        @media screen and (max-width: $tablet) {
             width: $max !important;
             margin: $small-value $initial !important;
         }

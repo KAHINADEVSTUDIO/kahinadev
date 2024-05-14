@@ -1,13 +1,20 @@
 .header {
     z-index: 10;
     top: $initial;
+    left: $initial;
     padding: $initial;
     position: $fixed;
     width: $max;
+    padding: $initial 5px;
     background-color: $background;
+    border-bottom: $border-dark;
+
+    @media screen and (max-width: $mobile) {
+        top: -3px;
+    }
 
     @media screen and (max-width: $tablet) {
-        padding: 10px $initial !important;
+        padding: 5px $initial !important;
     }
 
     .container-fluid {

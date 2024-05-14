@@ -22,7 +22,7 @@
 }
 
 .btn-dark {
-    color: $primary;
+    color: $background;
     background-color: $text !important;
 
     &:hover,
@@ -47,10 +47,4 @@
 
 .btn-max {
     width: $max;
-}
-
-.btn-language {
-    background-color: $background;
-    border-top-left-radius: $initial !important;
-    border-bottom-left-radius: $initial !important;
 }

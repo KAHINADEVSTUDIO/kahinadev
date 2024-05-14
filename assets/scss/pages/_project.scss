@@ -40,18 +40,10 @@
     }
 }
 
-.first-images,
-.branding-project,
+.branding,
 .other-images {
     img {
-        height: $max;
-    }
-}
-
-.branding-project,
-.other-images {
-    img {
-        margin-top: $simple-value;
+        margin-bottom: $simple-value;
     }
 }
 

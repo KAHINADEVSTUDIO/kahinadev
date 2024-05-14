@@ -49,17 +49,17 @@
                         <ul class="list-unstyled">
                             <li class="nav-item">
                                 <a href="#intro" class="nav-link">
-                                    Intro
+                                    { Intro }
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="#about" class="nav-link">
-                                    About
+                                    { About }
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="#services" class="nav-link">
-                                    Services
+                                    { Services }
                                 </a>
                             </li>
                         </ul>
@@ -73,17 +73,17 @@
                         <ul class="list-unstyled">
                             <li class="nav-item">
                                 <a href="#projects" class="nav-link">
-                                    Projects
+                                    { Projects }
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="#skills" class="nav-link">
-                                    Skills
+                                    { Skills }
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="https://mail.google.com/mail/u/0/#inbox" class="nav-link">
-                                    Contact
+                                    { Contact }
                                 </a>
                             </li>
                         </ul>
@@ -109,36 +109,36 @@
                                     <li class="nav-item">
                                         <a href="#intro" 
                                         class="nav-link">
-                                            Introduction
+                                            { Introduction }
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="#about" 
                                         class="nav-link">
-                                            About
+                                            { About }
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="#services" 
                                         class="nav-link">
-                                            Services
+                                            { Services }
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="#projects" 
                                         class="nav-link">
-                                            Projects
+                                            { Projects }
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="#skills" 
                                         class="nav-link">
-                                            Skills
+                                            { Skills }
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="https://mail.google.com/mail/u/0/#inbox" class="nav-link">
-                                            Contact
+                                            { Contact }
                                         </a>
                                     </li>
                                 </ul>
@@ -160,7 +160,7 @@
                             <div class="greetings-copy">
                                 <p class="greet text-center">Salut, Hello, Hola, 안녕하세요, سلام</p>
                                 <p class="copy text-center">
-                                    &copy;2023 KahinaDev - Tous droits réservés
+                                    &copy;2023 KahinaDev - All rights reserved
                                 </p>
                             </div>
                         </div>
@@ -173,15 +173,10 @@
     <main class="main" id="main" role="main" aria-label="Main">
         <section class="home-intro" id="intro">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12">
                         <h1 class="aos-init aos-animation" data-aos="zoom-in" 
                         data-aos-delay="300">Ouali Kahina</h1>
-                        <div class="container-images">
-                            <img src="../assets/img/me/pic-of-me-two.png" 
-                            class="image-one aos-init aos-animation" 
-                            data-aos="fade-up" data-aos-delay="400" alt="Pic of me">
-                        </div>
                         <div class="greetings aos-init aos-animation" data-aos="fade-up" 
                         data-aos-delay="400">
                             <span class="subtitle">
@@ -193,6 +188,11 @@
                         data-aos="zoom-in" data-aos-delay="600">
                             About me
                         </a>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <img src="../assets/img/me/pic-of-me-two.png" 
+                        class="image-one aos-init aos-animation" 
+                        data-aos="fade-up" data-aos-delay="400" alt="Pic of me">
                     </div>
                 </div>
             </div>
@@ -235,7 +235,7 @@
         <section class="services" id="services">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 text-center">
+                    <div class="col-md-12">
                         <h3 class="aos-init aos-animation" data-aos="zoom-in" 
                         data-aos-delay="300">What I do</h3>
                     </div>
@@ -309,44 +309,47 @@
                         <h3 class="aos-init aos-animation" data-aos="fade-up" 
                         data-aos-delay="300">Selection of the projects</h3>
                     </div>
-                    <div class="col-md-6">
-                        <a href="../projects/romanum-en.html" 
-                        class="text-decoration-none aos-init aos-animation" data-aos="fade-up" 
+                    <div class="col-lg-6 col-md-12">
+                        <div class="project-card aos-init aos-animation" data-aos="fade-up" 
                         data-aos-delay="400">
-                            <img src="../assets/img/projects/romanum/romanum.png" alt="Romanum">
-                            <div class="name-project aos-init aos-animation" data-aos="fade-up" 
-                            data-aos-delay="400">
-                                <span class="subtitle">
-                                    Romanum * 2024
-                                </span>
-                            </div>
-                        </a>
+                            <a href="../projects/romanum-en.html" 
+                            class="text-decoration-none">
+                                <img src="../assets/img/projects/romanum/romanum.png" alt="Romanum">
+                                <div class="name-project">
+                                    <span class="subtitle">
+                                        Romanum * 2024
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <a href="../projects/kanirgarden-en.html" 
-                        class="text-decoration-none aos-init aos-animation" data-aos="fade-up" 
+                    <div class="col-lg-6 col-md-12">
+                        <div class="project-card aos-init aos-animation" data-aos="fade-up" 
                         data-aos-delay="400">
-                            <img src="../assets/img/projects/kanirgarden/kanirgarden.png" alt="KanirGarden">
-                            <div class="name-project aos-init aos-animation" data-aos="fade-up" 
-                            data-aos-delay="400">
-                                <span class="subtitle">
-                                    KanirGarden * 2024
-                                </span>
-                            </div>
-                        </a>
+                            <a href="../projects/kanirgarden-en.html" 
+                            class="text-decoration-none">
+                                <img src="../assets/img/projects/kanirgarden/kanirgarden.png" alt="KanirGarden">
+                                <div class="name-project">
+                                    <span class="subtitle">
+                                        KanirGarden * 2024
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <a href="../projects/venirtransport-en.html" 
-                        class="text-decoration-none aos-init aos-animation" data-aos="fade-up" 
+                    <div class="col-lg-6 col-md-12">
+                        <div class="project-card aos-init aos-animation" data-aos="fade-up" 
                         data-aos-delay="400">
-                            <img src="../assets/img/projects/venirtransport/venirtransport.png" alt="VenirTransport">
-                            <div class="name-project aos-init aos-animation" data-aos="fade-up" 
-                            data-aos-delay="400">
+                        <a href="../projects/worldwheels-en.html" 
+                        class="text-decoration-none">
+                            <img src="../assets/img/projects/world-wheels/world-wheels.png" alt="WorldWheels">
+                            <div class="name-project">
                                 <span class="subtitle">
-                                    VenirTransport * 2024
+                                    WorldWheels * 2024
                                 </span>
                             </div>
                         </a>
+                        </div>
                     </div>
                     <div class="col-md-12 text-center">
                         <a href="portfolio.html" 
@@ -488,11 +491,18 @@
         </div>
     </footer>
 
-    <div class="languages position-fixed-left">
-        <a href="../index.html" class="btn btn-language">
-            Fr
-        </a>
-    </div>
+    <aside class="aside" id="aside" role="complementary" aria-label="Aside">
+        <div class="welcome">
+            <span class="subtitle">
+                Welcome to my portfolio
+            </span>
+        </div>
+        <div class="languages">
+            <a href="../index.html" class="text-decoration-none subtitle">
+                Fr
+            </a>
+        </div>
+    </aside>
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 

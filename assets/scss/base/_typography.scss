@@ -14,15 +14,15 @@ h6 {
 }
 
 h1 {
-    font-size: 330px;
+    font-size: 280px;
     line-height: 0.8;
 
     @media screen and (max-width: $mobile) {
-        font-size: 148px !important;
+        font-size: 100px !important;
     }
 
     @media screen and (max-width: $tablet) {
-        font-size: 270px;
+        font-size: 188px;
     }
 }
 
@@ -50,6 +50,6 @@ p {
     @include font-secondary;
 
     @media screen and (max-width: $mobile) {
-        font-size: 20px !important;
+        font-size: 17px !important;
     }
 }

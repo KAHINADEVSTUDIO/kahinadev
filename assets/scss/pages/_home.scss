@@ -1,48 +1,15 @@
+
 .home-intro {
+    img {
+        @media screen and (max-width: $tablet) {
+            margin-top: 1.3rem;
+        }
+    }
 
     h1 {
-        font-size: 330px;
-        line-height: 0.8;
-
-        @media screen and (max-width: $mobile) {
-            font-size: 148px !important;
-        }
-
         @media screen and (max-width: $tablet) {
             font-size: 270px;
         }
-    }
-
-    .container-images {
-        height: 300px;
-        margin-bottom: 22%;
-        position: $relative;
-
-        @media screen and (max-width: $mobile) {
-            margin-bottom: 32%;
-        }
-
-        img {
-            width: 50%;
-            height: 80vh;
-            margin-top: -15%;
-            margin-left: 0%;
-
-            @media screen and (max-width: $mobile) {
-                height: 62vh !important;
-                margin-top: -23% !important;
-            }
-
-            @media screen and (max-width: $tablet) {
-                width: 80%;
-                height: 50vh;
-                margin-top: -20%;
-            }
-        }
-    }
-
-    .subtitle {
-        font-size: 2.2rem;
     }
 }
 
@@ -59,5 +26,18 @@
 .projects {
     .name-project {
         margin: $small-value $initial;
+    }
+}
+
+.other-infos {
+    @media screen and (max-width: $mobile) {
+        padding-bottom: 80px !important;
+    }
+
+    h3 {
+        @media screen and (max-width: $mobile) {
+            font-size: 60px !important;
+            margin-bottom: $simple-value !important;
+        }
     }
 }
