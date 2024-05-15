@@ -438,6 +438,7 @@ footer .copy {
 @media screen and (max-width: 576px) {
   .aside {
     width: 15% !important;
+    bottom: 0 !important;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -447,10 +448,15 @@ footer .copy {
 }
 .aside .welcome {
   top: 50%;
-  left: 45%;
+  left: 30px;
   transform: translate(-50%, -50%);
   white-space: nowrap;
   position: absolute;
+}
+@media screen and (max-width: 576px) {
+  .aside .welcome {
+    left: 27px !important;
+  }
 }
 .aside .welcome .subtitle {
   text-align: center;
@@ -675,6 +681,16 @@ footer .copy {
   margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 576px) {
+  .other-projects {
+    padding-bottom: 80px !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .other-projects img {
+    margin-bottom: 2rem;
+  }
+}
 .other-projects .subtitle {
   color: #959895;
   padding: 2rem 0;

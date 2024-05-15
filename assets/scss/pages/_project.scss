@@ -48,6 +48,16 @@
 }
 
 .other-projects {
+    @media screen and (max-width: $mobile) {
+        padding-bottom: 80px !important;
+    }
+
+    img {
+        @media screen and (max-width: $mobile) {
+            margin-bottom: $simple-value;
+        }
+    }
+
     .subtitle {
         color: $tertiary;
         padding: $simple-value $initial;
