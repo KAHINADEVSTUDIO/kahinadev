@@ -1,10 +1,9 @@
 .home-intro {
-
     .welcome {
         color: $secondary;
         display: $display-none;
 
-        @media screen and (max-width: $mobile) {
+        @media screen and (max-width: $tablet) {
             display: $display-block !important;
         }
     }
@@ -18,7 +17,7 @@
     h1 {
 
         @media screen and (max-width: $mobile) {
-            margin-top: $simple-value;
+            margin-top: $small-value;
         }
 
         @media screen and (max-width: $tablet) {

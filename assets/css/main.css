@@ -452,7 +452,7 @@ footer .copy {
   white-space: nowrap;
   position: absolute;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1024px) {
   .aside .welcome {
     display: none !important;
   }
@@ -570,7 +570,7 @@ footer .copy {
   color: #79906a;
   display: none;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1024px) {
   .home-intro .welcome {
     display: block !important;
   }
@@ -582,7 +582,7 @@ footer .copy {
 }
 @media screen and (max-width: 576px) {
   .home-intro h1 {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 }
 @media screen and (max-width: 1024px) {

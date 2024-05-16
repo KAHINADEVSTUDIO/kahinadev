@@ -22,7 +22,7 @@
         white-space: nowrap;
         position: $absolute;
 
-        @media screen and (max-width: $mobile) {
+        @media screen and (max-width: $tablet) {
             display: $display-none !important;
         }
 
