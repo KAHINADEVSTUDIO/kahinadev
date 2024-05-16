@@ -438,7 +438,6 @@ footer .copy {
 @media screen and (max-width: 576px) {
   .aside {
     width: 15% !important;
-    bottom: 0 !important;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -448,14 +447,14 @@ footer .copy {
 }
 .aside .welcome {
   top: 50%;
-  left: 30px;
+  left: 32px;
   transform: translate(-50%, -50%);
   white-space: nowrap;
   position: absolute;
 }
 @media screen and (max-width: 576px) {
   .aside .welcome {
-    left: 27px !important;
+    display: none !important;
   }
 }
 .aside .welcome .subtitle {
@@ -567,9 +566,23 @@ footer .copy {
   }
 }
 
+.home-intro .welcome {
+  color: #79906a;
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .home-intro .welcome {
+    display: block !important;
+  }
+}
 @media screen and (max-width: 1024px) {
   .home-intro img {
     margin-top: 1.3rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .home-intro h1 {
+    margin-top: 2rem;
   }
 }
 @media screen and (max-width: 1024px) {

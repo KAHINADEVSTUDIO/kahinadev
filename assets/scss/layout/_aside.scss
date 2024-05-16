@@ -9,7 +9,6 @@
 
     @media screen and (max-width: $mobile) {
         width: 15% !important;
-        bottom: $initial !important;
     }
 
     @media screen and (max-width: $tablet) {
@@ -18,13 +17,13 @@
 
     .welcome {
         top: 50%;
-        left: 30px;
+        left: 32px;
         transform: translate(-50%, -50%);
         white-space: nowrap;
         position: $absolute;
 
         @media screen and (max-width: $mobile) {
-            left: 27px !important;
+            display: $display-none !important;
         }
 
         .subtitle {

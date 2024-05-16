@@ -1,5 +1,14 @@
-
 .home-intro {
+
+    .welcome {
+        color: $secondary;
+        display: $display-none;
+
+        @media screen and (max-width: $mobile) {
+            display: $display-block !important;
+        }
+    }
+
     img {
         @media screen and (max-width: $tablet) {
             margin-top: 1.3rem;
@@ -7,6 +16,11 @@
     }
 
     h1 {
+
+        @media screen and (max-width: $mobile) {
+            margin-top: $simple-value;
+        }
+
         @media screen and (max-width: $tablet) {
             font-size: 270px;
         }
