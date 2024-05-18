@@ -584,12 +584,13 @@ footer .copy {
 }
 @media screen and (max-width: 576px) {
   .home-intro h1 {
-    margin-top: 1rem;
+    margin-top: 1rem !important;
   }
 }
 @media screen and (max-width: 1024px) {
   .home-intro h1 {
     font-size: 270px;
+    margin-top: 2rem;
   }
 }
 

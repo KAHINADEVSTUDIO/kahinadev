@@ -17,11 +17,12 @@
     h1 {
 
         @media screen and (max-width: $mobile) {
-            margin-top: $small-value;
+            margin-top: $small-value !important;
         }
 
         @media screen and (max-width: $tablet) {
             font-size: 270px;
+            margin-top: $simple-value;
         }
     }
 }
