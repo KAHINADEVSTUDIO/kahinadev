@@ -1,0 +1,26 @@
+.coming-soon {
+    @media screen and (max-width: $tablet) {
+        padding-top: $large-value;
+    }
+
+    span {
+        font-size: 4rem;
+    }
+
+    h1 {
+        margin: $simple-value $initial;
+
+        @media screen and (max-width: $tablet) {
+            font-size: 70px;
+        }
+    }
+
+    .subtitle {
+        color: $text;
+        font-weight: 300;
+
+        i {
+            margin-right: 15px;
+        }
+    }
+}

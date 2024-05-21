@@ -446,6 +446,30 @@ p {
   transform: scale(1.05);
 }
 
+@media screen and (max-width: 1024px) {
+  .coming-soon {
+    padding-top: 10rem;
+  }
+}
+.coming-soon span {
+  font-size: 4rem;
+}
+.coming-soon h1 {
+  margin: 2rem 0;
+}
+@media screen and (max-width: 1024px) {
+  .coming-soon h1 {
+    font-size: 70px;
+  }
+}
+.coming-soon .subtitle {
+  color: #0e100e;
+  font-weight: 300;
+}
+.coming-soon .subtitle i {
+  margin-right: 15px;
+}
+
 @media screen and (max-width: 576px) {
   .about .img {
     padding: 0 !important;
@@ -453,6 +477,11 @@ p {
 }
 .about .img .img-one {
   height: 70vh;
+}
+@media screen and (max-width: 576px) {
+  .about .img .img-one {
+    border-radius: 0 !important;
+  }
 }
 @media screen and (max-width: 576px) {
   .about h1 {
