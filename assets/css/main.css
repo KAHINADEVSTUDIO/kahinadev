@@ -64,7 +64,7 @@ h1 {
 }
 @media screen and (max-width: 576px) {
   h1 {
-    font-size: 45px !important;
+    font-size: 38px !important;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -78,7 +78,7 @@ h2 {
 }
 @media screen and (max-width: 576px) {
   h2 {
-    font-size: 48px !important;
+    font-size: 34px !important;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -92,7 +92,7 @@ h3 {
 }
 @media screen and (max-width: 576px) {
   h3 {
-    font-size: 40px !important;
+    font-size: 32px !important;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -275,7 +275,7 @@ p {
 }
 @media screen and (max-width: 576px) {
   .footer h6 {
-    font-size: 4rem !important;
+    font-size: 3rem !important;
     line-height: 6rem !important;
   }
 }
@@ -381,9 +381,11 @@ p {
   background-color: transparent !important;
 }
 .accordion .accordion-item .accordion-header {
-  font-size: 22px;
   padding-bottom: 0 !important;
   border-bottom: none !important;
+}
+.accordion .accordion-item .accordion-header span {
+  font-size: 20px !important;
 }
 .accordion .accordion-item .accordion-button {
   color: #0e100e;
