@@ -1,16 +1,21 @@
+// FONTS
+
+$font-base: "Roboto", sans-serif;
+$font-primary: "Montserrat", sans-serif;
+$font-secondary: "Raleway", sans-serif;
+
 // COLORS
 
 $text: #0e100e;
-$background: #f5f5f5;
+$background: #f8f8f8;
 $primary: #92b592;
 $secondary: #79906a;
-$accent: #45402b;
 
 // OTHER COLOR
 
 $tertiary: #959895;
 
-// SIZE 
+// SIZE
 
 $initial: 0;
 $small-value: 1rem;
@@ -20,63 +25,57 @@ $medium-value: 5rem;
 $large-value: 10rem;
 $big-value: 15rem;
 
-// HEADING 
-
-$base-heading-size: 200px;
-$heading-line-height: 1.2;
-
-// IMAGE 
-
-$cover: cover;
-
 // MEDIA QUERIES 
 
 $mobile: 576px;
 $small-tablet: 768px;
 $tablet: 1024px;
 
-
 // DISPLAY 
 
-$display-flex: flex;
-$display-none: none;
-$display-block: block;
+$none: none;
+$flex: flex; 
+$block: block;
 
-// TRANSFORM 
+// LEFT 
 
-$uppercase: uppercase;
+$left: left;
+$right: right;
+$center: center;
 
-// TRANSITION
+// OVERFLOW
 
-$transition-two: all 0.5s ease;
+$hidden: hidden;
 
 // POSITION 
 
 $fixed: fixed;
-$absolute: absolute;
 $relative: relative;
+$absolute: absolute;
 
-// ALIGN 
+// IMAGE 
 
-$left: left;
-$center: center;
+$cover: cover;
 
 // MAX 
 
 $max: 100%;
 
-// JUSTIFY CONTENT 
+// BORDER
 
-$space-between: space-between;
+$border-light: 1px solid $background;
+$border-dark: 1px solid $text;
+$border-top-dark: 1px solid $text;
+$border-bottom-dark: 1px solid $text;
 
-// OVERFLOW 
+// TRANSFORM
 
-$hidden: hidden;
+$uppercase: uppercase;
+
+// TRANSITION 
+
+$transition: all 0.5s ease;
 
 // RADIUS
 
-$radius: 0.735rem;
-
-// BORDER
-
-$border-dark: 1px solid $text;
+$radius: 0.335rem;

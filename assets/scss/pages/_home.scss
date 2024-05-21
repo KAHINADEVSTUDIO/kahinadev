@@ -1,57 +1,42 @@
-.home-intro {
-    .welcome {
-        color: $secondary;
-        display: $display-none;
+.about {
 
-        @media screen and (max-width: $tablet) {
-            display: $display-block !important;
+    .img {
+        @media screen and (max-width: $mobile) {
+            padding: $initial !important;
         }
-    }
 
-    img {
-        @media screen and (max-width: $tablet) {
-            margin-top: 1.3rem;
+        .img-one {
+            height: 70vh;
         }
     }
 
     h1 {
-
         @media screen and (max-width: $mobile) {
-            margin-top: $small-value !important;
+            margin-bottom: $initial !important;
         }
+    }
+
+    h2 {
+        margin-top: $simple-value;
+        font-size: 40px;
 
         @media screen and (max-width: $tablet) {
-            font-size: 270px;
-            margin-top: $simple-value;
+            font-size: 20px !important;
         }
     }
-}
 
-.about {
     p {
-        margin-top: $simple-value;
+        @media screen and (max-width: $tablet) {
+            padding-top: $initial !important;
+        }
 
-        @media screen and (max-width: $mobile) {
-            margin-top: $small-value;
+        .subtitle {
+            color: $primary !important;
         }
     }
 }
 
-.projects {
-    .name-project {
-        margin: $small-value $initial;
-    }
-}
-
-.other-infos {
-    @media screen and (max-width: $mobile) {
-        padding-bottom: 80px !important;
-    }
-
-    h3 {
-        @media screen and (max-width: $mobile) {
-            font-size: 60px !important;
-            margin-bottom: $simple-value !important;
-        }
-    }
+.about, 
+.intro-project {
+    padding-top: $medium-value;
 }

@@ -28,10 +28,11 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+    rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -48,11 +49,6 @@
                     <div class="menu-one">
                         <ul class="list-unstyled">
                             <li class="nav-item">
-                                <a href="#intro" class="nav-link">
-                                    { Intro }
-                                </a>
-                            </li>
-                            <li class="nav-item">
                                 <a href="#propos" class="nav-link">
                                     { Propos }
                                 </a>
@@ -60,6 +56,11 @@
                             <li class="nav-item">
                                 <a href="#services" class="nav-link">
                                     { Services }
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#projets" class="nav-link">
+                                    { Projets }
                                 </a>
                             </li>
                         </ul>
@@ -71,11 +72,6 @@
                     </div>
                     <div class="menu-one">
                         <ul class="list-unstyled">
-                            <li class="nav-item">
-                                <a href="#projets" class="nav-link">
-                                    { Projets }
-                                </a>
-                            </li>
                             <li class="nav-item">
                                 <a href="#competences" class="nav-link">
                                     { Compétences }
@@ -106,12 +102,6 @@
                         <div class="offcanvas-body">
                             <div class="menu" role="navigation" aria-label="main navigation">
                                 <ul class="list-unstyled">
-                                    <li class="nav-item">
-                                        <a href="#intro" 
-                                        class="nav-link">
-                                            { Introduction }
-                                        </a>
-                                    </li>
                                     <li class="nav-item">
                                         <a href="#propos" 
                                         class="nav-link">
@@ -171,81 +161,62 @@
     </header>
 
     <main class="main" id="main" role="main" aria-label="Main">
-        <section class="home-intro" id="intro">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-12">
-                        <span class="subtitle welcome aos-init aos-animation" data-aos="zoom-in" 
-                        data-aos-delay="300">
-                            Bienvenu sur mon portfolio
-                        </span>
-                        <h1 class="aos-init aos-animation" data-aos="zoom-in" 
-                        data-aos-delay="300">Ouali Kahina</h1>
-                        <div class="greetings aos-init aos-animation" data-aos="fade-up" 
-                        data-aos-delay="400">
-                            <span class="subtitle">
-                                Salut, Hello, Hola, 안녕하세요, سلام
-                            </span>
-                        </div>
-                        <a href="#propos" 
-                        class="btn btn-dark btn-max aos-init aos-animation" 
-                        data-aos="zoom-in" data-aos-delay="600">
-                            À propos de moi
-                        </a>
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                        <img src="assets/img/me/pic-of-me-two.png" 
-                        class="image-one aos-init aos-animation" 
-                        data-aos="fade-up" data-aos-delay="400" alt="Photo de moi">
-                    </div>
-                </div>
-            </div>
-        </section>
         <section class="about" id="propos">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h2 class="aos-init aos-animation" data-aos="fade-down" 
-                        data-aos-delay="300">À propos</h2>
-                        <span class="subtitle aos-init aos-animation" data-aos="fade-down" 
-                        data-aos-delay="400">
-                            * Développeuse d'application php/symfony à la recherche d'une alternance *
-                        </span>
+                    <div class="col-lg-9 col-md-12 img">
+                        <h1 class="aos-init aos-animation" data-aos="fade-in" data-aos-delay="300">
+                            Kahina <span class="other-part">Ouali</span>
+                        </h1>
                     </div>
-                    <div class="col-md-12">
-                        <div class="text-container">
-                            <p class="aos-init aos-animation" data-aos="fade-in" data-aos-delay="500">
-                                Je suis une jeune développeuse web de 24 ans, passionnée par les technologies, 
-                                je me demande comment et de quelle manière elles peuvent nous être utiles sans 
-                                être néfaste. Le domaine du développement web et du web design me permet de 
-                                laisser libre cours à mes idées et à les faire vivre tout cela en créant des 
-                                interfaces intuitives et esthétiques. 
-                                <br>
-                                Je suis en train de revoir et améliorer plusieurs projets que j’ai déjà créés 
-                                et d’autres qui sont encore en cours de développement. 
-                                <br>
-                                <br>
-                                <strong>Restez connecté !</strong>
-                            </p>
-                            <a href="assets/pdf/developpeuse d’application php symfony - Kahina Ouali.pdf" 
-                            class="btn btn-dark btn-max aos-init aos-animation" 
-                            data-aos="fade-down" data-aos-delay="600">
-                                Curriculum vitae
-                            </a>
-                        </div>
+                    <div class="col-lg-4 col-md-4 img">
+                        <img src="assets/img/me/pic-of-me-two.png" 
+                        class="img-one aos-init aos-animation" data-aos="zoom-in" 
+                        data-aos-delay="300" alt="Photo de moi">
+                    </div>
+                    <div class="col-lg-8 col-md-8">
+                        <h2 class="subtitle aos-init aos-animation" data-aos="fade-up" data-aos-delay="300">
+                            * Développeuse d'application php/symfony à la recherche 
+                            d'une alternance *
+                        </h2>
+                        <p class="aos-init aos-animation" data-aos="fade-up" data-aos-delay="300">
+                            Je suis une jeune développeuse web de 24 ans, passionnée par les technologies, 
+                            je me demande comment et de quelle manière elles peuvent nous être utiles sans 
+                            être néfaste. Le domaine du développement web et du web design me permet de 
+                            laisser libre cours à mes idées et à les faire vivre tout cela en créant des 
+                            interfaces intuitives et esthétiques. 
+                            <br>
+                            Mon objectif est de mettre à profit mes compétences techniques et de mes passions 
+                            afin de contribuer à la création de site web interactif et captivant. Je suis 
+                            particulièrement <strong>intéressé par les opportunités de travail à distance</strong>, 
+                            car cela me permettrait de concilier ma passion pour la technologie avec un équilibre 
+                            de vie professionnelle et vie personnelle optimal. 
+                            <br>
+                            Je suis en train de revoir et améliorer plusieurs projets que j’ai déjà créés 
+                            et d’autres qui sont encore en cours de développement. 
+                            <br>
+                            <br>
+                            <strong class="subtitle">Restez connecté !</strong>
+                        </p>
+                        <a href="assets/pdf/developpeuse d’application php symfony - Kahina Ouali.pdf" 
+                        class="btn btn-secondary aos-init aos-animation" data-aos="fade-up" 
+                        data-aos-delay="300">
+                            Voir mon curriculum vitae
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
         <section class="services" id="services">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
-                        <h3 class="aos-init aos-animation" data-aos="zoom-in" 
-                        data-aos-delay="300">Ce que je fais</h3>
+                        <h2 class="aos-init aos-animation" data-aos="fade-down" data-aos-delay="300">
+                            Ce que <span class="other-part">je fais</span>
+                        </h2>
                     </div>
                     <div class="col-md-12">
-                        <div class="accordion aos-init aos-animation" data-aos="zoom-in" 
+                        <div class="accordion aos-init aos-animation" data-aos="fade-down" 
                         data-aos-delay="400" id="accordionPanelsStayOpenExample">
                             <div class="accordion-item">
                                 <h4 class="accordion-header">
@@ -309,70 +280,40 @@
                 </div>
             </div>
         </section>
-        <section class="projects" id="projets">
+        <section class="projets" id="projets">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h3 class="aos-init aos-animation" data-aos="fade-up" 
-                        data-aos-delay="300">Sélection des projets</h3>
+                    <div class="col-md-12">
+                        <h3 class="aos-init aos-animation" data-aos="fade-up" data-aos-delay="300">
+                            Sélection <span class="other-part">des projets</span>
+                        </h3>
                     </div>
-                    <!--<div class="col-lg-6 col-md-12">
-                        <div class="project-card aos-init aos-animation" data-aos="fade-up" 
-                        data-aos-delay="400">
-                            <a href="projects/romanum.html" 
-                            class="text-decoration-none">
-                                <img src="assets/img/projects/romanum/romanum.png" alt="Romanum">
-                                <div class="name-project">
-                                    <span class="subtitle">
-                                        Romanum * 2024
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>-->
                     <div class="col-lg-6 col-md-12">
-                        <div class="project-card aos-init aos-animation" data-aos="fade-up" 
-                        data-aos-delay="400">
-                            <a href="projects/kanirgarden.html" 
-                            class="text-decoration-none">
-                                <img src="assets/img/projects/kanirgarden/kanirgarden.png" alt="KanirGarden">
-                                <div class="name-project">
-                                    <span class="subtitle">
-                                        KanirGarden * 2024
-                                    </span>
-                                </div>
+                        <div class="card card-project aos-init aos-animation" data-aos="fade-up" data-aos-delay="300">
+                            <a href="projects/kanirgarden.html">
+                                <img src="assets/img/projects/kanirgarden/kanirgarden.png" 
+                                class="img-project" alt="KanirGarden">
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12">
-                        <div class="project-card aos-init aos-animation" data-aos="fade-up" 
-                        data-aos-delay="400">
-                            <a href="projects/worldwheels.html" 
-                            class="text-decoration-none">
-                                <img src="assets/img/projects/world-wheels/world-wheels.png" alt="WorldWheels">
-                                <div class="name-project">
-                                    <span class="subtitle">
-                                        WorldWheels * 2024
-                                    </span>
-                                </div>
+                        <div class="card card-project aos-init aos-animation" data-aos="fade-up" data-aos-delay="300">
+                            <a href="projects/world-wheels.html">
+                                <img src="assets/img/projects/world-wheels/world-wheels.png" 
+                                class="img-project" alt="WorldWheels">
                             </a>
                         </div>
-                    </div>
-                    <div class="col-md-12 text-center">
-                        <a href="portfolio.html" 
-                        class="btn btn-dark aos-init aos-animation" data-aos="fade-up" 
-                        data-aos-delay="400">
-                            Voir tous les projets
-                        </a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="other-infos" id="competences">
-            <div class="container">
+        <section class="skills" id="competences">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h3 class="aos-init aos-animation" data-aos="zoom-in" data-aos-delay="300">Compétences</h3>
+                    <div class="col-md-12">
+                        <h3 class="aos-init aos-animation" data-aos="zoom-in" data-aos-delay="300">
+                            Mes <span class="other-part">compétences</span>
+                        </h3>
                     </div>
                     <div class="col-md-12">
                         <div class="accordion aos-init aos-animation" data-aos="zoom-in" 
@@ -454,7 +395,7 @@
         </section>
     </main>
 
-    <footer class="footer" id="footer" role="footer" aria-label="Footer">
+    <footer class="footer" id="footer" role="footer" aria-label="Main">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
@@ -498,18 +439,17 @@
         </div>
     </footer>
 
-    <aside class="aside" id="aside" role="complementary" aria-label="Aside">
-        <div class="welcome">
-            <span class="subtitle">
-                Bienvenue sur mon portfolio
-            </span>
+    <div class="infos" id="infos">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <a href="home.html" class="text-decoration-none">
+                        <i class="fa-solid fa-globe"></i> English | En
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="languages">
-            <a href="english/home.html" class="text-decoration-none subtitle">
-                En
-            </a>
-        </div>
-    </aside>
+    </div>
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
@@ -519,6 +459,7 @@
     crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/93f593ecee.js" 
     crossorigin="anonymous"></script>
+    <script src="assets/js/header.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({

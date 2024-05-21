@@ -1,21 +1,8 @@
 .header {
     z-index: 10;
-    top: $initial;
-    left: $initial;
-    padding: $initial;
-    position: $fixed;
-    width: $max;
-    padding: $initial 5px;
-    background-color: $background;
-    border-bottom: $border-dark;
-
-    @media screen and (max-width: $mobile) {
-        top: -3px;
-    }
-
-    @media screen and (max-width: $tablet) {
-        padding: 5px $initial !important;
-    }
+    position: $relative;
+    transition: top 0.3s;
+    border-bottom: $border-bottom-dark;
 
     .container-fluid {
         .infos-menu {
@@ -23,13 +10,10 @@
 
             .name {
                 text-align: $center;
-
                 .name-website {
                     font-size: 20px;
-                    margin-top: 5px;
                     font-weight: 600;
                     color: $text;
-                    position: relative;
                     letter-spacing: 1px;
                     text-transform: $uppercase;
                     font-family: $font-secondary;
@@ -40,47 +24,40 @@
                 margin-top: 10px;
 
                 @media screen and (max-width: $tablet) {
-                    display: $display-none;
+                    display: $none !important;
                 }
 
                 .list-unstyled {
-                    display: $display-flex;
+                    display: $flex;
 
                     .nav-link {
-                        padding-right: 1rem;
+                        padding-right: 1.1rem;
                         @include link;
                     }
                 }
             }
 
             .button-canvas {
-                display: $display-none;
-
-                @media screen and (max-width: $mobile) {
-                    top: -10px !important;
-                    right: 10px !important;
-                }
+                display: $none;
 
                 @media screen and (max-width: $tablet) {
-                    top: -25px;
-                    right: 15px;
-                    z-index: 8;
-                    position: $absolute;
-                    display: $display-block !important;
-                }
-
-                .btn {
-                    padding: $initial !important;
-                    background-color: transparent !important;
-                    @media screen and (max-width: $tablet) {
-                        font-size: 23px;
-
-                        .icon {
-                            color: $text;
-                        }
+                    display: $block !important;
+                     
+                    .btn {
+                        color: $text !important;
+                        padding: $initial !important;
+                        background-color: transparent !important;
                     }
                 }
             }
         }
     }
+}
+
+.header.fixed {
+    top: $initial;
+    width: $max;
+    z-index: 1000;
+    position: $fixed;
+    background-color: $background;
 }

@@ -1,50 +1,22 @@
 .btn {
-    font-size: 18px;
-    font-weight: 500;
-    border: $display-none;
-    overflow: $hidden;
-    position: $relative;
+    color: $background;
+    font-size: 15px;
     padding: 15px 20px;
-    transition: $transition-two !important;
+    text-align: $center;
+    border: $none;
+    border-radius: 5px;
     text-transform: $uppercase;
-    margin-top: $simple-value;
-
-    @media screen and (max-width: $mobile) {
-        margin-top: $small-value;
-    }
-
-    &:hover,
-    &:focus,
-    &:active {
-        border-radius: 50px;
-        transition: $transition-two !important;
-    }
+    font-family: $font-secondary;
+    background-color: $secondary;
+    display: inline-block;
+    transition: background-color 0.3s ease;
 }
 
-.btn-dark {
-    color: $background;
-    background-color: $text !important;
-
+.btn-secondary {
     &:hover,
     &:focus,
     &:active {
-        color: $text;
+        color: $background !important;
         background-color: $primary !important;
     }
-}
-
-.btn-primary {
-    color: $text;
-    background-color: $primary !important;
-
-    &:hover,
-    &:focus,
-    &:active {
-        color: $primary;
-        background-color: $text !important;
-    }
-}
-
-.btn-max {
-    width: $max;
 }

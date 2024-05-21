@@ -1,9 +1,7 @@
-@import "../base/typography.scss";
-
 * {
     margin: $initial;
     padding: $initial;
-    user-select: none;
+    user-select: $none;
     cursor: pointer;
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -12,24 +10,23 @@
 body {
     color: $text;
     font-family: $font-base;
-    padding-left: $medium-value;
     background-color: $background;
+}
+
+section {
+    padding: $large-value $simple-value;
 
     @media screen and (max-width: $mobile) {
-        padding-left: 4rem;
+        padding: $medium-value $initial !important;
     }
 
-    img {
-        width: $max;
-        border-radius: $radius;
-        object-fit: $cover;
+    @media screen and (max-width: $tablet) {
+        padding: $medium-value $small-value;
     }
+}
 
-    section {
-        padding: 140px $initial;
-
-        @media screen and (max-width: $mobile) {
-            padding: 120px $initial $initial $initial;
-        }
-    }
+img {
+    width: $max;
+    border-radius: $radius;
+    object-fit: $cover;
 }

@@ -1,56 +1,13 @@
-.card {
+.card-project {
+    margin-top: $simple-value;
     padding: $simple-value;
-    border: $display-none;
-    background-color: transparent;
+    border: $border-bottom-dark;
+    background-color: transparent !important;
+    transition: transform 0.3s, box-shadow 0.3s;
 
-    // .line {
-    //     width: 50%;
-    //     height: 1px;
-    //     margin-top: $small-value;
-    //     right: $initial;
-    //     position: $absolute;
-    //     background-color: map-get(map-get($themes, dark), text);
-
-    //     @media screen and (max-width: $mobile) {
-    //         width: 20% !important;
-    //     }
-
-    //     @media screen and (max-width: $tablet) {
-    //         width: 50%;
-    //     }
-    // }
-
-    // p,
-    // .subtitle {
-    //     color: map-get(map-get($themes, dark), text);
-
-    //     @media screen and (max-width: $tablet) {
-    //         margin: $small-value $initial;
-    //     }
-    // }
-
-    // .content {
-    //     padding: $simple-value $initial;
-    // }
+    &:hover,
+    &:focus,
+    &:active {
+        transform: scale(1.05);
+    }
 }
-
-// .card-service {
-//     margin-bottom: $simple-value;
-//     border: 1px solid map-get(map-get($themes, dark), text);
-// }
-
-// .card-project-select {
-//     padding: $initial;
-
-//     .infos-projects {
-//         margin: $small-value $initial;
-
-//         @media screen and (max-width: $mobile) {
-//             margin: $simple-value $initial !important;
-//         }
-//     }
-
-//     .subtitle {
-//         color: map-get(map-get($themes, dark), accent) !important;
-//     }
-// }

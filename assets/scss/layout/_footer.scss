@@ -1,20 +1,15 @@
-footer {
-    margin-left: -2%;
-    color: $background;
-    padding: $medium-value;
+.footer {
+    margin-top: 25px;
+    padding: $medium-value $initial;
+    border-top: $border-top-dark;
     background-color: $text;
 
-    @media screen and (max-width: $mobile) {
-        padding: $other-simple-value !important;
+    a,
+    p,
+    h5 {
+        color: $background;
     }
-
-    h5,
-    a {
-        font-size: 22px;
-        color: $tertiary;
-        font-family: $font-secondary;
-    }
-
+    
     h5 {
         @media screen and (max-width: $mobile) {
             line-height: $simple-value !important;
@@ -24,17 +19,19 @@ footer {
     h6 {
         margin: $other-simple-value $initial;
         color: $background;
-        font-size: $big-value;
-        line-height: 13rem;
+        font-size: $large-value;
+        line-height: 10rem;
+        font-family: $font-primary;
+        text-transform: $uppercase;
 
         @media screen and (max-width: $mobile) {
-            font-size: 5rem !important;
+            font-size: 4rem !important;
             line-height: 6rem !important;
         }
 
         @media screen and (max-width: $tablet) {
-            font-size: $large-value;
-            line-height: $large-value;
+            font-size: 7rem;
+            line-height: 7rem;
         }
     }
 
@@ -42,25 +39,27 @@ footer {
         height: 220px;
         width: 220px;
         margin-left: 28%;
-        margin-top: -23rem;
-        padding: 4.5rem $other-simple-value;
+        font-weight: 700;
+        margin-top: -20rem;
+        padding: 5.1rem $other-simple-value;
         position: $absolute;
         border-radius: 200px;
         text-align: $center;
         border: 2px solid $text;
         background: $text;
-        transition: $transition-two;
+        transition: $transition;
+        font-family: $font-primary;
 
         @media screen and (max-width: $mobile) {
             width: 160px;
             height: 160px;
             margin-top: -14.5rem !important;
-            margin-left: 16% !important;
+            margin-left: 30% !important;
             padding: 2.9rem 2rem !important;
         }
 
         @media screen and (max-width: $tablet) {
-            margin-top: -20rem;
+            margin-top: -17rem;
         }
 
         a {
@@ -72,13 +71,17 @@ footer {
         &:hover,
         &:focus,
         &:active {
-            border: $display-none;
+            border: $none;
             background-color: $background;
 
             a {
                 color: $text;
             }
         }
+    }
+
+    .greetings {
+        color: $primary;
     }
 
     .copy {
@@ -88,17 +91,12 @@ footer {
 }
 
 .reseaux {
-    display: $display-flex;
+    display: $flex;
     justify-content: $center;
 
     a {
+        color: $primary;
         text-transform: $uppercase;
-
-        &:hover,
-        &:focus,
-        &:active {
-            color: $tertiary;
-        }
     }
 
     .git {

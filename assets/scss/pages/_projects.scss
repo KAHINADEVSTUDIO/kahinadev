@@ -1,0 +1,60 @@
+.intro-project {
+    img {
+        @media screen and (max-width: $mobile) {
+            height: 45vh !important;
+        }
+
+        @media screen and (max-width: $tablet) {
+            height: 55vh;
+        }
+    }
+
+    h1 {
+        @media screen and (max-width: $mobile) {
+            font-size: 40px !important;
+        }
+    }
+
+    .infos-project,
+    img {
+        margin-bottom: $simple-value;
+    }
+
+    .infos-project {
+        .btn {
+            @media screen and (max-width: $mobile) {
+                width: $max !important;
+            }
+        }
+
+        .type {
+            color: $background;
+            background-color: $text;
+        }
+
+        .services,
+        .year {
+            color: $text;
+            border: $border-dark;
+            background-color: $background !important;
+
+            @media screen and (max-width: $mobile) {
+                margin-top: $small-value
+            }
+        }
+    }
+}
+
+.images {
+    padding: $initial !important;
+
+    .card-project {
+        margin-bottom: $simple-value;
+    }
+}
+
+.universe {
+    .btn {
+        margin-top: $simple-value;
+    }
+}

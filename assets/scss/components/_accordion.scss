@@ -1,10 +1,18 @@
 .accordion {
-    background-color: $background !important;
+    margin-top: $simple-value;
+    background-color: transparent !important;
 
     .accordion-item {
-        border: $display-none !important;
+        border: $none !important;
         margin-bottom: $small-value;
         border-radius: $radius !important;
+        background-color: transparent !important;
+
+        .accordion-header {
+            font-size: 22px;
+            padding-bottom: $initial !important;
+            border-bottom: $none !important;
+        }
 
         .accordion-button {
             color: $text;
@@ -13,20 +21,22 @@
         }
 
         .accordion-button:not(.collapsed) {
-            background-color: $background !important;
+            background-color: transparent !important;
         }
     }
 
     .accordion-button,
     .accordion-body {
-        background-color: $background !important;
+        background-color: transparent !important;
     }
 
     .accordion-body {
+        border: $none !important;
         padding: $small-value $initial $initial !important;
 
         p {
             font-size: 1.4rem;
+            padding: $small-value $initial !important;
 
             @media screen and (max-width: $mobile) {
                 font-size: 1.2rem !important;

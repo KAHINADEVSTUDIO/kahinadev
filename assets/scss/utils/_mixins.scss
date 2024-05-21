@@ -1,28 +1,11 @@
-@mixin heading {
-    font-weight: 500;
-    line-height: $heading-line-height;
-    text-transform: $uppercase;
-    font-family: $font-primary;
-}
-
-@mixin text {
-    font-size: 1.8rem;
-    font-family: $font-base;
-
-    @media screen and (max-width: $mobile) {
-        font-size: 1.3rem;
-    }
-}
-
 @mixin link {
-    font-size: 18px;
-    letter-spacing: 0.5px;
+    font-size: 15px;
 
     &:hover,
     &:focus,
     &:active {
+        color: $primary;
         font-weight: 700;
-        transition: $transition-two;
     }
 }
 
@@ -31,4 +14,27 @@
     font-optical-sizing: auto;
     text-transform: $uppercase !important;
     font-family: $font-secondary;
+}
+
+@mixin subtitle {
+    color: $secondary;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: $uppercase;
+    font-family: $font-secondary;
+}
+
+@mixin text {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: justify;
+    padding: $simple-value;
+
+    @media screen and (max-width: $mobile) {
+        font-size: 1.3rem !important;
+    }
+
+    @media screen and (max-width: $tablet) {
+        padding: $simple-value $initial;
+    }
 }

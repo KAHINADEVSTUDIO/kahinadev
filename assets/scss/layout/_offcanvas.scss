@@ -1,5 +1,5 @@
 .offcanvas {
-    border: $display-none;
+    border: $none;
     height: $max !important;
     background-color: $text !important;
 
@@ -11,6 +11,11 @@
             right: 25px;
             padding: $initial !important;
             position: $absolute !important;
+            background-color: $text !important;
+
+            @media screen and (max-width: 780px) {
+                top: 10px;
+            }
         }
     }
 
@@ -47,12 +52,12 @@
 
             a {
                 font-size: 25px;
-                color: $tertiary;
+                color: $primary;
             }
         }
 
         .greetings-copy {
-            color: $primary;
+            color: $background;
 
             .greet,
             .copy {
