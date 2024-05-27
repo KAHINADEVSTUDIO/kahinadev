@@ -1,110 +1,32 @@
-.footer {
-    margin-top: 25px;
-    padding: $medium-value $initial;
-    border-top: $border-top-dark;
-    background-color: $text;
+footer {
+    margin-top: $size-fifty;
+    padding: $size-zero $size-ten;
 
-    a,
-    p,
-    h5 {
-        color: $background;
-    }
-    
-    h5 {
-        @media screen and (max-width: $mobile) {
-            line-height: $simple-value !important;
-        }
-    }
+    .first {
+        padding: $size-fifty;
+        margin-bottom: $size-twenty;
+        border-radius: $radius;
+        background-color: $white;
 
-    h6 {
-        margin: $other-simple-value $initial;
-        color: $background;
-        font-size: $large-value;
-        line-height: 10rem;
-        font-family: $font-primary;
-        text-transform: $uppercase;
-
-        @media screen and (max-width: $mobile) {
-            font-size: 3rem !important;
-            line-height: 6rem !important;
-        }
-
-        @media screen and (max-width: $tablet) {
-            font-size: 7rem;
-            line-height: 7rem;
-        }
-    }
-
-    .hire-me {
-        height: 220px;
-        width: 220px;
-        margin-left: 28%;
-        font-weight: 700;
-        margin-top: -20rem;
-        padding: 5.1rem $other-simple-value;
-        position: $absolute;
-        border-radius: 200px;
-        text-align: $center;
-        border: 2px solid $text;
-        background: $text;
-        transition: $transition;
-        font-family: $font-primary;
-
-        @media screen and (max-width: $mobile) {
-            width: 160px;
-            height: 160px;
-            margin-top: -14.5rem !important;
-            margin-left: 30% !important;
-            padding: 2.9rem 2rem !important;
-        }
-
-        @media screen and (max-width: $tablet) {
-            margin-top: -17rem;
-        }
-
-        a {
-            color: $background;
+        h5 {
             text-transform: $uppercase;
-            font-family: $font-secondary;
         }
 
-        &:hover,
-        &:focus,
-        &:active {
-            border: $none;
-            background-color: $background;
+        a,
+        p {
+            font-size: 18px;
+        }
 
-            a {
-                color: $text;
+        p {
+            br {
+                @media screen and (max-width: $tablet) {
+                    display: $none;
+                }
             }
         }
     }
 
-    .greetings {
-        color: $primary;
+    h6 {
+        padding: $size-twenty $size-zero;
     }
-
-    .copy {
-        color: $background;
-        margin-top: $simple-value;
-    }
-}
-
-.reseaux {
-    display: $flex;
-    justify-content: $center;
-
-    a {
-        color: $primary;
-        text-transform: $uppercase;
-    }
-
-    .git {
-        margin: $initial 1rem;
-    }
-}
-
-.copy {
-    font-size: 16px;
-    text-transform: $uppercase;
 }

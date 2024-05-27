@@ -1,29 +1,16 @@
-// FONTS
-
-$font-base: "Roboto", sans-serif;
-$font-primary: "Montserrat", sans-serif;
-$font-secondary: "Raleway", sans-serif;
-
 // COLORS
 
-$text: #0e100e;
-$background: #f8f8f8;
-$primary: #92b592;
-$secondary: #79906a;
+$dark-green: #213121;
+$hunter-green: #395639;
+$fern-green: #496e49;
+$fern-green-2: #5a875a;
+$white: #f6f6f6;
 
-// OTHER COLOR
+// FONTS 
 
-$tertiary: #959895;
-
-// SIZE
-
-$initial: 0;
-$small-value: 1rem;
-$simple-value: 2rem;
-$other-simple-value: 3rem;
-$medium-value: 5rem;
-$large-value: 10rem;
-$big-value: 15rem;
+$font-base: "Hind", sans-serif;
+$font-primary: "Montserrat", sans-serif;
+$font-secondary: "Raleway", sans-serif;
 
 // MEDIA QUERIES 
 
@@ -31,51 +18,58 @@ $mobile: 576px;
 $small-tablet: 768px;
 $tablet: 1024px;
 
+// RADIUS 
+
+$radius: 0.350rem;
+
 // DISPLAY 
 
 $none: none;
-$flex: flex; 
+$flex: flex;
 $block: block;
 
-// LEFT 
+// BORDER
 
-$left: left;
-$right: right;
-$center: center;
-
-// OVERFLOW
-
-$hidden: hidden;
+$border: 1px solid $hunter-green;
 
 // POSITION 
 
 $fixed: fixed;
-$relative: relative;
 $absolute: absolute;
 
-// IMAGE 
-
-$cover: cover;
-
-// MAX 
+// WIDTH 
 
 $max: 100%;
 
-// BORDER
-
-$border-light: 1px solid $background;
-$border-dark: 1px solid $text;
-$border-top-dark: 1px solid $text;
-$border-bottom-dark: 1px solid $text;
-
-// TRANSFORM
+// TRANSFORM 
 
 $uppercase: uppercase;
 
-// TRANSITION 
+// SIZE 
 
-$transition: all 0.5s ease;
+$size-zero: 0px;
+$size-two: 2px;
+$size-five: 5px;
+$size-ten: 10px;
+$size-twenty: 20px;
+$size-twenty-five: 25px;
+$size-thirty: 30px;
+$size-forty: 40px;
+$size-fifty: 50px;
 
-// RADIUS
+// SPACING 
 
-$radius: 0.335rem;
+$spacing: 0.6px;
+$second-spacing: 0.9px;
+
+// GRADIENT
+
+$gradient-top: linear-gradient(0deg, #213121ff, #395639ff, #496e49ff, #5a875aff, #ebebebff);
+$gradient-right: linear-gradient(90deg, #213121ff, #395639ff, #496e49ff, #5a875aff, #ebebebff);
+$gradient-bottom: linear-gradient(180deg, #213121ff, #395639ff, #496e49ff, #5a875aff, #ebebebff);
+$gradient-left: linear-gradient(270deg, #213121ff, #395639ff, #496e49ff, #5a875aff, #ebebebff);
+$gradient-top-right: linear-gradient(45deg, #213121ff, #395639ff, #496e49ff, #5a875aff, #ebebebff);
+$gradient-bottom-right: linear-gradient(135deg, #213121ff, #395639ff, #496e49ff, #5a875aff, #ebebebff);
+$gradient-top-left: linear-gradient(225deg, #213121ff, #395639ff, #496e49ff, #5a875aff, #ebebebff);
+$gradient-bottom-left: linear-gradient(315deg, #213121ff, #395639ff, #496e49ff, #5a875aff, #ebebebff);
+$gradient-radial: radial-gradient(#213121ff, #395639ff, #496e49ff, #5a875aff, #ebebebff);

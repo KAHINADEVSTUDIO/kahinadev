@@ -1,46 +1,99 @@
-.about {
+.introduction,
+.about,
+.services,
+.projects, 
+.skills,
+.project-presentation {
 
-    .img {
+    h1,
+    h2,
+    h3,
+    .buttons {
+        margin: $size-thirty $size-zero;
+
         @media screen and (max-width: $mobile) {
-            padding: $initial !important;
-        }
-
-        .img-one {
-            height: 70vh;
-
-            @media screen and (max-width: $mobile) {
-                border-radius: $initial !important;
-            }
-        }
-    }
-
-    h1 {
-        @media screen and (max-width: $mobile) {
-            margin-bottom: $initial !important;
-        }
-    }
-
-    h2 {
-        margin-top: $simple-value;
-        font-size: 40px;
-
-        @media screen and (max-width: $tablet) {
-            font-size: 20px !important;
-        }
-    }
-
-    p {
-        @media screen and (max-width: $tablet) {
-            padding-top: $initial !important;
-        }
-
-        .subtitle {
-            color: $primary !important;
+            margin: $size-forty $size-zero;
         }
     }
 }
 
-.about, 
-.intro-project {
-    padding-top: $medium-value;
+.introduction,
+.services, 
+.skills, 
+.project-presentation {
+    background-color: $white;
+}
+
+.introduction {
+    h1 {
+        br {
+            display: $none;
+
+            @media screen and (max-width: $mobile) {
+                display: $block !important;
+            }
+        }
+
+        @media screen and (max-width: $mobile) {
+            line-height: 5rem !important;
+        }
+
+        @media screen and (max-width: $tablet) {
+            line-height: 9rem;
+        }
+    }
+
+    p {
+        padding-right: $size-twenty;
+
+        @media screen and (max-width: $tablet) {
+            padding-right: $size-zero !important;
+        }
+    }
+}
+
+.about {
+    img {
+
+        @media screen and (max-width: $tablet) {
+            margin-top: $size-thirty;
+        }
+    }
+}
+
+
+.projects {
+    ul {
+        li {
+            img {
+                left: 0;
+                width: 36%;
+                border-top-left-radius: $size-zero;
+                border-bottom-left-radius: $size-zero;
+                position: $absolute;
+                opacity: 0;
+                transition: all 0.5s ease !important;
+
+                @media screen and (max-width: $mobile) {
+                    display: $none !important;
+                }
+
+                @media screen and (max-width: $tablet) {
+                    width: 32%;
+                }
+            }
+
+            a {
+                @include list;
+            }
+
+            &:hover,
+            &:focus,
+            &:active {
+                img {
+                    opacity: 1;
+                }
+            }
+        }
+    }
 }

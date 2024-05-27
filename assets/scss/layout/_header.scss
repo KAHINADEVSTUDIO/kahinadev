@@ -1,63 +1,103 @@
-.header {
-    z-index: 10;
-    position: $relative;
-    transition: top 0.3s;
-    border-bottom: $border-bottom-dark;
+header {
+    top: $size-zero;
+    position: $fixed;
+    margin: $size-zero $size-ten;
+    width: 98.5%;
+    z-index: 150;
+    background-color: $white;
+    border-bottom-left-radius: $radius;
+    border-bottom-right-radius: $radius;
 
-    .container-fluid {
-        .infos-menu {
-            display: contents;
+    @media screen and (max-width: $mobile) {
+        width: 95% !important;
+    }
 
-            .name {
-                text-align: $center;
-                .name-website {
-                    font-size: 20px;
-                    font-weight: 600;
-                    color: $text;
-                    letter-spacing: 1px;
-                    text-transform: $uppercase;
-                    font-family: $font-secondary;
-                }
+    @media screen and (max-width: $tablet) {
+        padding: $size-ten;
+    }
+
+    .toggler {
+        display: $none;
+
+        @media screen and (max-width: $tablet) {
+            color: $hunter-green;
+            display: $block !important;
+
+            .second-circle {
+                display: $none;
             }
 
-            .menu-one {
-                margin-top: 10px;
+            &:hover,
+            &:focus,
+            &:active {
+                color: $fern-green-2;
+                transition: all 0.5s ease;
 
-                @media screen and (max-width: $tablet) {
+                .first-circle {
                     display: $none !important;
                 }
 
-                .list-unstyled {
-                    display: $flex;
-
-                    .nav-link {
-                        padding-right: 1.1rem;
-                        @include link;
-                    }
+                .second-circle {
+                    display: $block !important;
                 }
             }
+        }
+    }
 
-            .button-canvas {
-                display: $none;
+    a {
+        text-transform: $uppercase;
+    }
 
-                @media screen and (max-width: $tablet) {
-                    display: $block !important;
-                     
-                    .btn {
-                        color: $text !important;
-                        padding: $initial !important;
-                        background-color: transparent !important;
-                    }
-                }
+    .navbar-nav,
+    .languages {
+        @media screen and (max-width: $tablet) {
+            margin-top: $size-forty;
+        }
+    }
+
+    .nav-item {
+        .nav-link {
+            @include link;
+        }
+    }
+
+    .navbar-brand,
+    .link {
+        font-size: 16px;
+        color: $dark-green;
+        font-weight: 600;
+        font-family: $font-secondary;
+    }
+
+    .first-languages {
+        display: $none;
+
+        @media screen and (max-width: $mobile) {
+            top: 23px !important;
+            right: 18% !important;
+        }
+
+        @media screen and (max-width: $tablet) {
+            right: 10%;
+            top: 25px;
+            position: $fixed;
+            display: $block !important;
+        }
+    }
+
+    .second-languages {
+        @media screen and (max-width: $tablet) {
+            display: $none !important;
+        }
+
+        .languages {
+            a {
+                margin-right: $size-five;
             }
         }
     }
 }
 
-.header.fixed {
-    top: $initial;
-    width: $max;
-    z-index: 1000;
-    position: $fixed;
-    background-color: $background;
+header.fixed {
+    background-color: $white !important;
 }

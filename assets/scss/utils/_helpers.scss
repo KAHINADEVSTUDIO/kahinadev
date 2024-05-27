@@ -1,20 +1,12 @@
-// POSITION
-
-.position-absolute-right {
-    top: $initial;
-    right: $initial;
-    position: $absolute;
+.radius {
+    border-radius: $radius;
 }
 
-// .position-fixed-left {
-//     left: $initial;
-//     bottom: $initial;
-//     position: $fixed;
-// }
-
-// DISPLAY 
-
-.display-space {
-    display: $display-flex; 
-    justify-content: $space-between;
+.navbar-brand {
+    font-size: 16px;
+    color: $dark-green;
+    font-weight: 600;
+    letter-spacing: $spacing;
+    text-transform: $uppercase;
+    font-family: $font-secondary;
 }

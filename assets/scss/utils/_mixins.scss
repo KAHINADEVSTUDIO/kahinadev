@@ -1,40 +1,68 @@
 @mixin link {
-    font-size: 15px;
+    color: $dark-green;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: $spacing;
+    transition: all 0.5s ease !important;
+    font-family: $font-base;
+
+    i {
+        color: $fern-green;
+        margin-right: $size-two;
+    }
 
     &:hover,
     &:focus,
     &:active {
-        color: $primary;
-        font-weight: 700;
+        color: $fern-green;
+        font-weight: 600;
     }
 }
 
-@mixin font-secondary {
-    font-weight: 600;
-    font-optical-sizing: auto;
-    text-transform: $uppercase !important;
-    font-family: $font-secondary;
+@mixin text {
+    font-size: $size-twenty;
+    font-weight: 300;
+    text-align: justify;
+    color: $hunter-green;
+    letter-spacing: $second-spacing;
+    font-family: $font-base;
 }
 
 @mixin subtitle {
-    color: $secondary;
-    font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 19px;
     text-transform: $uppercase;
     font-family: $font-secondary;
 }
 
-@mixin text {
-    font-size: 1.5rem;
-    font-weight: 300;
-    text-align: justify;
-    padding: $simple-value;
+@mixin list {
+    color: $hunter-green;
+    display: $flex;
+    margin-top: $size-twenty;
+    padding-bottom: $size-twenty;
+    justify-content: space-between;
+    border-bottom: $border;
 
-    @media screen and (max-width: $mobile) {
-        font-size: 1.3rem !important;
+    .arrow {
+        color: $hunter-green;
+        margin-right: $size-five;
     }
 
-    @media screen and (max-width: $tablet) {
-        padding: $simple-value $initial;
+    @media screen and (max-width: $mobile) {
+        font-size: 14.5px;
+    }
+}
+
+@mixin btn-modal {
+    width: $max;
+    padding: $size-ten 15px;
+    color: $white !important;
+    border-radius: $radius !important;
+    background-color: $dark-green;
+
+    &:hover,
+    &:focus,
+    &:active {
+        border-bottom: $none !important;
+        background-color: $hunter-green;
     }
 }

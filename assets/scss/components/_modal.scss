@@ -1,0 +1,46 @@
+.modal {
+    .modal-dialog {
+        .modal-content {
+            padding: $size-twenty-five;
+            border-radius: $radius;
+            background-color: $white !important;
+
+            .modal-body {
+                h4 {
+                    color: $dark-green;
+                }
+
+                ul {
+                    margin-top: $size-forty;
+
+                    li {
+                        margin-bottom: $size-twenty;
+
+                        a {
+                            color: $dark-green;
+
+                            &:hover,
+                            &:focus,
+                            &:active {
+                                color: $dark-green;
+                            }
+
+                            i {
+                                margin-right: $size-five;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .modal-footer {
+                padding: $size-zero;
+                border-top: $none;
+
+                .btn {
+                    @include btn-modal;
+                }
+            }
+        }
+    }
+}

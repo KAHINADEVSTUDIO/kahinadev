@@ -1,68 +1,145 @@
-.hero-project {
-    padding-bottom: $initial;
-
+.project-presentation {
     h1 {
-        font-size: 250px;
-        margin: $simple-value $initial;
+        margin-top: $size-zero !important;
 
         @media screen and (max-width: $mobile) {
-            font-size: 80px !important;
+            font-size: 38px !important;
+            margin-bottom: $size-zero !important;
         }
 
         @media screen and (max-width: $tablet) {
-            font-size: 150px;
-        }
-
-        br {
-            display: $display-none;
-
-            @media screen and (max-width: $mobile) {
-                display: $display-block !important;
-            }
+            font-size: 70px;
         }
     }
 
-    a {
+    img {
+        @media screen and (max-width: $mobile) {
+            margin-top: $size-twenty;
+        }
+    }
+
+    .slogan {
+        display: grid;
+        margin-top: $size-thirty;
+        padding: $size-thirty;
+        border-radius: $radius;
+        background-color: $white;
+
+        .subtitle {
+            margin-bottom: $size-twenty;
+        }
+    }
+
+    .btn {
+        @include btn-modal;
+
+    }
+
+    .btn-website {
+        margin-top: $size-twenty;
+        background-color: $fern-green;
+
 
         &:hover,
         &:focus,
         &:active {
-            color: $tertiary;
+            border-bottom: $none !important;
+            background-color: $fern-green-2;
         }
     }
 }
 
-.text-project {
-    padding: $simple-value;
+.project-introduction {
 
-    @media screen and (max-width: $mobile) {
-        padding: $simple-value $initial !important;
-    }
-}
+    h2 {
+        font-size: $size-thirty;
+        margin-bottom: $size-twenty;
 
-.branding,
-.other-images {
-    img {
-        margin-bottom: $simple-value;
-    }
-}
-
-.other-projects {
-    @media screen and (max-width: $mobile) {
-        padding-bottom: 80px !important;
-    }
-
-    img {
         @media screen and (max-width: $mobile) {
-            margin-bottom: $simple-value;
+            font-size: 34px !important;
+            margin: $size-forty $size-zero;
         }
     }
 
     .subtitle {
-        color: $tertiary;
-        padding: $simple-value $initial;
-        margin-bottom: $simple-value;
-        border-top: 1px solid $tertiary;
-        border-bottom: 1px solid $tertiary;
+        color: $fern-green-2;
     }
+
+    .infos-project {
+        ul {
+            li {
+                a {
+                    @include list;
+                }
+            }
+        }
+    }
+}
+
+
+.project-concept,
+.images-project {
+    background-color: $dark-green;
+
+    .subtitle,
+    h2,
+    i,
+    h3 {
+        color: $white;
+    }
+
+    p {
+        color: $white;
+        margin-top: $size-twenty;
+    }
+}
+
+.project-concept {
+    h2 {
+        @media screen and (max-width: $mobile) {
+            font-size: $size-thirty !important;
+        }
+
+        @media screen and (max-width: $tablet) {
+            font-size: 60px;
+        }
+    }
+
+    .card-concept {
+        background-color: transparent;
+
+        @media screen and (max-width: $mobile) {
+            padding: $size-twenty $size-zero !important;
+        }
+    }
+}
+
+.charter {
+    img {
+        height: 193px;
+        margin-bottom: $size-twenty;
+    }
+
+    h3 {
+        border-top: $border;
+        padding: $size-twenty $size-zero;
+        border-bottom: $border;
+        margin: $size-twenty $size-zero $size-thirty $size-zero;
+    }
+}
+
+.images-project {
+    img {
+        margin: $size-twenty $size-zero;
+    }
+}
+
+.next {
+    @media screen and (max-width: $mobile) {
+        padding: 80px $size-ten !important;
+    }
+    a {
+        @include list;
+    }
+
 }

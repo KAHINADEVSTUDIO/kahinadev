@@ -1,22 +1,21 @@
 .btn {
-    color: $background;
-    font-size: 15px;
-    padding: 15px 20px;
-    text-align: $center;
-    border: $none;
-    border-radius: 5px;
+    font-size: 17px !important;
+    border: $none !important;
+    border-radius: 0px !important;
+    color: $hunter-green;
     text-transform: $uppercase;
     font-family: $font-secondary;
-    background-color: $secondary;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-}
+    transition: all 0.3s ease;
 
-.btn-secondary {
+    i {
+        margin-right: $size-five;
+    }
+
     &:hover,
     &:focus,
     &:active {
-        color: $background !important;
-        background-color: $primary !important;
+        color: $fern-green-2; 
+        font-weight: 700;
+        border-bottom: 3px solid $fern-green-2 !important;
     }
 }

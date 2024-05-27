@@ -1,13 +1,41 @@
-.card-project {
-    margin-top: $simple-value;
-    padding: $simple-value;
-    border: $border-bottom-dark;
-    background-color: transparent !important;
-    transition: transform 0.3s, box-shadow 0.3s;
+.card {
+    border: $none;
+    padding: $size-twenty;
 
-    &:hover,
-    &:focus,
-    &:active {
-        transform: scale(1.05);
+    p {
+        margin-top: $size-twenty;
     }
+}
+
+.card-service,
+.card-skills {
+    background-color: $white;
+
+    @media screen and (max-width: $tablet) {
+        margin-bottom: $size-twenty !important;
+    }
+
+    i {
+        margin-right: $size-two;
+    }
+}
+
+.second-service {
+    background-color: $fern-green !important;
+
+    p,
+    span {
+        color: $white;
+    }
+}
+
+.card-skills {
+    p {
+        text-align: left !important;
+    }
+}
+
+.card-charte {
+    margin-bottom: $size-twenty;
+    background-color: $white;
 }

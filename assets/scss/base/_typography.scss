@@ -2,35 +2,15 @@ h1,
 h2,
 h3,
 h4 {
-    font-weight: 500;
-    padding-bottom: $simple-value;
-    letter-spacing: .05em;
     text-transform: $uppercase;
     font-family: $font-primary;
-    border-bottom: $border-bottom-dark;
-
-    .other-part {
-        color: $tertiary;
-        font-weight: 400;
-        font-style: italic;
-    }
-}
-
-h1,
-h2,
-h3 {
-    margin-bottom: $simple-value;
 }
 
 h1 {
-    font-size: 110px;
+    font-size: 140px;
 
     @media screen and (max-width: $mobile) {
-        font-size: 38px !important;
-    }
-
-    @media screen and (max-width: $tablet) {
-        font-size: 80px;
+        font-size: 70px !important;
     }
 }
 
@@ -38,7 +18,7 @@ h2 {
     font-size: 90px;
 
     @media screen and (max-width: $mobile) {
-        font-size: 34px !important;
+        font-size: 41px !important;
     }
 
     @media screen and (max-width: $tablet) {
@@ -50,7 +30,7 @@ h3 {
     font-size: 88px;
 
     @media screen and (max-width: $mobile) {
-        font-size: 32px !important;
+        font-size: 40px !important;
     }
 
     @media screen and (max-width: $tablet) {
@@ -58,10 +38,16 @@ h3 {
     }
 }
 
-.subtitle {
-    @include subtitle;
+p,
+a, 
+q {
+    @include text;
+
+    strong {
+        font-weight: 600;
+    }
 }
 
-p {
-    @include text;
+.subtitle {
+    @include subtitle;
 }

@@ -1,32 +1,21 @@
 * {
-    margin: $initial;
-    padding: $initial;
-    user-select: $none;
+    margin: 0;
+    padding: 0;
     cursor: pointer;
-    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
 body {
-    color: $text;
+    color: $dark-green;
     font-family: $font-base;
-    background-color: $background;
 }
 
 section {
-    padding: $large-value $simple-value;
-
-    @media screen and (max-width: $mobile) {
-        padding: $medium-value $initial !important;
-    }
-
-    @media screen and (max-width: $tablet) {
-        padding: $medium-value $small-value;
-    }
+    padding: 180px $size-ten;
 }
 
 img {
     width: $max;
     border-radius: $radius;
-    object-fit: $cover;
+    object-fit: cover;
 }
