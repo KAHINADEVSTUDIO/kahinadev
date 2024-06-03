@@ -426,6 +426,15 @@ footer h6 {
   opacity: 1;
 }
 
+.skills h3 br {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .skills h3 br {
+    display: block !important;
+  }
+}
+
 .presentation h1,
 .presentation h2,
 .presentation .h3,

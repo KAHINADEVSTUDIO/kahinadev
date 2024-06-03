@@ -64,3 +64,14 @@
         }
     }
 }
+
+.skills {
+    h3 {
+        br {
+            display: $none;
+            @media screen and (max-width: $mobile) {
+                display: $block !important;
+            }
+        }
+    }
+}
