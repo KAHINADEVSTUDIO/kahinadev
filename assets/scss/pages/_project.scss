@@ -1,145 +1,83 @@
-.project-presentation {
-    h1 {
-        margin-top: $size-zero !important;
+.presentation,
+.project-introduction,
+.concept {
 
-        @media screen and (max-width: $mobile) {
-            font-size: 38px !important;
-            margin-bottom: $size-zero !important;
-        }
-
-        @media screen and (max-width: $tablet) {
-            font-size: 70px;
-        }
-    }
-
-    img {
-        @media screen and (max-width: $mobile) {
-            margin-top: $size-twenty;
-        }
-    }
-
-    .slogan {
-        display: grid;
-        margin-top: $size-thirty;
-        padding: $size-thirty;
-        border-radius: $radius;
-        background-color: $white;
-
-        .subtitle {
-            margin-bottom: $size-twenty;
-        }
-    }
-
-    .btn {
-        @include btn-modal;
-
-    }
-
-    .btn-website {
-        margin-top: $size-twenty;
-        background-color: $fern-green;
-
-
-        &:hover,
-        &:focus,
-        &:active {
-            border-bottom: $none !important;
-            background-color: $fern-green-2;
-        }
-    }
-}
-
-.project-introduction {
-
-    h2 {
-        font-size: $size-thirty;
-        margin-bottom: $size-twenty;
-
-        @media screen and (max-width: $mobile) {
-            font-size: 34px !important;
-            margin: $size-forty $size-zero;
-        }
-    }
-
-    .subtitle {
-        color: $fern-green-2;
-    }
-
-    .infos-project {
-        ul {
-            li {
-                a {
-                    @include list;
-                }
-            }
-        }
-    }
-}
-
-
-.project-concept,
-.images-project {
-    background-color: $dark-green;
-
-    .subtitle,
+    h1,
     h2,
-    i,
-    h3 {
-        color: $white;
-    }
+    .h3 {
+        font-size: 80px;
 
-    p {
-        color: $white;
-        margin-top: $size-twenty;
-    }
-}
-
-.project-concept {
-    h2 {
         @media screen and (max-width: $mobile) {
-            font-size: $size-thirty !important;
+            font-size: 32px !important;
         }
 
         @media screen and (max-width: $tablet) {
             font-size: 60px;
         }
     }
+}
 
-    .card-concept {
-        background-color: transparent;
+.presentation {
+    padding-top: 5rem;
 
+    @media screen and (max-width: $mobile) {
+        padding-top: 8rem !important;
+    }
+
+    @media screen and (max-width: $tablet) {
+        padding-top: 10rem;
+    }
+
+    .subtitle {
+        font-size: 17px;
+        color: $dark-green;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid $dark-green;
+    }
+
+    img {
+        @media screen and (max-width: $tablet) {
+            height: 50vh !important;
+        }
+    }
+
+    .img-one {
+        height: 41vh;
+    }
+
+    .img-two {
+        height: 100vh;
+    }
+}
+
+.project-introduction {
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
         @media screen and (max-width: $mobile) {
-            padding: $size-twenty $size-zero !important;
+            font-size: 25px !important;
+            margin-top: $size-thirty;
         }
     }
 }
 
 .charter {
-    img {
-        height: 193px;
-        margin-bottom: $size-twenty;
+    .color {
+        height: 30vh;
     }
 
-    h3 {
-        border-top: $border;
-        padding: $size-twenty $size-zero;
-        border-bottom: $border;
-        margin: $size-twenty $size-zero $size-thirty $size-zero;
-    }
-}
-
-.images-project {
-    img {
-        margin: $size-twenty $size-zero;
-    }
-}
-
-.next {
-    @media screen and (max-width: $mobile) {
-        padding: 80px $size-ten !important;
-    }
     a {
-        @include list;
+        .meaning {
+            margin-top: 6rem;
+            margin-left: 2rem;
+            position: $absolute;
+            font-family: $font-base;
+        }
     }
+}
 
+.next-project {
+    padding-bottom: 5rem;
 }

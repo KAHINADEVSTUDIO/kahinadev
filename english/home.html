@@ -41,59 +41,57 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
-    <header id="header" class="header" aria-label="Header">
-        <nav id="navbar-example" class="navbar navbar-expand-lg">
+<body class="light-theme">
+    <header id="header" class="header p-3 mb-3" role="heading" aria-label="Header of the website">
+        <nav class="navbar" role="navigation" aria-label="Menu de navigation du site">
             <div class="container-fluid">
-                <a href="home.html" class="navbar-brand">
+                <a href="home.html" class="navbar-brand" aria-label="KahinaDev">
                     KahinaDev
                 </a>
-                <div class="first-languages">
-                    <a href="../index.html" class="text-decoration-none navbar-brand" aria-label="Français">Fr</a>
-                    <a href="home.html" class="text-decoration-none navbar-brand" aria-label="English">En</a>
-                </div>
-                <span class="toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-circle fa-2xl first-circle"></i>
-                    <i class="fa-regular fa-circle fa-2xl second-circle"></i>
-                </span>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#introduction" aria-label="Introduction">
-                                <i class="fa-solid fa-house" aria-hidden="true"></i> Introduction
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about" aria-label="About">
-                                <i class="fa-solid fa-user" aria-hidden="true"></i> About
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services" aria-label="Services">
-                                <i class="fa-solid fa-database" aria-hidden="true"></i> Services
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects" aria-label="My projects">
-                                <i class="fa-solid fa-diagram-project" aria-hidden="true"></i> My projects
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills" aria-label="Skills">
-                                <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i> Skills
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-label="Contact" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="d-flex second-languages" role="search">
-                        <div class="languages">
-                            <a href="../index.html" class="text-decoration-none navbar-brand" aria-label="Français">Fr</a>
-                            <a href="home.html" class="text-decoration-none navbar-brand" aria-label="English">En</a>
+                <div class="menu">
+                    <button id="theme-toggle" class="btn toggle-theme">
+                        <span class="moon"><i class="fa-solid fa-moon"></i></span>
+                    </button>
+                    <a href="../index.html" class="text-decoration-none subtitle lang" aria-label="French">
+                        Fr
+                    </a>
+                    <span class="btn-menu" id="toggleMenu">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                    <div class="sidebar" id="sidebar">
+                        <div class="menu-sidebar">
+                            <ul class="list-unstyled">
+                                <li class="nav-item">
+                                    <a href="#introduction" class="nav-link" aria-label="Introduction">
+                                        Introduction
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#about-me" class="nav-link" aria-label="About me">
+                                        About me
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#services" class="nav-link" aria-label="Services">
+                                        Services
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#projects" class="nav-link" aria-label="Projects">
+                                        Projects
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#skills" class="nav-link" aria-label="Skills">
+                                        Skills
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#contact" class="nav-link" aria-label="Contact">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -101,158 +99,137 @@
         </nav>
     </header>  
 
-    <main id="main" class="main" aria-label="Main">
-        <section id="introduction" class="introduction">
-            <div class="container">
+    <main id="main" class="main" role="main" aria-label="Main of the website">
+        <section id="introduction" class="introduction" aria-label="Introduction section">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-                        <span class="greetings subtitle aos-init aos-animation" data-aos="fade-in" data-aos-delay="300">
-                            Salut, Hello, Hola, 안녕하세요, سلام
-                        </span>
-                        <h1 class="aos-init aos-animation" data-aos="fade-in" data-aos-delay="300">
-                            Kahina <br> Ouali
-                        </h1>
-                        <span class="subtitle aos-init aos-animation" data-aos="fade-up-right" data-aos-delay="300">
-                            <strong>
-                                I am a php/symfony application developer <br> looking for an apprenticeship for 24 months.
-                            </strong>
-                        </span>
-                        <div class="buttons aos-init aos-animation" data-aos="fade-in" data-aos-delay="300">
-                            <a href="#about" class="btn">
-                                <i class="fa-solid fa-arrow-right-long"></i> Learn more about me
-                            </a>
-                            <a class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <i class="fa-solid fa-arrow-right-long"></i> The ways to contact me
+                    <div class="col-lg-6 col-md-12">
+                        <h1 class="aos-init aos-animation" data-aos="fade-up" data-aos-delay="300">Kahina Ouali</h1>
+                        <img src="../assets/img/me/pic-of-me.png" class="first-image aos-init aos-animation" data-aos="fade-up" data-aos-delay="300" 
+                        alt="Picture of me number one">
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="aos-init aos-animation" data-aos="fade-up" data-aos-delay="300">
+                            <h2 class="simple-margin-tablet">I am a php/symfony application developer looking for an alternation for 24 months</h2>
+                            <img src="../assets/img/me/pic-of-me-two.png" class="first-image simple-margin" alt="Picture of me number two">
+                            <a href="#about-me" class="btn btn-dark btn-max simple-margin">
+                                Discover me
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="about" class="about">
+        <section id="about-me" class="about" aria-label="About me section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12">
-                        <span class="subtitle aos-init aos-animation" data-aos="fade-down" data-aos-delay="300">
-                            Learn more about me
-                        </span>
-                        <h2 class="aos-init aos-animation" data-aos="fade-down" data-aos-delay="400">About me</h2>
-                        <p class="aos-init aos-animation" data-aos="fade-down" data-aos-delay="500">
-                            I am a young web developer of 24 years, passionate about technologies, 
-                            I wonder how and how they can be useful to us without being harmful. 
-                            The field of web development and web design allows me to give free rein 
-                            to my ideas and make them live by creating intuitive and aesthetic interfaces.
+                    <div class="col-lg-12 col-md-12">
+                        <div class="text-center">
+                            <h4 class="subtitle simple-margin aos-init aos-animation" data-aos="fade-in" data-aos-delay="300">
+                                Learn more about me
+                            </h4>
+                            <h3 class="aos-init aos-animation" data-aos="fade-in" data-aos-delay="300">About me</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <p class="margin aos-init aos-animation" data-aos="fade-in" data-aos-delay="300">
+                            I am a 24-year-old developer, passionate about technology and its impact on our daily lives. I am 
+                            interested in how they can be beneficial without having adverse effects. Web development and web 
+                            design allow me to express my creativity by designing intuitive and aesthetic interfaces. 
                             <br>
-                            My goal is to use my technical skills and passions to contribute to the creation 
-                            of an interactive and captivating website. I am particularly <strong>interested in remote work opportunities</strong>, 
-                            as this would allow me to reconcile my passion for technology with an optimal work-life balance.
+                            My goal is to use my technical skills and passion to create interactive and engaging websites. I am particularly 
+                            <strong>interested in remote work opportunities</strong>, as this will allow me to reconcile my passion for 
+                            technology with an optimal work-life balance. 
                             <br>
-                            I am reviewing and improving several projects that I have already created 
-                            and others that are still under development.
+                            Currently, I am working on the improvement of several existing projects and on the development of new projects.
                             <br>
                             <br>
-                            <strong class="subtitle">Stay tuned!</strong>
+                            <strong>Stay tuned!</strong>
                         </p>
-                        <a href="../assets/pdf/php symfony application developer - Kahina Ouali.pdf" class="btn aos-init aos-animation" 
-                        data-aos="fade-down" data-aos-delay="500">
-                            <i class="fa-solid fa-arrow-right-long"></i> My resume
+                        <a href="../assets/pdf/php symfony application developer - Kahina Ouali.pdf" class="btn btn-dark btn-max aos-init aos-animation" 
+                        data-aos="fade-in" data-aos-delay="300">
+                            Resume
                         </a>
                     </div>
-                    <div class="col-lg-6 col-md-12">
-                        <img src="../assets/img/me/pic-of-me.png" aria-label="Image of me" class="aos-init aos-animation" data-aos="fade-uo" data-aos-delay="300" alt="Pic of me">
-                    </div>
                 </div>
             </div>
         </section>
-        <section id="services" class="services">
-            <div class="container">
+        <section id="services" class="services" aria-label="Services section">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-12">
-                        <span class="subtitle aos-init aos-animation" data-aos="fade-in" data-aos-delay="300">My services</span>
-                        <h3 class="aos-init aos-animation" data-aos="zoom-in" data-aos-delay="400">
-                            What I do
-                        </h3>
+                    <div class="col-lg-12 col-md-12">
+                        <span class="subtitle aos-init aos-animation" data-aos="fade-up" data-aos-delay="300">What I do</span>
+                        <h3 class="simple-margin aos-init aos-animation" data-aos="fade-up" data-aos-delay="300">My services</h3>
                     </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="card card-service radius shadow-sm aos-init aos-animation" data-aos="fade-in" data-aos-delay="500">
-                            <span class="subtitle">
-                                <strong>
-                                    <i class="fa-solid fa-laptop-code"></i> 
-                                    Web development
-                                </strong>
-                            </span>
-                            <p>
-                                Web development is essential for the creation, maintenance and improvement of websites. 
-                                It includes the integration of programming, visual design and interactive features. 
-                                Through web development, companies can establish an online presence, provide services 
-                                and products to these customers and interact effectively.
-                            </p>
+                    <div class="col-lg-12 col-md-12">
+                        <div class="simple-margin card-background aos-init aos-animation" data-aos="fade-up" data-aos-delay="300">
+                            <div class="title-background bg-one">
+                                <h4 class="subtitle"><i class="fa-solid fa-laptop-code"></i> Web development</h4>
+                                <p class="simple-margin">
+                                    Web development plays a crucial role in the creation, maintenance and improvement of websites. 
+                                    It encompasses the integration of programming, visual design and interactive features. Through 
+                                    web development, companies can build an online presence, offer services and products to their 
+                                    customers, and interact effectively with them.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="card card-service second-service radius shadow-sm aos-init aos-animation" data-aos="fade-in" data-aos-delay="500">
-                            <span class="subtitle">
-                                <strong>
-                                    <i class="fa-solid fa-palette"></i>
-                                    Web design
-                                </strong>
-                            </span>
-                            <p>
-                                Web design is the art of creating visual and interactive experiences on the Web. 
-                                This involves designing and implementing attractive, functional and intuitive user 
-                                interfaces, while taking into account user needs, business objectives and aesthetic trends.
-                            </p>
+                    <div class="col-lg-12 col-md-12">
+                        <div class="simple-margin card-background aos-init aos-animation" data-aos="fade-up" data-aos-delay="300">
+                            <div class="title-background bg-three">
+                                <h4 class="subtitle"><i class="fa-solid fa-palette"></i> Web design</h4>
+                                <p class="simple-margin">
+                                    Web design is the art of designing visual and interactive experiences on the web. 
+                                    This includes the creation and realization of attractive, functional and intuitive 
+                                    user interfaces, while taking into account the needs of users in the business goals 
+                                    and aesthetic trends.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="card card-service radius shadow-sm aos-init aos-animation" data-aos="fade-in" data-aos-delay="500">
-                            <span class="subtitle">
-                                <strong>
-                                    <i class="fa-solid fa-wrench"></i>
-                                    Redesign of website
-                                </strong>
-                            </span>
-                            <p>
-                                Website redesign is used to update, improve and optimize an existing website. 
-                                This can be driven by different factors, such as changing business needs, 
-                                technological changes, or adapting to design and user experience trends.
-                            </p>
+                    <div class="col-lg-12 col-md-12">
+                        <div class="simple-margin card-background aos-init aos-animation" data-aos="fade-up" data-aos-delay="300">
+                            <div class="title-background bg-two">
+                                <h4 class="subtitle"><i class="fa-solid fa-wrench"></i> Redesign of website</h4>
+                                <p class="simple-margin">
+                                    The website redesign allows to update, improve and optimize an existing website. It can be driven 
+                                    by various factors, such as changing business needs, technological advances or adapting to new 
+                                    design and user experience trends.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="projects" class="projects">
+        <section id="projects" class="projects" aria-label="Projects section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <span class="subtitle aos-init aos-animation" data-aos="fade-down" data-aos-delay="300">Recent project</span>
-                        <h3 class="aos-init aos-animation" data-aos="fade-up" data-aos-delay="400">
-                            Project selection
-                        </h3>
+                        <span class="subtitle aos-init aos-animation" data-aos="fade-in" data-aos-delay="300">Projects selection</span>
+                        <h3 class="margin aos-init aos-animation" data-aos="fade-in" data-aos-delay="300">Recent projects</h3>
                     </div>
-                    <div class="col-lg-4 col-md-4"></div>
-                    <div class="col-lg-6 col-md-8">
-                        <ul class="list-unstyled">
+                    <div class="col-md-12">
+                        <ul class="list-unstyled aos-init aos-animation" data-aos="fade-in" data-aos-delay="300">
                             <li>
-                                <img src="../assets/img/projects/romanum/romanum.png" aria-label="Image of the project Romanum" alt="Romanum">
-                                <a href="romanum.html" class="text-decoration-none subtitle aos-init aos-animation" data-aos="fade-up" data-aos-delay="500">
-                                    <span class="name"><i class="fa-solid fa-arrow-right-long arrow"></i> Romanum</span>
-                                    <span class="type">Development / design</span>
+                                <img src="../assets/img/projects/kanirgarden/kanirgarden.png" aria-label="Image du projet KanirGarden" alt="KanirGarden">
+                                <a href="kanirgarden.html" class="text-decoration-none a-project">
+                                    <span class="name"><i class="fa-solid fa-arrow-right-long arrow"></i> KanirGarden</span>
+                                    <span class="type">Development</span>
                                 </a>
                             </li>
                             <li>
-                                <img src="../assets/img/projects/world-wheels/world-wheels.png" aria-label="Image of the project WorldWheels" alt="WorldWheels">
-                                <a href="" class="text-decoration-none subtitle aos-init aos-animation" data-aos="fade-up" data-aos-delay="500">
+                                <img src="../assets/img/projects/world-wheels/world-wheels.png" aria-label="Image du projet WorldWheels" alt="WorldWheels">
+                                <a href="worldwheels.html" class="text-decoration-none a-project">
                                     <span class="name"><i class="fa-solid fa-arrow-right-long arrow"></i> WorldWheels</span>
                                     <span class="type">Design</span>
                                 </a>
                             </li>
                             <li>
-                                <img src="../assets/img/projects/kanirgarden/kanirgarden.png" aria-label="Image of the project KanirGarden" alt="KanirGarden">
-                                <a href="" class="text-decoration-none subtitle aos-init aos-animation" data-aos="fade-up" data-aos-delay="500">
-                                    <span class="name"><i class="fa-solid fa-arrow-right-long arrow"></i> KanirGarden</span>
-                                    <span class="type">Development / design</span>
+                                <img src="../assets/img/projects/romanum/romanum.png" aria-label="Image du projet Romanum" alt="Romanum">
+                                <a href="#" class="text-decoration-none a-project">
+                                    <span class="name"><i class="fa-solid fa-arrow-right-long arrow"></i> Romanum</span>
+                                    <span class="type">Ongoing</span>
                                 </a>
                             </li>
                         </ul>
@@ -260,139 +237,101 @@
                 </div>
             </div>
         </section>
-        <section id="skills" class="skills">
-            <div class="container">
+        <section id="skills" class="skills" aria-label="Skills section">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-12">
-                        <span class="subtitle aos-init aos-animation" data-aos="fade-in" data-aos-delay="300">Development / design / languages</span>
-                        <h3 class="aos-init aos-animation" data-aos="zoom-in" data-aos-delay="400">
-                            Skills
-                        </h3>
+                    <div class="col-lg-12 col-md-12">
+                        <span class="subtitle aos-init aos-animation" data-aos="fade-up" data-aos-delay="300">Development / Design / Languages</span>
+                        <h3 class="simple-margin aos-init aos-animation" data-aos="fade-up" data-aos-delay="300">Skills</h3>
                     </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="card card-skills radius shadow-sm aos-init aos-animation" data-aos="fade-in" data-aos-delay="500">
-                            <span class="subtitle">
-                                <strong>
-                                    <i class="fa-solid fa-server"></i>
-                                    Web development
-                                </strong>
-                            </span>
-                            <p>
-                                - Programming : <strong>Html, Css, Javascript, PHP</strong>
-                                <br>
-                                - Preprocessors : <strong>SASS</strong>
-                                <br>
-                                - Frameworks : <strong>Symfony, Bootstrap</strong>
-                                <br>
-                                - Database: <strong>MySQL</strong>
-                                <br>
-                                - Development tools: <strong>Github</strong>
-                                <br>
-                                - Methodology: <strong>Agile</strong>
-                            </p>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="simple-margin card-background aos-init aos-animation" data-aos="fade-up" data-aos-delay="300">
+                            <div class="title-background bg-three">
+                                <h4 class="subtitle"><i class="fa-solid fa-server"></i> Development</h4>
+                                <p class="simple-margin">
+                                    - Programming : <strong>Html, Css, Javascript, PHP</strong>
+                                    <br>
+                                    - Preprocessors : <strong>SASS</strong>
+                                    <br>
+                                    - Frameworks : <strong>Symfony, Bootstrap</strong>
+                                    <br>
+                                    - Database: <strong>MySQL</strong>
+                                    <br>
+                                    - Development tools: <strong>Github</strong>
+                                    <br>
+                                    - Methodology: <strong>Agile</strong>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="card card-skills second-service radius shadow-sm aos-init aos-animation" data-aos="fade-in" data-aos-delay="500">
-                            <span class="subtitle">
-                                <strong>
-                                    <i class="fa-solid fa-palette"></i>
-                                    Web design
-                                </strong>
-                            </span>
-                            <p>
-                                - Figma: <strong>in progress</strong>
-                                <br>
-                                - Illustrator: <strong>in progress</strong>
-                                <br>
-                                - Photoshop: <strong>in progress</strong>
-                            </p>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="simple-margin card-background aos-init aos-animation" data-aos="fade-up" data-aos-delay="300">
+                            <div class="title-background bg-two">
+                                <h4 class="subtitle"><i class="fa-solid fa-globe"></i> Languages</h4>
+                                <p class="simple-margin">
+                                    - French: <strong>Native language</strong>
+                                    <br>
+                                    - English: <strong>Intermediate</strong>
+                                    <br>
+                                    - Arabic: <strong>Beginner</strong>
+                                    <br>
+                                    - Korean: <strong>Beginner</strong>
+                                    <br>
+                                    - Spanish: <strong>Beginner</strong>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="card card-skills radius shadow-sm aos-init aos-animation" data-aos="fade-in" data-aos-delay="500">
-                            <span class="subtitle">
-                                <strong>
-                                    <i class="fa-solid fa-globe"></i>
-                                    Languages
-                                </strong>
-                            </span>
-                            <p>
-                                - French: <strong>Native language</strong>
-                                <br>
-                                - English: <strong>Intermediate</strong>
-                                <br>
-                                - Arabic: <strong>Beginner</strong>
-                                <br>
-                                - Korean: <strong>Beginner</strong>
-                                <br>
-                                - Spanish: <strong>Beginner</strong>
-                            </p>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="simple-margin card-background aos-init aos-animation" data-aos="fade-up" data-aos-delay="300">
+                            <div class="title-background bg-one">
+                                <h4 class="subtitle"><i class="fa-solid fa-paintbrush"></i> Web design</h4>
+                                <p class="simple-margin">
+                                    - Figma : <strong>In progress</strong>
+                                    <br>
+                                    - Illustrator : <strong>In progress</strong>
+                                    <br>
+                                    - Photoshop : <strong>In progress</strong>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
-    
-    <footer id="footer" class="footer" aria-label="Footer">
-        <div class="container-fluid first">
-            <div class="infos">
+        <section id="contact" class="contact" aria-label="Contact section">
+            <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12">
-                        <h5 class="navbar-brand">KahinaDev</h5>
-                        <p>
-                            Web developer passionate about creating modern and intuitive websites and applications.
-                            <br>
-                            The field of web development and web design allows me to give free rein to my ideas 
-                            <br> 
-                            and make them live by creating intuitive and aesthetic interfaces.
-                        </p>
+                    <div class="col-lg-12 col-md-12">
+                        <span class="subtitle aos-init aos-animation" data-aos="fade-in" data-aos-delay="300">The ways to contact me</span>
+                        <h3 class="simple-margin aos-init aos-animation" data-aos="fade-in" data-aos-delay="300">Let's talk together</h3>
                     </div>
-                    <div class="col-lg-2 col-md-6">
-                        <h5>Pages</h5>
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#about" aria-label="About" class="text-decoration-none">About</a>
-                            </li>
-                            <li>
-                                <a href="#serices" aria-label="Services" class="text-decoration-none">Services</a>
-                            </li>
-                            <li>
-                                <a href="#projects" aria-label="Projects" class="text-decoration-none">My projects</a>
-                            </li>
-                            <li>
-                                <a href="#skills" aria-label="Skills" class="text-decoration-none">Skills</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <h5>My social networks</h5>
-                        <ul class="list-unstyled">
+                    <div class="col-md-12">
+                        <ul class="list-unstyled simple-margin aos-init aos-animation" data-aos="fade-in" data-aos-delay="300">
                             <li>
                                 <a href="https://mail.google.com/mail/u/0/#inbox" 
-                                class="text-decoration-none">
+                                class="subtitle text-decoration-none a-project">
                                     <i class="fa-solid fa-envelope"></i>
-                                    By e-mail
+                                    By mail
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.linkedin.com/in/kahinaouali/" 
-                                class="text-decoration-none">
+                                class="subtitle text-decoration-none a-project">
                                     <i class="fa-brands fa-linkedin-in"></i>
                                     LinkedIn
                                 </a>
                             </li>
                             <li>
                                 <a href="https://github.com/kahinadev" 
-                                class="text-decoration-none">
+                                class="subtitle text-decoration-none a-project">
                                     <i class="fa-brands fa-github"></i>
                                     Github
                                 </a>
                             </li>
                             <li>
                                 <a href="https://codepen.io/kahinadev" 
-                                class="text-decoration-none">
+                                class="subtitle text-decoration-none a-project">
                                     <i class="fa-brands fa-codepen"></i>
                                     Codepen
                                 </a>
@@ -401,66 +340,44 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container-fluid copy">
+        </section>
+    </main>
+
+    <footer id="footer" class="footer" role="footer" aria-label="Footer of the website">
+        <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center">
-                    <h6>
-                        &copy;2023 KahinaDev - All rights reserved
-                    </h6>
+                <div class="col-lg-6 col-md-12">
+                    <h5>KahinaDev</h5>
+                    <p>
+                        Web developer passionate about creating modern and intuitive websites and applications.
+                        The field of web development and web design allows me to give free rein to my ideas 
+                        and make them live by creating intuitive and aesthetic interfaces. 
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Pages</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#about-me" aria-label="About me" class="text-decoration-none">About me</a>
+                        </li>
+                        <li>
+                            <a href="#serices" aria-label="Services" class="text-decoration-none">Services</a>
+                        </li>
+                        <li>
+                            <a href="#projects" aria-label="Projets" class="text-decoration-none">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#skills" aria-label="Skills" class="text-decoration-none">Skills</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <h5>Copyright</h5>
+                    <h6>&copy;2023 KahinaDev - All rights reserved</h6>
                 </div>
             </div>
         </div>
     </footer>
-    
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-          <div class="modal-content">
-            <div class="modal-body">
-                <div class="reseaux-contact">
-                    <h4 class="subtitle" id="exampleModalLabel">
-                        <strong>The ways to contact me</strong>
-                    </h4>
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="https://mail.google.com/mail/u/0/#inbox" 
-                            class="subtitle text-decoration-none">
-                                <i class="fa-solid fa-envelope"></i>
-                                By e-mail
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/kahinaouali/" 
-                            class="subtitle text-decoration-none">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                                LinkedIn
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/kahinadev" 
-                            class="subtitle text-decoration-none">
-                                <i class="fa-brands fa-github"></i>
-                                Github
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://codepen.io/kahinadev" 
-                            class="subtitle text-decoration-none">
-                                <i class="fa-brands fa-codepen"></i>
-                                Codepen
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
-                    <i class="fa-solid fa-arrow-right-long"></i> Close
-                </button>
-            </div>
-          </div>
-        </div>
-    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
@@ -470,6 +387,7 @@
     crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/93f593ecee.js" 
     crossorigin="anonymous"></script>
+    <script src="../assets/js/website.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({

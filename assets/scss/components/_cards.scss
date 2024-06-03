@@ -1,41 +1,77 @@
 .card {
-    border: $none;
-    padding: $size-twenty;
+    padding: $size-thirty;
+    background-color: transparent;
 
     p {
-        margin-top: $size-twenty;
+        margin-top: $size-thirty;
     }
 }
 
-.card-service,
-.card-skills {
-    background-color: $white;
+.card-service {
+    border: $border-dark;
+    padding: $size-thirty 50px;
 
-    @media screen and (max-width: $tablet) {
-        margin-bottom: $size-twenty !important;
+    .icon-card {
+        top: $size-zero;
+        left: $size-zero;
+        position: $absolute;
+        padding: $size-thirty;
+        border-bottom-right-radius: 10px;
+        background-color: $dark-green;
+
+        i {
+            font-size: 25px;
+            color: $cambridge-blue;
+        }
     }
 
-    i {
-        margin-right: $size-two;
+    h4 {
+        color: $dark-green;
+        margin-left: 5%;
     }
-}
 
-.second-service {
-    background-color: $fern-green !important;
-
-    p,
-    span {
-        color: $white;
-    }
-}
-
-.card-skills {
     p {
-        text-align: left !important;
+        margin-top: 50px;
     }
 }
 
-.card-charte {
-    margin-bottom: $size-twenty;
-    background-color: $white;
+.card-background {
+
+    .title-background {
+        height: auto;
+        padding: 5rem;
+        border-radius: $second-radius;
+
+        @media screen and (max-width: $mobile) {
+            padding: 3rem 2rem !important;
+        }
+    }
+
+    .bg-one,
+    .bg-two {
+
+        h4,
+        p {
+            color: $dark-green;
+        }
+
+    }
+
+    .bg-one {
+        background-color: $ash-gray;
+    }
+
+    .bg-two {
+        background-color: $cambridge-blue;
+    }
+
+    .bg-three {
+        background-color: $hunter-green;
+
+        h3,
+        h4,
+        p {
+            color: $seasalt;
+        }
+    }
 }

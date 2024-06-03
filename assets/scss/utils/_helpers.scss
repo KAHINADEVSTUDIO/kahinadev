@@ -1,12 +1,63 @@
-.radius {
+@import "../utils/mixins.scss";
+
+// POSITION 
+
+.position-absolute-top-left {
+    top: $size-zero;
+    left: $size-zero;
+    position: $absolute;
+}
+
+// TYPOGRAPHY 
+
+.subtitle {
+    @include subtitle;
+}
+
+// BORDER
+
+.content-border {
+    padding: $size-thirty;
+    border: $border-dark;
     border-radius: $radius;
 }
 
-.navbar-brand {
-    font-size: 16px;
-    color: $dark-green;
-    font-weight: 600;
-    letter-spacing: $spacing;
-    text-transform: $uppercase;
-    font-family: $font-secondary;
+// MARGIN 
+
+.margin {
+    margin: 50px 0;
+}
+
+.simple-margin {
+    margin-top: $size-sixty;
+
+    @media screen and (max-width: $mobile) {
+        margin-top: $size-thirty !important;
+    }
+}
+
+.simple-margin-tablet {
+    @media screen and (max-width: $mobile) {
+        margin-top: $size-thirty !important;
+    }
+
+    @media screen and (max-width: $tablet) {
+        margin-top: $size-sixty;
+    }
+}
+
+// PADDING 
+
+.without-padding {
+    padding: 0rem $size-ten !important;
+}
+
+// COLOR
+
+.color-white {
+    color: $seasalt;
+}
+
+.color-dark {
+    color: $hunter-green;
 }

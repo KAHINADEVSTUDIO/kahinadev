@@ -8,10 +8,30 @@
 body {
     color: $dark-green;
     font-family: $font-base;
+    background-color: $seasalt;
+    transition: background-color 0.3s, color 0.3s;
+
+    h1,
+    h2,
+    h3 {
+        color: $dark-green;
+    }
+
+    #main {
+        padding: 0 3rem;
+
+        @media screen and (max-width: $mobile) {
+            padding: 0rem !important;
+        }
+    }
 }
 
 section {
-    padding: 180px $size-ten;
+    padding: 10rem $size-ten;
+
+    @media screen and (max-width: $mobile) {
+        padding: 5rem $size-ten !important;
+    }
 }
 
 img {

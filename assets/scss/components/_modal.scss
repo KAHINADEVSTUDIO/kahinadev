@@ -1,44 +1,28 @@
 .modal {
     .modal-dialog {
         .modal-content {
-            padding: $size-twenty-five;
-            border-radius: $radius;
-            background-color: $white !important;
+            padding: 3rem;
+            background-color: $seasalt;
 
-            .modal-body {
-                h4 {
-                    color: $dark-green;
-                }
+            .modal-header {
+                border-bottom: $none;
 
-                ul {
-                    margin-top: $size-forty;
+                button {
+                    border: $none;
+                    font-size: 20px;
+                    color: $hunter-green;
+                    padding: $size-zero !important;
+                    background-color: transparent !important;
 
-                    li {
-                        margin-bottom: $size-twenty;
-
-                        a {
-                            color: $dark-green;
-
-                            &:hover,
-                            &:focus,
-                            &:active {
-                                color: $dark-green;
-                            }
-
-                            i {
-                                margin-right: $size-five;
-                            }
-                        }
+                    i {
+                        margin-right: 10px;
                     }
                 }
             }
 
-            .modal-footer {
-                padding: $size-zero;
-                border-top: $none;
-
-                .btn {
-                    @include btn-modal;
+            .modal-body {
+                p {
+                    margin-top: $size-twenty;
                 }
             }
         }

@@ -5,6 +5,8 @@
 @import "base/reset.scss";
 @import "base/typography.scss";
 
+@import "themes/themes.scss";
+
 @import "layout/header.scss";
 @import "layout/footer.scss";
 
@@ -12,5 +14,5 @@
 @import "pages/project.scss";
 
 @import "components/buttons.scss";
-@import "components/modal.scss";
 @import "components/cards.scss";
+@import "components/modal.scss";

@@ -1,14 +1,22 @@
-@mixin link {
+@mixin title {
+    font-weight: 500;
     color: $dark-green;
-    font-size: 14px;
+    letter-spacing: $spacing;
+    text-transform: $uppercase;
+    font-family: $font-primary;
+}
+
+@mixin link {
+    color: $seasalt;
+    font-size: 18px;
     font-weight: 400;
     letter-spacing: $spacing;
+    text-transform: $uppercase;
     transition: all 0.5s ease !important;
     font-family: $font-base;
 
     i {
         color: $fern-green;
-        margin-right: $size-two;
     }
 
     &:hover,
@@ -20,16 +28,22 @@
 }
 
 @mixin text {
-    font-size: $size-twenty;
+    color: $hunter-green;
+    font-size: 23px;
     font-weight: 300;
     text-align: justify;
-    color: $hunter-green;
-    letter-spacing: $second-spacing;
     font-family: $font-base;
+
+    @media screen and (max-width: $mobile) {
+        font-size: $size-twenty !important;
+    }
 }
 
 @mixin subtitle {
-    font-size: 19px;
+    font-size: 22px;
+    font-weight: 700;
+    color: $fern-green;
+    letter-spacing: $spacing;
     text-transform: $uppercase;
     font-family: $font-secondary;
 }
@@ -40,7 +54,9 @@
     margin-top: $size-twenty;
     padding-bottom: $size-twenty;
     justify-content: space-between;
-    border-bottom: $border;
+    border-bottom: 1px solid $cambridge-blue;
+
+    @include subtitle;
 
     .arrow {
         color: $hunter-green;

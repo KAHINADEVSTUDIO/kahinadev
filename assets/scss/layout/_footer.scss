@@ -1,32 +1,21 @@
 footer {
-    margin-top: $size-fifty;
-    padding: $size-zero $size-ten;
+    padding: 5rem 0;
+    background: #f3f3f3;
 
-    .first {
-        padding: $size-fifty;
-        margin-bottom: $size-twenty;
-        border-radius: $radius;
-        background-color: $white;
-
-        h5 {
-            text-transform: $uppercase;
-        }
-
-        a,
-        p {
-            font-size: 18px;
-        }
-
-        p {
-            br {
-                @media screen and (max-width: $tablet) {
-                    display: $none;
-                }
-            }
-        }
+    h5 {
+        font-size: 18px;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid $dark-green;
+        text-transform: $uppercase;
+        font-family: $font-primary !important;
     }
 
+    a,
+    p,
     h6 {
-        padding: $size-twenty $size-zero;
+        font-size: 17px;
+        font-weight: 300 !important;
+        color: $hunter-green;
     }
 }
