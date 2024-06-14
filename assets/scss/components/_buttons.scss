@@ -1,70 +1,61 @@
 .btn {
-    font-size: 16px;
-    font-weight: 500;
-    padding: 20px 25px;
-    letter-spacing: 1.1px;
+    font-size: 19px !important;
     text-transform: $uppercase;
-    font-family: $font-primary;
-    transition: all 0.3s ease;
-    background-color: transparent;
+    padding: $size-twenty 25px;
+    font-family: $font-secondary;
+    background-color: $transparent;
+    @include button;
+    transition: $transition-normal !important;
 
-    @media screen and (max-width: $mobile) {
-        font-size: 14px !important;
+    i {
+        margin-left: $size-ten;
     }
+}
+
+.btn-light {
+    border: $light-border;
+    color: $dark-text;
 
     &:hover,
     &:focus,
     &:active {
-        border: $none !important;
+        color: $dark-background;
+        background-color: $dark-text !important;
+    }
+}
+
+.btn-bg-accent {
+    border: $none;
+    color: $dark-background;
+    background-color: $dark-accent;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $dark-background;
+        background-color: $dark-accent;
     }
 }
 
 .btn-max {
-    width: $max;
+    width: $p-max;
 }
 
-.btn-dark {
-    color: $dark-green;
-    border: 2px solid $dark-green;
+.btn-bg-secondary {
+    color: $dark-text;
+    border: $none;
+    background-color: $dark-secondary;
+}
+
+.btn-bg-dark {
+    border: $none;
+    color: $dark-text;
+    background-color: $dark-background;
 
     &:hover,
     &:focus,
     &:active {
-        color: $seasalt;
-        background-color: $dark-green;
+        color: $dark-text;
+        background-color: $dark-background;
     }
 }
-
-.btn-primary {
-    color: $seasalt;
-    background-color: $dark-green;
-
-    &:hover,
-    &:focus,
-    &:active {
-        color: $seasalt;
-        background-color: $fern-green;
-    }
-}
-
-// .btn {
-//     font-size: 17px !important;
-//     border: $none !important;
-//     border-radius: 0px !important;
-//     color: $hunter-green;
-//     text-transform: $uppercase;
-//     font-family: $font-secondary;
-//     transition: all 0.3s ease;
-
-//     i {
-//         margin-right: $size-five;
-//     }
-
-//     &:hover,
-//     &:focus,
-//     &:active {
-//         color: $fern-green-2; 
-//         font-weight: 700;
-//         border-bottom: 3px solid $fern-green-2 !important;
-//     }
-// }

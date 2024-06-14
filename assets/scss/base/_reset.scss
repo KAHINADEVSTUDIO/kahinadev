@@ -2,40 +2,38 @@
     margin: 0;
     padding: 0;
     cursor: pointer;
+    //user-select: $none;
+    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
 body {
-    color: $dark-green;
+    color: $dark-text;
     font-family: $font-base;
-    background-color: $seasalt;
+    background-color: $dark-background;
     transition: background-color 0.3s, color 0.3s;
-
-    h1,
-    h2,
-    h3 {
-        color: $dark-green;
-    }
-
-    #main {
-        padding: 0 3rem;
-
-        @media screen and (max-width: $mobile) {
-            padding: 0rem !important;
-        }
-    }
 }
 
 section {
-    padding: 10rem $size-ten;
+    padding: $r-ten $size-twenty;
 
     @media screen and (max-width: $mobile) {
-        padding: 5rem $size-ten !important;
+        padding: $r-ten $size-ten;
     }
 }
 
 img {
-    width: $max;
-    border-radius: $radius;
+    width: $p-max;
+    height: $auto;
+    filter: grayscale(1);
+    border-radius: $second-radius;
     object-fit: cover;
+    filter: grayscale(1);
+    transition: transform 0.5s ease;
+
+    &:hover,
+    &:focus,
+    &:active {
+        @include img-card;
+    }
 }

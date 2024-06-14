@@ -1,77 +1,29 @@
 .introduction {
-    padding-top: 5rem;
+    .subtitle {
+        margin-top: 15rem;
 
-    .first-image {
-        height: 50vh;
+        @media screen and (max-width: $mobile) {
+            margin-top: $r-five !important;
+        }
     }
 
     h2 {
-        font-size: 35px !important;
-        font-family: $font-secondary !important;
-    }
-}
+        font-size: 250px;
 
-.about {
-    h4 {
         @media screen and (max-width: $mobile) {
-            margin-top: 50px !important;
+            font-size: 80px !important;
+        }
+
+        @media screen and (max-width: $desktop) {
+            font-size: 160px;
         }
     }
 }
 
-.projects,
-.contact,
-.project-introduction {
-    ul {
-        li {
-            img {
-                width: 36%;
-                left: 30%;
-                opacity: 0;
-                position: $absolute;
-                transition: all 0.5s ease !important;
-
-                @media screen and (max-width: $mobile) {
-                    display: $none !important;
-                }
-
-                @media screen and (max-width: $tablet) {
-                    width: 32%;
-                }
-            }
-
-            a {
-                @include list;
-                color: $hunter-green;
-                font-size: 20px;
-
-                @media screen and (max-width: $mobile) {
-                    font-size: 16px !important;
-                }
-
-                .name {
-                    font-weight: 400;
-                }
-            }
-
-            &:hover,
-            &:focus,
-            &:active {
-                img {
-                    opacity: 1;
-                }
-            }
-        }
-    }
-}
-
-.skills {
+.contact {
     h3 {
-        br {
-            display: $none;
-            @media screen and (max-width: $mobile) {
-                display: $block !important;
-            }
+        @media screen and (max-width: $mobile) {
+            font-size: 55px !important;
         }
     }
 }

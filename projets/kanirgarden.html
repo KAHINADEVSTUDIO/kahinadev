@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Projet KanirGarden : Spa et centre de bien-être - KahinaDev</title>
+
+    <meta name="description" content="KanirGarden est un projet de spa et centre de bien-être créer en 2024. 
+    La mission est de fournir une expérience de relaxation et de revitalisation à travers une gamme de 
+    services de haute qualité.">
+    <meta name="keywords" content="Développeuse web, developpeur web, télétravail, paris, web design, design">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../assets/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../assets/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" 
+    rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header id="header" class="header p-2 mb-3" role="heading" aria-label="Haut du site">
+        <nav class="navbar" role="navigation" aria-label="Menu de navigation du site">
+            <div class="container">
+                <div class="menu-one">
+                    <a href="../index.html" class="navbar-brand col-lg-2 col-md-2 col-sm-2" aria-label="KahinaDev">
+                        <img src="../assets/img/logo/logo.webp" class="logo" alt="Logo du site" aria-label="Logo du site">
+                    </a>
+                </div>
+                <div class="menu-two">
+                    <a href="../projects/kanirgarden.html" class="nav-link nav-lang" aria-label="English">
+                        En
+                    </a>
+                    <button id="open-sidenav" class="menu-btn" onclick="openNav()" aria-label="Ouvrir le menu">
+                        <span class="bars"><i class="fa-solid fa-bars-staggered"></i></span>
+                        <span class="menu-text">Menu</span>
+                    </button>
+                    <div id="sidenav" class="sidenav">
+                        <div class="menu-sidebar">
+                            <button id="close-sidenav" class="close" onclick="closeNav()" aria-label="Fermer le menu">
+                                <i class="fa-solid fa-xmark"></i> 
+                                <span class="menu-text">Fermer</span>
+                            </button>
+                            <ul class="list-unstyled">
+                                <li class="nav-item">
+                                    <a href="../index.html" class="nav-link" aria-label="Accueil">
+                                        Accueil
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../a-propos.html" class="nav-link" aria-label="À propos">
+                                        À propos
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../services.html" class="nav-link" aria-label="Services">
+                                        Services
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../portfolio.html" class="nav-link" aria-label="Portfolio">
+                                        Portfolio
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#contact" class="nav-link" aria-label="Contact">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main" class="main" role="main" aria-label="Main du site">
+        <section class="banner" aria-label="Bannière du projet">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="../assets/img/projects/kanirgarden/présentation/banner-kanirgarden.webp" class="banner-project" 
+                        alt="Bannière du projet KanirGarden" aria-label="Bannière du projet KanirGarden">
+                        <a href="../portfolio.html" class="btn return aos-init aos-animation" data-aos="fade-up" data-aos-delay="300">
+                            <i class="fa-solid fa-arrow-left-long"></i> Retour au portfolio
+                        </a>
+                        <h1 class="marg aos-init aos-animation" data-aos="fade-up" data-aos-delay="300 ">Kanir<br>Garden</h1>
+                        <div class="buttons aos-init aos-animation" data-aos="fade-up" data-aos-delay="400">
+                            <button type="button" class="btn btn-light">2024</button>
+                            <button type="button" class="btn btn-light marg-top-mobile">Développement & Design</button>
+                            <button type="button" class="btn btn-light marg-top-mobile">Site internet</button>
+                            <button type="button" class="btn btn-light marg-top-tablet">E-commerce</button>
+                            <button type="button" class="btn btn-light marg-top-tablet">Shopify</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="project-introduction bg-dark" aria-label="Introduction du projet">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <h2 class="aos-init aos-animation" data-aos="zoom-in-up" data-aos-delay="300">Le projet</h2>
+                        <a href="https://kahinadev.github.io/kanirgarden/" class="btn btn-light marg btn-max aos-init aos-animation" 
+                        data-aos="zoom-in-up" data-aos-delay="300">
+                            <i class="fa-brands fa-safari"></i> Voir le site
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <h3 class="subtitle aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="400">
+                            Sérénité et équilibre : Bienvenue chez KanirGarden
+                        </h3>
+                        <p class="marg p-3 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="400">
+                            KanirGarden est un projet dédié au bien-être et à la relaxation, 
+                            offrant une expérience ultime à travers des services de spa haut de gamme. 
+                            Sa mission inclut également la création d’une plateforme e-commerce 
+                            intuitive et élégante. 
+                        </p>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="aos-init aos-animation marg-top" data-aos="fade-up" data-aos-delay="500" >
+                            <img src="../assets/img/projects/kanirgarden/kanirgarden.webp" alt="Images des produits KanirGarden" 
+                            aria-label="Images des produits KanirGarden">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="project-concept" aria-label="Concept du projet">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <h3 class="aos-init aos-animation" data-aos="fade-down" data-aos-delay="300">Concept</h3>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="marg aos-init aos-animation" data-aos="fade-down" data-aos-delay="400">
+                            Le projet KanirGarden est conçu pour offrir un sanctuaire de bien-être, combinant relaxation et 
+                            excellence. L'objectif est de fournir aux clients un espace où ils peuvent se ressourcer et 
+                            revitaliser leur esprit et leur corps. Grâce au site internet e-commerce intuitif, les clients 
+                            peuvent aisément réserver des sessions bien-être, acheter des produits de qualité, et accéder 
+                            à des conseils de l'équipe d'experts. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="project-graphic-charter bg-dark" aria-label="Charte graphique du projet">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="aos-init aos-animation" data-aos="fade-up" data-aos-delay="300">Charte graphique</h3>
+                    </div>
+                    <div class="col-md-12">
+                        <h4 class="subtitle marg-top aos-init aos-animation" data-aos="fade-up" data-aos-delay="400">Typographies</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="aos-init aos-animation" data-aos="fade-up" data-aos-delay="400">
+                            <img src="../assets/img/projects/kanirgarden/charter/title-font.webp" class="marg-top typo" 
+                            alt="Typographie des titre" aria-label="Typographie des titre">
+                        </div> 
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="aos-init aos-animation" data-aos="fade-up" data-aos-delay="400">
+                            <img src="../assets/img/projects/kanirgarden/charter/subtitle-font.webp" class="marg-top typo" 
+                            alt="Typographie des sous-titres" aria-label="Typographie des sous-titres">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="aos-init aos-animation" data-aos="fade-up" data-aos-delay="400">
+                            <img src="../assets/img/projects/kanirgarden/charter/text-font.webp" class="marg-top typo" 
+                            alt="Typographie des textes" aria-label="Typographie des textes">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <h4 class="subtitle marg aos-init aos-animation" data-aos="fade-up" data-aos-delay="400">Couleurs</h4>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <button type="button" class="btn btn-light btn-max aos-init aos-animation" data-aos="fade-up" data-aos-delay="400" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                            Violet profond <i class="fa-solid fa-arrow-right-long"></i>
+                        </button>
+                        <div class="modal fade" id="exampleModal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" 
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+                                            <i class="fa-solid fa-xmark"></i> Fermer
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <span class="subtitle btn btn-bg-accent btn-max">   
+                                            Violet profond : #251439
+                                        </span>
+                                        <p class="marg">
+                                            Couleur riche et profonde représente la spiritualité, la 
+                                            méditation et la transformation. Elle évoque la sagesse intérieure et l'équilibre émotionnel.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <button type="button" class="btn btn-light btn-max marg-top-tablet aos-init aos-animation" data-aos="fade-up" data-aos-delay="400" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                            Violet mauve <i class="fa-solid fa-arrow-right-long"></i>
+                        </button>
+                        <div class="modal fade" id="exampleModal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" 
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+                                            <i class="fa-solid fa-xmark"></i> Fermer
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <span class="subtitle btn btn-bg-accent btn-max">   
+                                            Violet mauve : #532b5e
+                                        </span>
+                                        <p class="marg">
+                                            Ce violet doux et apaisant est associé à la créativité, à l'intuition et à la guérison. 
+                                            Il encourage l'inspiration et la réflexion profonde, créant un environnement propice à la 
+                                            croissance personnelle et à l'épanouissement spirituel. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <button type="button" class="btn btn-light btn-max marg-top aos-init aos-animation" data-aos="fade-up" data-aos-delay="400" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                            Violet lilas <i class="fa-solid fa-arrow-right-long"></i>
+                        </button>
+                        <div class="modal fade" id="exampleModal3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" 
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+                                            <i class="fa-solid fa-xmark"></i> Fermer
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <span class="subtitle btn btn-bg-accent btn-max">   
+                                            Violet lilas : #774a82
+                                        </span>
+                                        <p class="marg">
+                                            Incarne la relaxation, l'équilibre et la douceur. Il diffuse une énergie apaisante et 
+                                            réconfortante.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <button type="button" class="btn btn-light btn-max marg-top aos-init aos-animation" data-aos="fade-up" data-aos-delay="400" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                            Violet lavande <i class="fa-solid fa-arrow-right-long"></i>
+                        </button>
+                        <div class="modal fade" id="exampleModal4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" 
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+                                            <i class="fa-solid fa-xmark"></i> Fermer
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <span class="subtitle btn btn-bg-accent btn-max">   
+                                            Violet lavande : #925489
+                                        </span>
+                                        <p class="marg">
+                                            Cette teinte délicate de violet évoque la tranquilité, la guérison et la beauté intérieure. Elle 
+                                            crée une ambiance harmonieuse et paisible. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <button type="button" class="btn btn-light btn-max marg-top aos-init aos-animation" data-aos="fade-up" data-aos-delay="400" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                            Blanc neige <i class="fa-solid fa-arrow-right-long"></i>
+                        </button>
+                        <div class="modal fade" id="exampleModal5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" 
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+                                            <i class="fa-solid fa-xmark"></i> Fermer
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <span class="subtitle btn btn-bg-accent btn-max">   
+                                            Blanc neige : #f2f2f2
+                                        </span>
+                                        <p class="marg">
+                                            Évoque la pureté, la clarté et la tranquilité. Il crée une toile lumineuse et apaisante 
+                                            pour notre espace, symbolisant la paix intérieure et la pureté d'esprit. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="project-images" aria-label="Images du projet">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="aos-init aos-animation" data-aos="fade-down" data-aos-delay="300">Images</h3>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <div class="aos-init aos-animation" data-aos="fade-down" data-aos-delay="400">
+                            <img src="../assets/img/projects/kanirgarden/mockup/kanirgarden-desktop.webp" class="marg first"
+                            alt="Image du projet sur desktop" aria-label="Image du projet sur desktop">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="aos-init aos-animation" data-aos="fade-down" data-aos-delay="400">
+                            <img src="../assets/img/projects/kanirgarden/mockup/kanirgarden-tablet.webp" class="marg second" 
+                            alt="Image du projet sur tablet" aria-label="Image du projet sur tablet">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="aos-init aos-animation" data-aos="fade-down" data-aos-delay="400">
+                            <img src="../assets/img/projects/kanirgarden/mockup/kanirgarden-mobile.webp" class="marg second"
+                            alt="Image du projet sur mobile" aria-label="Image du projet sur mobile">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <div class="aos-init aos-animation" data-aos="fade-down" data-aos-delay="400">
+                            <img src="../assets/img/projects/kanirgarden/mockup/kanirgarden-other.webp" class="marg first"
+                            alt="Image du projet sur ordinateur portable" aria-label="Image du projet sur ordinateur portable">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="other bg-dark" aria-label="Navigation pour les autres projets">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="agency.html" class="btn btn-light btn-max aos-init aos-animation" data-aos="fade-up" data-aos-delay="400">
+                            <i class="fa-solid fa-arrow-left-long"></i> projet précédent
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="col-md-12">
+                            <a href="worldwheels.html" class="btn btn-light btn-max marg-top-mobile aos-init aos-animation" data-aos="fade-up" data-aos-delay="400">
+                                projet suivant <i class="fa-solid fa-arrow-right-long"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact bg-white" aria-label="Les moyens pour me contacter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="aos-init aos-animation text-left" data-aos="zoom-in" data-aos-delay="300">Parlons</h3>
+                        <h3 class="aos-init aos-animation text-end" data-aos="zoom-in" data-aos-delay="300">ensemble</h3>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="list marg">
+                            <ul class="list-one list-unstyled">
+                                <li class="dev aos-init aos-animation" data-aos="zoom-in" data-aos-delay="400">    
+                                    <a href="https://mail.google.com/mail/u/0/#inbox" aria-label="E-mail">
+                                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                                        <span class="service-name">E-mail</span>
+                                        <span class="arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                                    </a>
+                                </li>
+                                <li class="design aos-init aos-animation" data-aos="zoom-in" data-aos-delay="400">    
+                                    <a href="https://www.linkedin.com/in/kahinaouali/" aria-label="Linkedin">
+                                        <span class="icon"><i class="fa-brands fa-linkedin-in"></i></span>
+                                        <span class="service-name">LinkedIn</span>
+                                        <span class="arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                                    </a>
+                                </li>
+                                <li class="aos-init aos-animation" data-aos="zoom-in" data-aos-delay="400">    
+                                    <a href="https://github.com/kahinadev" aria-label="Github">
+                                        <span class="icon"><i class="fa-brands fa-github"></i></span>
+                                        <span class="service-name">Github</span>
+                                        <span class="arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                                    </a>
+                                </li>
+                                <li class="redesign aos-init aos-animation" data-aos="zoom-in" data-aos-delay="400">    
+                                    <a href="https://codepen.io/kahinadev" aria-label="Codepen">
+                                        <span class="icon"><i class="fa-brands fa-codepen"></i></span>
+                                        <span class="service-name">Codepen</span>
+                                        <span class="arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer id="footer" class="footer" role="complementary" aria-label="Footer du site">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12">
+                    <div class="logo d-flex">
+                        <img src="../assets/img/logo/logo.webp" class="logo-fotoer" alt="Logo du site web" aria-label="Logo du site web">
+                        <h4>KahinaDev</h4>
+                    </div>
+                    <p class="marg">
+                        Développeuse web passionnée par la création de sites web et applications modernes et intuitifs. 
+                        Le domaine du développement web et du web design me permet de laisser libre cours à mes idées et 
+                        à les faire vivre tout cela en créant des interfaces intuitives et esthétiques. 
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled marg">
+                        <li>
+                            <a href="../services.html#developpement" class="text-decoration-none">Développement web</a>
+                        </li>
+                        <li>
+                            <a href="../services.html#design" class="text-decoration-none">Web design</a>
+                        </li>
+                        <li>
+                            <a href="../services.html#refonte" class="text-decoration-none">Refonte de site</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Projets</h5>
+                    <ul class="list-unstyled marg">
+                        <li>
+                            <a href="agency.html" aria-label="Agency" class="text-decoration-none">Agency</a>
+                        </li>
+                        <li>
+                            <a href="kanirgarden.html" aria-label="KanirGarden" class="text-decoration-none">KanirGarden</a>
+                        </li>
+                        <li>
+                            <a href="worldwheels.html" aria-label="WorldWheels" class="text-decoration-none">WorldWheels</a>
+                        </li>
+                        <li>
+                            <a href="romanum.html" aria-label="Romanum" class="text-decoration-none">Romanum</a>
+                        </li>
+                        <li>
+                            <a href="../portfolio.html" aria-label="Tous les projets" class="text-decoration-none">Tous les projets</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 col-md-12 text-center">
+                    <div class="reseaux">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="https://mail.google.com/mail/u/0/#inbox" class="text-decoration-none a-reseau" aria-label="E-mail">
+                                    E-mail | 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/kahinaouali/" class="text-decoration-none a-reseau" aria-label="LinkedIn">
+                                    LinkedIn | 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/kahinadev" class="text-decoration-none a-reseau" aria-label="Github">
+                                    Github | 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://codepen.io/kahinadev" class="text-decoration-none a-reseau" aria-label="Codepen">
+                                    Codepen
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h6><strong>&copy;2023 KahinaDev - Tous droits réservés</strong></h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" 
+    crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/93f593ecee.js" 
+    crossorigin="anonymous"></script>
+    <script src="../assets/js/website.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 600,
+            easing: 'ease-in-sine',
+            delay: 100,
+        });
+    </script>
+</body>
+</html>

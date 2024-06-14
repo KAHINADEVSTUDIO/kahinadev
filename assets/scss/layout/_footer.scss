@@ -1,21 +1,76 @@
-footer {
-    padding: 5rem 0;
-    background: #f3f3f3;
+.footer {
+    padding: $r-five 0;
+    background-color: $dark-background;
 
+    h4,
     h5 {
-        font-size: 18px;
-        padding-bottom: 1rem;
-        margin-bottom: 1rem;
-        border-bottom: 1px solid $dark-green;
-        text-transform: $uppercase;
-        font-family: $font-primary !important;
+        font-size: 20px;
     }
 
-    a,
+    .logo {
+        img {
+            width: 10%;
+
+            @media screen and (max-width: $mobile) {
+                width: 11% !important;
+            }
+
+            @media screen and (max-width: $tablet) {
+                width: 6%;
+            }
+        }
+
+        h4 {
+            margin-top: 11px;
+            margin-left: 11px;
+        }
+    }
+
     p,
+    a {
+        color: $dark-text;
+        font-size: 17.6px;
+
+        @media screen and (max-width: $mobile) {
+            font-size: 16.5px !important;
+        }
+    }
+
+    h6,
+    .a-reseau {
+        @include subtitle;
+    }
+
+    .a-reseau {
+        @media screen and (max-width: $mobile) {
+            font-size: 15px !important;
+        }
+    }
+
     h6 {
-        font-size: 17px;
-        font-weight: 300 !important;
-        color: $hunter-green;
+        font-size: 15px !important;
+
+        @media screen and (max-width: $mobile) {
+            text-align: left !important;
+
+        }
+    }
+
+    .reseaux {
+        ul {
+            display: inline-flex;
+
+            @media screen and (max-width: $mobile) {
+                display: $flex !important;
+            }
+
+            li {
+                margin-right: $size-twenty;
+
+                @media screen and (max-width: $mobile) {
+                    margin-right: $size-five !important;
+                }
+            }
+        }
     }
 }

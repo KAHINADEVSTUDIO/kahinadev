@@ -1,28 +1,30 @@
 .modal {
     .modal-dialog {
         .modal-content {
-            padding: 3rem;
-            background-color: $seasalt;
+            padding: $r-two;
+            background-color: $dark-background;
 
             .modal-header {
                 border-bottom: $none;
 
-                button {
-                    border: $none;
-                    font-size: 20px;
-                    color: $hunter-green;
-                    padding: $size-zero !important;
-                    background-color: transparent !important;
+                .btn {
+                    color: $dark-text;
+                    padding: $size-zero;
+                    font-size: $size-twenty;
+                    border: $none !important;
 
                     i {
-                        margin-right: 10px;
+                        margin-left: $size-zero !important;
                     }
                 }
             }
 
             .modal-body {
+                .btn {
+                    font-weight: 700;
+                }
                 p {
-                    margin-top: $size-twenty;
+                    font-size: 22px !important;
                 }
             }
         }

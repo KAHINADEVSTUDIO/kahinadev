@@ -1,0 +1,106 @@
+.portfolio {
+
+    h1,
+    h2 {
+        @media screen and (max-width: $mobile) {
+            font-size: 58px !important;
+        }
+    }
+}
+
+.banner {
+    .banner-project {
+        left: 0;
+        top: 0;
+        z-index: -5;
+        height: 100vh;
+        position: $fixed;
+        border-radius: $size-zero !important;
+    }
+
+    .return {
+        border: $none !important;
+        padding: $size-zero !important;
+        color: $dark-text !important;
+    }
+
+    h1 {
+        font-size: 200px;
+
+        @media screen and (max-width: $mobile) {
+            font-size: 54px !important;
+        }
+
+        @media screen and (max-width: $desktop) {
+            font-size: 140px;
+        }
+    }
+
+    .buttons {
+        .btn {
+            @media screen and (max-width: $mobile) {
+                width: $p-max !important;
+            }
+        }
+    }
+}
+
+.project-introduction {
+    h2 {
+        font-size: 120px;
+    }
+    img {
+        height: 780px;
+
+        @media screen and (max-width: $mobile) {
+            height: 380px !important;
+        }
+
+        @media screen and (max-width: $tablet) {
+            height: 580px;
+        }
+    }
+
+    p {
+        @media screen and (max-width: $mobile) {
+            padding: $size-zero !important;
+        }
+    }
+}
+
+.project-graphic-charter,
+.project-images {
+    img {
+        @media screen and (max-width: $mobile) {
+            height: 280px !important;
+        }
+    }
+
+    .typo {
+        height: 400px;
+
+        @media screen and (max-width: $mobile) {
+            height: 380px !important;
+        }
+
+        @media screen and (max-width: $tablet) {
+            height: 300px;
+        }
+    }
+
+    .first {
+        height: 900px;
+
+        @media screen and (max-width: $tablet) {
+            height: 600px;
+        }
+    }
+
+    .second {
+        height: 580px;
+
+        @media screen and (max-width: $tablet) {
+            height: 280px;
+        }
+    }
+}

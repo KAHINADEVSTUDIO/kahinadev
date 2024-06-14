@@ -1,50 +1,39 @@
 // SIDEBAR 
 
-document.getElementById("toggleMenu").addEventListener("click", function () {
+document.addEventListener("DOMContentLoaded", () => {
+    const openButton = document.getElementById("open-sidenav");
+    const closeButton = document.getElementById("close-sidenav");
+    const sidenav = document.getElementById("sidenav");
 
-    var sidebar = document.getElementById("sidebar");
+    openButton.addEventListener("click", () => {
+        sidenav.classList.add("open");
+    });
 
-    if (sidebar.style.display == "none" || sidebar.style.display == "") {
-        sidebar.style.display = "block";
-    } else {
-        sidebar.style.display = "none";
-    }
+    closeButton.addEventListener("click", () => {
+        sidenav.classList.remove("open");
+    });
 
 });
 
-// THEME 
+// HEADER
 
-document.getElementById('theme-toggle').addEventListener('click', function () {
-
-    const body = document.body;
-    const icon = this.querySelector('i');
-
-    body.classList.toggle('dark-theme');
-
-    if (body.classList.contains('dark-theme')) {
-        icon.classList.remove('fa-moon');
-        icon.classList.add('fa-sun');
-    } else {
-        icon.classList.remove('fa-sun');
-        icon.classList.add('fa-moon');
-    }
-
-})
-
-// FIXED 
-
-window.onscroll = function () {
-    scrollFunction()
+window.onscroll = function () { 
+    scrollFunction(); 
 };
 
-var header = document.getElementById('header');
-var sticky = header.offsetTop;
+var header = document.getElementById("header");
+var sticky = header.offsetTop; 
 
 function scrollFunction() {
-    
-    if (window.pageYOffset > sticky) {
-        header.classList.add('fixed');
+
+    if(window.pageYOffset > sticky) {
+
+        header.classList.add("fixed");
+
     } else {
-        header.classList.remove('fixed');
+
+        header.classList.remove("fixed");
+
     }
+
 }

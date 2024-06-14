@@ -1,69 +1,175 @@
 .header {
-    width: $max;
-    z-index: 10;
-    position: $fixed;
+    transition: top 0.3s ease;
+    padding: .5rem .5rem .5rem 0rem !important;
 
-    .navbar-brand,
-    .btn-menu {
-        font-size: 18px !important;
-    }
+    .navbar {
+        display: $contents;
 
-    .navbar-brand {
-        font-weight: 400 !important;
-        @include title;
-    }
+        .navbar-brand {
+            img {
+                width: $p-max;
+                height: $auto;
+                border-radius: $size-zero !important;
 
-    .navbar-brand,
-    .subtitle {
-        color: $dark-green;
-    }
-
-    .menu {
-        .btn {
-            font-size: 20px;
-            color: $cambridge-blue;
-            padding: $size-zero !important;
+                @media screen and (max-width: $mobile) {
+                    width: 14%;
+                }
+            }
         }
 
-        a {
-            font-size: 15px !important;
-            font-weight: 400 !important;
-            text-transform: $uppercase !important;
-            margin: $size-zero $size-ten !important;
+        .menu-one,
+        .menu-two {
+            display: $flex;
+
+            .nav-lang,
+            .menu-btn {
+                @media screen and (max-width: $mobile) {
+                    padding: $size-ten $size-twenty !important;
+                }
+            }
+
+            .nav-lang,
+            .menu-btn,
+            .close {
+                font-weight: 700;
+                border: $none !important;
+                overflow: $hidden;
+                @include font;
+                font-size: 14px;
+                margin-top: auto;
+                padding: $size-ten $size-thirty;
+                border-radius: $radius;
+            }
+
+            .menu-btn,
+            .close {
+                transition: $bg-transition;
+
+                i {
+                    font-size: $size-twenty;
+                    margin-right: 5px;
+                }
+            }
+
+            .nav-lang {
+                color: $dark-background;
+                margin-right: $size-ten;
+                background-color: $dark-text;
+            }
+
+            .nav-lang,
+            .close {
+
+                @media screen and (max-width: $mobile) {
+                    font-size: 18px !important;
+                }
+            }
+
+            .menu-btn {
+                i {
+                    @media screen and (max-width: $mobile) {
+                        margin-right: $size-zero !important;
+                        font-size: 15px !important;
+                    }
+                }
+            }
+
         }
 
-        .btn-menu {
-            padding: 15px;
-            border-radius: 50%;
-            background-color: $cambridge-blue;
+        .menu-two {
 
-            i {
-                padding: $size-five;
-                color: $seasalt;
+            @media screen and (max-width: $mobile) {
+                right: $r-one;
+                margin-top: $size-zero !important;
+                position: $absolute;
+            }
+
+            .nav-lang {
+                @media screen and (max-width: $mobile) {
+                    padding: 8px 30px !important;
+                }
             }
         }
     }
 
-    .sidebar {
-        top: $size-zero;
-        left: $size-zero;
-        z-index: 5;
-        width: 250px;
-        height: 100%;
-        position: $fixed;
-        overflow-x: hidden;
-        display: none;
-        background-color: $cambridge-blue;
 
-        .menu-sidebar {
-            padding: 5rem 2rem;
+    .open {
+        width: 100%;
 
-            ul {
-                .nav-item {
-                    margin-bottom: $size-twenty;
+        @media screen and (min-width: $mobile) {
+            width: 80%;
+        }
 
-                    .nav-link {
-                        @include link;
+        @media screen and (min-width: $tablet) {
+            width: 50%;
+        }
+    }
+}
+
+.sidenav {
+    top: 0;
+    right: 0;
+    width: 0;
+    z-index: 3;
+    height: $p-max;
+    overflow-x: $hidden;
+    transition: width 0.3s ease;
+    position: $fixed;
+    background-color: $dark-text;
+
+    .menu-sidebar {
+        padding: $r-ten $r-one;
+
+        @media screen and (max-width: $mobile) {
+            padding: $r-five $r-one;
+        }
+
+        .close {
+            color: $dark-text;
+            top: $size-twenty;
+            @include button;
+            position: $absolute;
+            background-color: $dark-background;
+        }
+
+        ul {
+            margin-top: $r-five;
+            text-align: center;
+
+            .nav-item {
+                .nav-link {
+                    font-size: 50px;
+                    position: $relative;
+                    text-decoration: $none;
+                    @include link;
+                    transition: color 0.3s ease-in-out;
+
+                    &::before {
+                        left: 50%;
+                        bottom: 0;
+                        height: 2px;
+                        content: '';
+                        width: 0;
+                        position: $absolute;
+                        visibility: $hidden;
+                        transform: translateX(-50%);
+                        background-color: $dark-secondary !important;
+                        transition: all 0.3s ease-in-out;
+                    }
+
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        color: $dark-secondary !important;
+
+                        &:before {
+                            visibility: visible;
+                            width: 50%;
+                        }
+                    }
+
+                    @media screen and (max-width: $mobile) {
+                        font-size: 50px !important;
                     }
                 }
             }
@@ -72,5 +178,10 @@
 }
 
 .header.fixed {
-    background-color: $seasalt;
+    top: 0;
+    z-index: 12;
+    width: $p-max;
+    position: $fixed;
+    transition: all top 0.3s ease-in-out;
+    background-color: $dark-background;
 }

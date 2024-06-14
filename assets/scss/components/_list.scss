@@ -1,0 +1,96 @@
+.list {
+    ul {
+        li {
+            padding: $r-two 0;
+            border-top: $second-dark-border;
+            transition: all 0.3s ease-in-out !important;
+
+            .service-name {
+                @include font;
+            }
+
+            a {
+                color: $dark-background;
+                @include list;
+            }
+
+            &:hover,
+            &:focus,
+            &:active {
+                padding: $r-two;
+                background-color: $dark-background;
+
+                a {
+                    color: $dark-text;
+                }
+            }
+        }
+
+        .redesign {
+            border-bottom: $second-dark-border;
+        }
+    }
+
+    .list-two {
+        li {
+            display: $flex;
+            justify-content: space-between;
+            border-top: $second-light-border;
+
+            @media screen and (max-width: $tablet) {
+                display: $block !important;
+            }
+
+            a {
+                color: $dark-text;
+            }
+
+            .infos-job {
+                display: $flex;
+                flex-direction: column;
+
+                @media screen and (max-width: $tablet) {
+                    margin-bottom: $r-two !important;
+                }
+
+                .name {
+                    font-size: 30px;
+                    font-weight: 500;
+                    font-family: $font-primary;
+
+                    @media screen and (max-width: $mobile) {
+                        font-size: 25.5px !important;
+                    }
+                }
+
+                .subtitle {
+                    font-size: 1.5rem !important;
+
+                    @media screen and (max-width: $mobile) {
+                        margin: 0.5rem 0;
+                    }
+                }
+
+                .year {
+                    font-size: 20px;
+                    font-family: $font-base;
+                }
+            }
+
+            &:hover,
+            &:focus,
+            &:active {
+                padding: $r-two;
+                background-color: $dark-text;
+
+                a {
+                    color: $dark-background;
+                }
+            }
+        }
+
+        .redesign {
+            border-bottom: $second-light-border;
+        }
+    }
+}

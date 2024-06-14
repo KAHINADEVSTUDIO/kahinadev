@@ -1,38 +1,45 @@
 @mixin title {
-    font-weight: 500;
-    color: $dark-green;
+    font-weight: 700;
     letter-spacing: $spacing;
     text-transform: $uppercase;
     font-family: $font-primary;
 }
 
 @mixin link {
-    color: $seasalt;
-    font-size: 18px;
+    color: $dark-background;
     font-weight: 400;
     letter-spacing: $spacing;
     text-transform: $uppercase;
     transition: all 0.5s ease !important;
     font-family: $font-base;
-
-    i {
-        color: $fern-green;
-    }
-
-    &:hover,
-    &:focus,
-    &:active {
-        color: $fern-green;
-        font-weight: 600;
-    }
 }
 
 @mixin text {
-    color: $hunter-green;
-    font-size: 23px;
+    font-size: 30px;
     font-weight: 300;
-    text-align: justify;
+    letter-spacing: $spacing;
     font-family: $font-base;
+
+    @media screen and (max-width: $mobile) {
+        font-size: 25px !important;
+    }
+}
+
+@mixin button {
+    border: $dark-border;
+    border-radius: $radius;
+}
+
+@mixin font {
+    text-transform: $uppercase;
+    font-family: $font-secondary;
+}
+
+@mixin list {
+    display: $flex;
+    font-size: 25px;
+    text-decoration: $none;
+    justify-content: $space-between;
 
     @media screen and (max-width: $mobile) {
         font-size: $size-twenty !important;
@@ -40,45 +47,12 @@
 }
 
 @mixin subtitle {
-    font-size: 22px;
-    font-weight: 700;
-    color: $fern-green;
-    letter-spacing: $spacing;
-    text-transform: $uppercase;
-    font-family: $font-secondary;
+    font-weight: 400;
+    text-transform: $capitalize;
+    font-family: $font-secondary !important;
 }
 
-@mixin list {
-    color: $hunter-green;
-    display: $flex;
-    margin-top: $size-twenty;
-    padding-bottom: $size-twenty;
-    justify-content: space-between;
-    border-bottom: 1px solid $cambridge-blue;
-
-    @include subtitle;
-
-    .arrow {
-        color: $hunter-green;
-        margin-right: $size-five;
-    }
-
-    @media screen and (max-width: $mobile) {
-        font-size: 14.5px;
-    }
-}
-
-@mixin btn-modal {
-    width: $max;
-    padding: $size-ten 15px;
-    color: $white !important;
-    border-radius: $radius !important;
-    background-color: $dark-green;
-
-    &:hover,
-    &:focus,
-    &:active {
-        border-bottom: $none !important;
-        background-color: $hunter-green;
-    }
+@mixin img-card {
+    filter: grayscale(0);
+    transform: scale(1.1);
 }

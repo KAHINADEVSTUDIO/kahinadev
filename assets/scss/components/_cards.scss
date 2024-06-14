@@ -1,77 +1,69 @@
 .card {
-    padding: $size-thirty;
-    background-color: transparent;
-
-    p {
-        margin-top: $size-thirty;
-    }
+    border: $none;
+    background-color: $transparent;
 }
 
-.card-service {
-    border: $border-dark;
-    padding: $size-thirty 50px;
+.card-project {
+    overflow: $hidden;
 
-    .icon-card {
-        top: $size-zero;
-        left: $size-zero;
-        position: $absolute;
-        padding: $size-thirty;
-        border-bottom-right-radius: 10px;
-        background-color: $dark-green;
+    a {
+        img {
+            height: 420px;
+            filter: grayscale(1);
+            transition: transform 0.5s ease;
+        }
 
-        i {
-            font-size: 25px;
-            color: $cambridge-blue;
+        &:hover,
+        &:focus,
+        &:active {
+            img {
+                @include img-card;
+            }
+        }
+
+        .infos {
+            display: $flex;
+            margin-bottom: 0rem !important;
+            justify-content: $space-between;
+
+            .name,
+            .arrow {
+                font-size: 22px;
+                @include font;
+
+                @media screen and (max-width: $mobile) {
+                    font-size: $size-twenty !important;
+                }
+
+                .service {
+                    color: $dark-secondary;
+                }
+            }
+
+            .arrow {
+                color: $dark-text;
+                margin-top: 6px;
+            }
         }
     }
 
-    h4 {
-        color: $dark-green;
-        margin-left: 5%;
-    }
 
-    p {
-        margin-top: 50px;
-    }
-}
+    // a {
+    //     color: $dark-background;
 
-.card-background {
+    //     .project--infos {
+    //         display: $flex;
+    //         justify-content: $space-between;
+    //         font-family: $font-secondary;
 
-    .title-background {
-        height: auto;
-        padding: 5rem;
-        border-radius: $second-radius;
+    //         strong {
+    //             text-transform: $uppercase;
+    //         }
 
-        @media screen and (max-width: $mobile) {
-            padding: 3rem 2rem !important;
-        }
-    }
-
-    .bg-one,
-    .bg-two {
-
-        h4,
-        p {
-            color: $dark-green;
-        }
-
-    }
-
-    .bg-one {
-        background-color: $ash-gray;
-    }
-
-    .bg-two {
-        background-color: $cambridge-blue;
-    }
-
-    .bg-three {
-        background-color: $hunter-green;
-
-        h3,
-        h4,
-        p {
-            color: $seasalt;
-        }
-    }
+    //         .service {
+    //             font-weight: 300;
+    //             color: $dark-secondary;
+    //         }
+    //     }
+    // }
 }

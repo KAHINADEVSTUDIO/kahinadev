@@ -1,63 +1,70 @@
 @import "../utils/mixins.scss";
 
-// POSITION 
-
-.position-absolute-top-left {
-    top: $size-zero;
-    left: $size-zero;
-    position: $absolute;
-}
-
-// TYPOGRAPHY 
-
-.subtitle {
-    @include subtitle;
-}
-
-// BORDER
-
-.content-border {
-    padding: $size-thirty;
-    border: $border-dark;
-    border-radius: $radius;
-}
 
 // MARGIN 
 
-.margin {
-    margin: 50px 0;
+.marg {
+    margin: $r-two 0;
 }
 
-.simple-margin {
-    margin-top: $size-sixty;
+.marg-top {
+    margin-top: $r-two;
+}
 
+.marg-top-mobile {
     @media screen and (max-width: $mobile) {
-        margin-top: $size-thirty !important;
+        margin-top: $r-two;
     }
 }
 
-.simple-margin-tablet {
-    @media screen and (max-width: $mobile) {
-        margin-top: $size-thirty !important;
-    }
-
+.marg-top-tablet {
     @media screen and (max-width: $tablet) {
-        margin-top: $size-sixty;
+        margin-top: $r-two;
     }
 }
 
-// PADDING 
-
-.without-padding {
-    padding: 0rem $size-ten !important;
+.marg-tablet {
+    @media screen and (max-width: $tablet) {
+        margin-bottom: $r-two;
+    }
 }
 
-// COLOR
+// BACKGROUND 
 
-.color-white {
-    color: $seasalt;
+.bg-white {
+    color: $dark-background;
+    background-color: $dark-text !important;
 }
 
-.color-dark {
-    color: $hunter-green;
+.bg-dark,
+.bg-primary {
+    color: $dark-text !important;
+}
+
+.bg-dark {
+    background-color: $dark-background !important;
+}
+
+.bg-primary {
+    background-color: $dark-primary !important;
+}
+
+.bg-transparent {
+    background-color: $transparent !important;
+
+    span {
+        color: rgba(255, 255, 255, 0);
+    }
+}
+
+// FONTS
+
+.subtitle {
+    color: $dark-accent;
+    font-size: $r-two;
+    @include subtitle;
+
+    @media screen and (max-width: $mobile) {
+        font-size: 1.5rem!important;
+    }
 }
