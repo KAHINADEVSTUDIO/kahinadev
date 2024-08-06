@@ -1,61 +1,100 @@
 .btn {
-    font-size: 19px !important;
-    text-transform: $uppercase;
-    padding: $size-twenty 25px;
-    font-family: $font-secondary;
-    background-color: $transparent;
-    @include button;
-    transition: $transition-normal !important;
-
-    i {
-        margin-left: $size-ten;
-    }
+    font-size: 19px;
+    font-weight: 600;
+    font-family: $base;
+    padding: 15px 30px;
+    border: $none !important;
+    border-radius: $zero !important;
+    transition: all 0.3s ease-in-out !important;
 }
 
-.btn-light {
-    border: $light-border;
-    color: $dark-text;
+.btn-round {
+    color: $secondary;
+    padding: 20px !important;
+    border: 2px solid $secondary !important;
+    border-radius: 50% !important;
 
     &:hover,
     &:focus,
     &:active {
-        color: $dark-background;
-        background-color: $dark-text !important;
+        color: $background;
+        background-color: $secondary;
     }
 }
 
-.btn-bg-accent {
-    border: $none;
-    color: $dark-background;
-    background-color: $dark-accent;
+.btn-dark {
+    color: $background;
+    background-color: $second-bg;
 
     &:hover,
     &:focus,
     &:active {
-        color: $dark-background;
-        background-color: $dark-accent;
+        color: $primary;
+        background-color: $accent;
+    }
+}
+
+.btn--secondary {
+    color: $text;
+    background-color: $secondary;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $accent;
+        background-color: $primary;
+    }
+}
+
+.btn--primary {
+    color: $accent;
+    background-color: $primary;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $text;
+        background-color: $secondary;
+    }
+}
+
+.btn-span {
+    color: $background;
+    background-color: $span;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $accent;
+        background-color: $second-bg;
+    }
+}
+
+.btn-accent {
+    color: $primary;
+    background-color: $accent;
+
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $background;
+        background-color: $text;
     }
 }
 
 .btn-max {
-    width: $p-max;
+    width: $max;
 }
 
-.btn-bg-secondary {
-    color: $dark-text;
-    border: $none;
-    background-color: $dark-secondary;
-}
-
-.btn-bg-dark {
-    border: $none;
-    color: $dark-text;
-    background-color: $dark-background;
+.btn-border-light {
+    color: $secondary;
+    border: 2px solid $secondary !important;
 
     &:hover,
     &:focus,
     &:active {
-        color: $dark-text;
-        background-color: $dark-background;
+        color: $text;
+        background-color: $secondary;
     }
 }

@@ -1,0 +1,35 @@
+.accordion {
+    .accordion-item {
+        border: $none !important;
+        margin-bottom: 2rem !important;
+        background-color: $transparent !important;
+
+        .accordion-header {
+            border: 1px solid $background !important;
+            background-color: $transparent !important;
+
+            button {
+                color: $background !important;
+                padding: 34px 50px;
+                background-color: $transparent !important;
+            
+                @media screen and (max-width: $mobile) {
+                    padding: 34px !important;
+                }
+
+                &::after {
+                    content: $none !important;
+                }
+            }
+        }
+
+        .accordion-body {
+            border-top: $none !important;
+            padding: 3rem 1rem 1rem 1rem;
+
+            p {
+                color: $background !important;
+            }
+        }
+    }
+}

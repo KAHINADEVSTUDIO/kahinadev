@@ -1,65 +1,39 @@
-// DARK THEME 
-
-$dark-text: #F6F6F6;
-$dark-background: #101910;
-$dark-primary: #395639;
-$dark-secondary: #496e49;
-$dark-accent: #85ad85;
-
 // FONTS 
 
-$font-base: "Hind Madurai", sans-serif;
-$font-primary: "Montserrat", sans-serif;
-$font-secondary: "Ropa Sans", sans-serif;
+$base: "Tajawal", sans-serif;
+$title: "Arima", system-ui;
+$signing: "Grand Hotel", cursive;
 
-// MEDIA QUERIES 
+// COLORS
 
-$mobile: 578px;
-$small-tablet: 769px;
-$tablet: 1024px;
-$desktop: 1480px;
+$text: #3a2d32; 
+$background: #F5F5F5; 
+$primary: #ae979b; 
+$secondary: #dbb4ad; 
+$accent: #ffe3dc;
 
-// DISPLAY 
+// SECOND 
 
-$none: none;
-$flex: flex;
-$block: block;
-$contents: contents;
+$second-bg: #24181d;
+$span: #5d4b59;
 
 // SIZE 
 
-$size-zero: 0px;
-$size-five: 5px;
-$size-ten: 10px;
-$size-twenty: 20px;
-$size-thirty: 30px;
-$size-sixty: 60px;
+$zero: 0; 
 
-// SIZE REM 
+// WIDTH 
 
-$r-one: 1rem;
-$r-two: 2rem;
-$r-five: 5rem;
-$r-ten: 10rem;
+$max: 100%;
 
-// HEIGHT & WIDTH 
+// IMAGE 
 
-$vh-max: 100vh;
-$p-max: 100%;
+$cover: cover;
 
-// AUTO 
+// DISPLAY 
 
-$auto: auto;
-
-// TEXT TRANSFORM 
-
-$lowercase: lowercase;
-$uppercase: uppercase;
-$capitalize: capitalize;
-
-// SPACING 
-
-$spacing: 1px;
+$none: none; 
+$flex: flex;
+$block: block;
 
 // POSITION 
 
@@ -67,36 +41,29 @@ $fixed: fixed;
 $absolute: absolute;
 $relative: relative;
 
-// RADIUS 
+// OVERFLOW 
 
-$radius: 20rem;
-$second-radius: 1rem;
+$hidden: hidden;
 
+// MEDIA QUERIES
+
+$mobile: 578px;
+$small-tablet: 769px;
+$tablet: 1024px;
+$desktop: 1480px;
+
+// TRANSFORM 
+
+$uppercase: uppercase;
+
+// JUSTIFY CONTENT 
+
+$space-between: space-between;
 
 // ALIGN 
 
 $center: center;
 
-// HIDDEN 
-
-$hidden: hidden;
-
-// CONTENT 
-
-$space-between: space-between;
-
-// BACKGROUND
+// TRANSPARENT
 
 $transparent: transparent;
-
-// BORDER DARK THEME
-
-$light-border: 1px solid $dark-text;
-$dark-border: 1px solid $dark-background;
-$second-light-border: 2px solid $dark-text;
-$second-dark-border: 2px solid $dark-background;
-
-// TRANSITION 
-
-$bg-transition: background-color 0.3s ease;
-$transition-normal: all 0.5s ease;

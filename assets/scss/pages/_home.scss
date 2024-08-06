@@ -1,29 +1,142 @@
-.introduction {
-    .subtitle {
-        margin-top: 15rem;
+.home {
+    .background--width {
+        background: $second-bg;
+        width: 30%;
+        position: absolute;
+        top: 0px;
+        left: 37%;
+        height: 100%;
+        z-index: -3;
 
         @media screen and (max-width: $mobile) {
-            margin-top: $r-five !important;
+            left: 30% !important;
+            width: 40% !important;
+            height: 50% !important;
+        }
+
+        @media screen and (max-width: $tablet) {
+            height: 70%;
+        }
+
+        .width {
+            opacity: 0;
         }
     }
 
-    h2 {
-        font-size: 250px;
+    p {
+        padding-right: 25rem;
 
+        @media screen and (max-width: $tablet) {
+            padding-right: $zero !important;
+        }
+    }
+
+    .title {
         @media screen and (max-width: $mobile) {
-            font-size: 80px !important;
+            margin-top: 3rem !important;
         }
 
-        @media screen and (max-width: $desktop) {
-            font-size: 160px;
+        @media screen and (max-width: $tablet) {
+            margin-top: 8rem;
+        }
+    }
+
+    .me {
+        @media screen and (max-width: $mobile) {
+            margin-top: -2rem !important;
+            width: 98% !important;
+        }
+
+        @media screen and (max-width: $tablet) {
+            width: 96%;
+        }
+    }
+
+    .infos {
+        position: relative;
+        margin-top: -20rem;
+        margin-left: -8rem;
+
+        @media screen and (max-width: $mobile) {
+            margin-top: -6rem !important;
+            margin-left: -1rem !important;
+            margin-bottom: 0rem !important;
+        }
+
+        @media screen and (max-width: $tablet) {
+            margin-left: $zero;
+            margin-bottom: 8rem;
+        }
+
+        .location {
+            margin-left: 10%;
+        }
+    }
+}
+
+.portfolio {
+    .title {
+        margin-bottom: 2rem;
+    }
+}
+
+.about {
+    .img-me {
+        height: 70vh;
+        z-index: -3;
+        position: $relative;
+    }
+
+    .sign {
+        margin-top: -4rem;
+
+        @media screen and (max-width: $mobile) {
+            margin-top: -2.3rem !important;
+            font-size: 4rem !important;
+        }
+
+        @media screen and (max-width: $tablet) {
+            margin-top: -9%;
+        }
+    }
+
+    .btn-round {
+        width: 7%;
+        position: $absolute;
+        margin-left: -3%;
+        margin-top: -3%;
+
+        @media screen and (max-width: $mobile) {
+            width: 40% !important;
+            margin-top: -10% !important;
+        }
+
+        @media screen and (max-width: $tablet) {
+            width: 20%;
+        }
+    }
+
+    .content {
+        padding-left: 2rem;
+
+        @media screen and (max-width: $mobile) {
+            padding-top: 2rem !important;
+            padding-left: $zero !important;
         }
     }
 }
 
 .contact {
-    h3 {
-        @media screen and (max-width: $mobile) {
-            font-size: 55px !important;
+    ul {
+        li {
+            a {
+                text-align: $center;
+                padding: 20px;
+
+                i {
+                    margin-right: 10px;
+                }
+            }
         }
     }
 }

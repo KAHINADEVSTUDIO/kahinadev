@@ -1,83 +1,74 @@
-.presentation,
-.project-introduction,
-.concept {
+.project-name {
+    padding: 5rem $zero !important;
+}
 
-    h1,
-    h2,
-    .h3 {
-        font-size: 80px;
-
+.project-name {
+    h1 {
         @media screen and (max-width: $mobile) {
-            font-size: 32px !important;
-        }
-
-        @media screen and (max-width: $tablet) {
-            font-size: 60px;
+            font-size: 2.7rem !important;
+            margin-top: 5px;
         }
     }
 }
 
-.presentation {
-    padding-top: 5rem;
+.banner {
+    padding: $zero $zero 10rem $zero;
 
     @media screen and (max-width: $mobile) {
-        padding-top: 8rem !important;
+        padding: $zero $zero 5rem $zero !important;
     }
 
-    @media screen and (max-width: $tablet) {
-        padding-top: 10rem;
+    .image-ban {
+        padding: $zero !important;
     }
 
-    .subtitle {
-        font-size: 17px;
-        color: $dark-green;
-        padding-bottom: 0.5rem;
-        border-bottom: 1px solid $dark-green;
+    .project-category {
+        margin-top: 35%;
+        position: $relative !important;
+        margin-left: -30%;
+
+        @media screen and (max-width: $mobile) {
+            margin-left: 2% !important;
+            margin-top: -8% !important;
+        }
+
+        .second {
+            margin-left: 5%;
+        }
+
+        .third {
+            margin-left: 10%;
+        }
     }
+
+    p {
+        padding: 10rem $zero $zero $zero;
+
+        @media screen and (max-width: $mobile) {
+            padding: 0rem 1rem 0rem 1rem !important;
+        }
+
+        @media screen and (max-width: $tablet) {
+            padding: 5rem $zero $zero $zero;
+        }
+    }
+}
+
+.image-logo {
+    text-align: $center;
 
     img {
+        width: 50%;
+
         @media screen and (max-width: $tablet) {
-            height: 50vh !important;
-        }
-    }
-
-    .img-one {
-        height: 41vh;
-    }
-
-    .img-two {
-        height: 100vh;
-    }
-}
-
-.project-introduction {
-    h2 {
-        font-size: 40px;
-    }
-
-    h3 {
-        @media screen and (max-width: $mobile) {
-            font-size: 25px !important;
-            margin-top: $size-thirty;
+            width: $max !important;
         }
     }
 }
 
-.charter {
-    .color {
-        height: 30vh;
+.comparison,
+.project-images {
+    .title {
+        margin-bottom: 4rem;
     }
-
-    a {
-        .meaning {
-            margin-top: 6rem;
-            margin-left: 2rem;
-            position: $absolute;
-            font-family: $font-base;
-        }
-    }
-}
-
-.next-project {
-    padding-bottom: 5rem;
 }

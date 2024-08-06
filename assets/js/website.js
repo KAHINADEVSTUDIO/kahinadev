@@ -1,39 +1,48 @@
-// SIDEBAR 
+// BURGER ANIMATION 
 
-document.addEventListener("DOMContentLoaded", () => {
-    const openButton = document.getElementById("open-sidenav");
-    const closeButton = document.getElementById("close-sidenav");
-    const sidenav = document.getElementById("sidenav");
+const btnMenu = document.querySelector("#button-menu"); 
 
-    openButton.addEventListener("click", () => {
-        sidenav.classList.add("open");
-    });
-
-    closeButton.addEventListener("click", () => {
-        sidenav.classList.remove("open");
-    });
-
+btnMenu.addEventListener("click", () => {
+    btnMenu.classList.toggle("active");
 });
 
-// HEADER
+const sidebar = document.getElementById("sidebar");
+const toggleBtn = document.getElementById("button-menu");
 
-window.onscroll = function () { 
-    scrollFunction(); 
+const toggleSidebar = () => {
+
+    const isClosed = sidebar.style.width === '0px' || !sidebar.style.width;
+    sidebar.style.width = isClosed ? '380px' : '0px';
+
 };
 
-var header = document.getElementById("header");
-var sticky = header.offsetTop; 
+toggleBtn.addEventListener("click", toggleSidebar);
 
-function scrollFunction() {
+// BUTTON FIXED & TOP
 
-    if(window.pageYOffset > sticky) {
+let topButton = document.getElementById("top");
+let sidebarButton = document.getElementById("button-menu"); 
 
-        header.classList.add("fixed");
+let sidebarOffsetTop = sidebarButton.offsetTop; 
 
+function handleScroll() {
+    
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        topButton.style.display = "block";
     } else {
-
-        header.classList.remove("fixed");
-
+        topButton.style.display = "none";
     }
 
+    if (window.pageYOffset >= sidebarOffsetTop) {
+        sidebarButton.style.position = "fixed";
+        sidebarButton.style.top = "10px";
+        sidebarButton.classList.add("button-fixed");
+
+    } else {
+        sidebarButton.style.position = "relative";
+        sidebarButton.style.top = "";
+        sidebarButton.classList.remove("button-fixed");
+    }
 }
+
+window.onscroll = handleScroll;

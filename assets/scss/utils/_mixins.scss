@@ -1,58 +1,7 @@
-@mixin title {
-    font-weight: 700;
-    letter-spacing: $spacing;
-    text-transform: $uppercase;
-    font-family: $font-primary;
-}
-
-@mixin link {
-    color: $dark-background;
-    font-weight: 400;
-    letter-spacing: $spacing;
-    text-transform: $uppercase;
-    transition: all 0.5s ease !important;
-    font-family: $font-base;
-}
-
-@mixin text {
-    font-size: 30px;
-    font-weight: 300;
-    letter-spacing: $spacing;
-    font-family: $font-base;
-
-    @media screen and (max-width: $mobile) {
-        font-size: 25px !important;
-    }
-}
-
-@mixin button {
-    border: $dark-border;
-    border-radius: $radius;
-}
-
-@mixin font {
-    text-transform: $uppercase;
-    font-family: $font-secondary;
-}
-
-@mixin list {
-    display: $flex;
+@mixin link-menu {
+    color: $background;
     font-size: 25px;
-    text-decoration: $none;
-    justify-content: $space-between;
-
-    @media screen and (max-width: $mobile) {
-        font-size: $size-twenty !important;
-    }
-}
-
-@mixin subtitle {
-    font-weight: 400;
-    text-transform: $capitalize;
-    font-family: $font-secondary !important;
-}
-
-@mixin img-card {
-    filter: grayscale(0);
-    transform: scale(1.1);
+    position: $relative;
+    font-family: $title;
+    transition: colors 0.3s ease-in-out;
 }

@@ -1,187 +1,150 @@
 .header {
-    transition: top 0.3s ease;
-    padding: .5rem .5rem .5rem 0rem !important;
+    .menu-header {
+        width: $max !important;
+    }
 
-    .navbar {
-        display: $contents;
-
-        .navbar-brand {
-            img {
-                width: $p-max;
-                height: $auto;
-                border-radius: $size-zero !important;
-
-                @media screen and (max-width: $mobile) {
-                    width: 14%;
-                }
-            }
-        }
-
-        .menu-one,
-        .menu-two {
-            display: $flex;
-
-            .nav-lang,
-            .menu-btn {
-                @media screen and (max-width: $mobile) {
-                    padding: $size-ten $size-twenty !important;
-                }
-            }
-
-            .nav-lang,
-            .menu-btn,
-            .close {
-                font-weight: 700;
-                border: $none !important;
-                overflow: $hidden;
-                @include font;
-                font-size: 14px;
-                margin-top: auto;
-                padding: $size-ten $size-thirty;
-                border-radius: $radius;
-            }
-
-            .menu-btn,
-            .close {
-                transition: $bg-transition;
-
-                i {
-                    font-size: $size-twenty;
-                    margin-right: 5px;
-                }
-            }
-
-            .nav-lang {
-                color: $dark-background;
-                margin-right: $size-ten;
-                background-color: $dark-text;
-            }
-
-            .nav-lang,
-            .close {
-
-                @media screen and (max-width: $mobile) {
-                    font-size: 18px !important;
-                }
-            }
-
-            .menu-btn {
-                i {
-                    @media screen and (max-width: $mobile) {
-                        margin-right: $size-zero !important;
-                        font-size: 15px !important;
-                    }
-                }
-            }
-
-        }
-
-        .menu-two {
+    .navbar-brand {
+        .logo {
+            width: 15%;
 
             @media screen and (max-width: $mobile) {
-                right: $r-one;
-                margin-top: $size-zero !important;
-                position: $absolute;
-            }
-
-            .nav-lang {
-                @media screen and (max-width: $mobile) {
-                    padding: 8px 30px !important;
-                }
+                width: 28% !important;
             }
         }
     }
 
-
-    .open {
-        width: 100%;
-
-        @media screen and (min-width: $mobile) {
-            width: 80%;
+    .lang {
+        a {
+            color: $primary;
+            font-weight: 600;
+            margin-right: 10px;
+            text-transform: $uppercase;
+            font-family: $base;
         }
+    }
 
-        @media screen and (min-width: $tablet) {
-            width: 50%;
+    .btn-menu {
+        z-index: 11;
+        border: $none !important;
+        position: $relative;
+        transition: all .4s ease-in-out;
+
+        span {
+            display: block;
+            width: 28px;
+            height: 2px;
+            border-radius: 999px;
+            background-color: $primary;
+            transition: all .4s ease-in-out;
+
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    .btn-menu.active {
+        transition-delay: 0.8s;
+        transform: rotate(45deg);
+
+        span {
+
+            &:nth-child(1),
+            &:nth-child(3) {
+                transition-delay: .4s;
+            }
+
+            &:nth-child(2) {
+                width: $zero;
+            }
+
+            &:nth-child(1) {
+                transform: translateY(9px);
+            }
+
+            &:nth-child(3) {
+                transform: translateY(-9px) rotate(90deg);
+            }
         }
     }
 }
 
-.sidenav {
-    top: 0;
-    right: 0;
-    width: 0;
-    z-index: 3;
-    height: $p-max;
+.button-fixed {
+    right: 10px;
+    background-color: $span;
+
+    span {
+        background-color: $primary !important;
+    }
+}
+
+.sidebar {
+    top: $zero;
+    right: $zero;
+    height: 100%;
+    width: 0px;
+    z-index: 8;
+    position: $fixed;
     overflow-x: $hidden;
     transition: width 0.3s ease;
-    position: $fixed;
-    background-color: $dark-text;
+    background-color: $text;
 
-    .menu-sidebar {
-        padding: $r-ten $r-one;
+    .close {
+        margin-top: 1rem;
+        margin-left: 1.5rem;
+        position: $absolute;
 
-        @media screen and (max-width: $mobile) {
-            padding: $r-five $r-one;
+        span {
+            font-size: 28px;
+        }
+    }
+
+    .menu {
+        padding: 6rem 5rem;
+        text-align: center;
+
+        @media screen and (max-width: $tablet) {
+            padding: 10rem 5rem;
         }
 
-        .close {
-            color: $dark-text;
-            top: $size-twenty;
-            @include button;
-            position: $absolute;
-            background-color: $dark-background;
-        }
+        .nav-item {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
 
-        ul {
-            margin-top: $r-five;
-            text-align: center;
+            .nav-link {
+                @include link-menu;
 
-            .nav-item {
-                .nav-link {
-                    font-size: 50px;
-                    position: $relative;
-                    text-decoration: $none;
-                    @include link;
-                    transition: color 0.3s ease-in-out;
+                &::before {
+                    left: 50%;
+                    bottom: 0;
+                    height: 3px;
+                    content: '';
+                    width: 0;
+                    position: $absolute;
+                    visibility: $hidden;
+                    transform: translateX(-50%);
+                    background-color: $primary !important;
+                    transition: all 0.3s ease-in-out;
+                }
+
+                &:hover,
+                &:focus,
+                &:active {
+                    color: $primary !important;
+                    font-weight: 500;
 
                     &::before {
-                        left: 50%;
-                        bottom: 0;
-                        height: 2px;
-                        content: '';
-                        width: 0;
-                        position: $absolute;
-                        visibility: $hidden;
-                        transform: translateX(-50%);
-                        background-color: $dark-secondary !important;
-                        transition: all 0.3s ease-in-out;
-                    }
+                        width: 60%;
+                        visibility: visible;
 
-                    &:hover,
-                    &:focus,
-                    &:active {
-                        color: $dark-secondary !important;
+                        @media screen and (max-width: $mobile) {
+                            width: 30% !important;
 
-                        &:before {
-                            visibility: visible;
-                            width: 50%;
                         }
-                    }
-
-                    @media screen and (max-width: $mobile) {
-                        font-size: 50px !important;
                     }
                 }
             }
         }
     }
-}
-
-.header.fixed {
-    top: 0;
-    z-index: 12;
-    width: $p-max;
-    position: $fixed;
-    transition: all top 0.3s ease-in-out;
-    background-color: $dark-background;
 }
