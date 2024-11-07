@@ -11,7 +11,6 @@ I'm a developer passionate about creating interactive and functional websites an
     - PHP / MYSQL 
     - SASS / BOOTSTRAP 
     - SYMFONY / SHOPIFY 
-    - WORDPRESS
 
 You can find all my projects on my portfolio: https://kahinadev.github.io/kahinadev/
 

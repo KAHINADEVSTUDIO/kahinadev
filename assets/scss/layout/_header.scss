@@ -1,150 +1,186 @@
 .header {
-    .menu-header {
-        width: $max !important;
+    padding: 20px 0px;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        padding: 10px 0px !important;
     }
 
-    .navbar-brand {
-        .logo {
-            width: 15%;
+    // Container
 
-            @media screen and (max-width: $mobile) {
-                width: 28% !important;
+    .container {
+        @media screen and (max-width: $breakpoint-mobile) {
+            flex-direction: row-reverse !important;
+        }
+    }
+
+    // Brand 
+
+    .brand {
+        @media screen and (max-width: $breakpoint-mobile) {
+            width: 86%;
+        }
+
+        .website-name {
+            margin-top: 8%;
+            @include brand;
+        }
+    }
+
+    // Toggler 
+
+    .toggler-menu {
+        padding: 10px;
+        background-color: $background-smoke;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $background-gold;
+            transition: $transition-ease-in-out !important;
+
+            .bars {
+                background-color: $background-smoke !important;
+            }
+
+            .second-bars {
+                width: $width-bars-menu !important;
+                transition: $transition-ease-in-out !important;
+            }
+        }
+
+        @media screen and (max-width: $breakpoint-mobile) {
+            margin-right: 5px;
+        }
+
+        .toggler-bars {
+            width: $width-bars-menu;
+
+            .bars {
+                height: 2px;
+                width: $width-bars-menu;
+                display: $display-flex;
+                flex-direction: $direction-column;
+                background-color: $background-eerie;
+
+                &:not(:last-child) {
+                    margin-bottom: 5px;
+                }
+            }
+
+            .second-bars {
+                width: $width-bars-second;
             }
         }
     }
 
-    .lang {
-        a {
-            color: $primary;
-            font-weight: 600;
-            margin-right: 10px;
-            text-transform: $uppercase;
-            font-family: $base;
-        }
-    }
+    // Languages 
 
-    .btn-menu {
-        z-index: 11;
-        border: $none !important;
-        position: $relative;
-        transition: all .4s ease-in-out;
+    .languages {
+        margin-top: 1%;
 
-        span {
-            display: block;
-            width: 28px;
-            height: 2px;
-            border-radius: 999px;
-            background-color: $primary;
-            transition: all .4s ease-in-out;
+        .btn-languages {
+            padding: 10px 15px;
+            border: 1px solid $color-smoke;
 
-            &:not(:last-child) {
-                margin-bottom: 8px;
+            @media screen and (max-width: $breakpoint-mobile) {
+                position: $position-fixed;
+                bottom: 10px;
+                left: 10px;
+            }
+
+            .flag {
+                @media screen and (max-width: $breakpoint-mobile) {
+                    display: $display-none;
+                }
             }
         }
-    }
 
-    .btn-menu.active {
-        transition-delay: 0.8s;
-        transform: rotate(45deg);
+        .flag {
+            width: 20px;
+        }
 
-        span {
+        .name-flag {
+            font-size: 15px;
+            margin-left: 5px;
+            margin-right: 2px;
+            text-transform: $text-transform-uppercase;
+            font-family: $font-text;
+        }
 
-            &:nth-child(1),
-            &:nth-child(3) {
-                transition-delay: .4s;
-            }
+        .dropdown-menu.show {
+            border: none;
+            border-radius: 0px;
 
-            &:nth-child(2) {
-                width: $zero;
-            }
+            .dropdown-item {
 
-            &:nth-child(1) {
-                transform: translateY(9px);
-            }
+                &:hover,
+                &:active,
+                &:focus {
+                    span {
+                        color: $color-gold !important;
+                    }
 
-            &:nth-child(3) {
-                transform: translateY(-9px) rotate(90deg);
+                    background-color: $background-transparent;
+                }
             }
         }
-    }
-}
-
-.button-fixed {
-    right: 10px;
-    background-color: $span;
-
-    span {
-        background-color: $primary !important;
     }
 }
 
 .sidebar {
-    top: $zero;
-    right: $zero;
-    height: 100%;
-    width: 0px;
-    z-index: 8;
-    position: $fixed;
-    overflow-x: $hidden;
+    top: $initial;
+    left: $initial;
+    height: $width-max;
+    width: 0;
+    position: $position-fixed;
+    overflow-x: $overflow-hidden;
     transition: width 0.3s ease;
-    background-color: $text;
+    background-color: $background-smoke;
+
+    .img-sidebar {
+        z-index: -99;
+        min-height: 100vh;
+        position: $position-absolute;
+    }
 
     .close {
-        margin-top: 1rem;
-        margin-left: 1.5rem;
-        position: $absolute;
+        font-size: 20px;
+        margin-top: 2rem;
+        margin-left: 2rem;
+        padding: 10px;
+        position: $position-absolute;
+        background-color: $background-eerie;
 
-        span {
-            font-size: 28px;
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $background-gold;
+            transition: $transition-ease-in-out !important;
+
+            i {
+                color: $color-smoke;
+            }
+        }
+
+        i {
+            color: $color-smoke;
         }
     }
 
     .menu {
-        padding: 6rem 5rem;
+        padding: 5rem 5rem;
         text-align: center;
 
-        @media screen and (max-width: $tablet) {
-            padding: 10rem 5rem;
+        @media screen and (max-width: $breakpoint-mobile) {
+            padding: 10rem 1rem !important;
         }
 
-        .nav-item {
-            &:not(:last-child) {
-                margin-bottom: 10px;
-            }
+        @media screen and (max-width: $breakpoint-tablet) {
+            padding: 10rem 2rem;
+        }
 
-            .nav-link {
-                @include link-menu;
-
-                &::before {
-                    left: 50%;
-                    bottom: 0;
-                    height: 3px;
-                    content: '';
-                    width: 0;
-                    position: $absolute;
-                    visibility: $hidden;
-                    transform: translateX(-50%);
-                    background-color: $primary !important;
-                    transition: all 0.3s ease-in-out;
-                }
-
-                &:hover,
-                &:focus,
-                &:active {
-                    color: $primary !important;
-                    font-weight: 500;
-
-                    &::before {
-                        width: 60%;
-                        visibility: visible;
-
-                        @media screen and (max-width: $mobile) {
-                            width: 30% !important;
-
-                        }
-                    }
-                }
-            }
+        .nav-link {
+            @include links;
         }
     }
 }

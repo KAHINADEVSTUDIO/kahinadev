@@ -1,0 +1,27 @@
+@import "../base/typography.scss";
+
+* {
+    margin: $initial;
+    padding: $initial;
+    cursor: pointer;
+    scroll-behavior: smooth;
+    box-sizing: $border-box;
+}
+
+body {
+    font-family: $font-text;
+    background-color: $background-eerie;
+
+    img {
+        width: $width-max;
+        object-fit: cover;
+    }
+
+    section {
+        padding: 10rem 0rem;
+
+        @media screen and (max-width: $breakpoint-tablet-sm) {
+            padding: 5rem 1rem;
+        }
+    }
+}

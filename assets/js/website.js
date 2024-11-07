@@ -1,22 +1,15 @@
-// BURGER ANIMATION 
+// Sidebar
 
-const btnMenu = document.querySelector("#button-menu"); 
+const sidenav = document.getElementById("sidebar");
 
-btnMenu.addEventListener("click", () => {
-    btnMenu.classList.toggle("active");
-});
-
-const sidebar = document.getElementById("sidebar");
-const toggleBtn = document.getElementById("button-menu");
-
-const toggleSidebar = () => {
-
-    const isClosed = sidebar.style.width === '0px' || !sidebar.style.width;
-    sidebar.style.width = isClosed ? '380px' : '0px';
-
+const openNav = () => {
+  sidenav.style.width = "100%";
 };
 
-toggleBtn.addEventListener("click", toggleSidebar);
+const closeNav = () => {
+  sidenav.style.width = "0";
+};
+
 
 // BUTTON FIXED & TOP
 

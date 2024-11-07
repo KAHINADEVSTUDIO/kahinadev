@@ -1,0 +1,50 @@
+// Colors 
+
+.color-smoke {
+    color: $color-smoke !important;
+}
+
+.color-gold {
+    color: $color-gold !important;
+}
+
+.color-turkey {
+    color: $color-turkey !important;
+}
+
+.color-falu {
+    color: $color-falu !important;
+}
+
+.color-eerie {
+    color: $color-eerie !important;
+}
+
+// Background 
+
+.background-smoke {
+    background-color: $background-smoke;
+}
+
+.background-gold {
+    background-color: $background-gold;
+}
+
+.background-turkey {
+    background-color: $background-turkey;
+}
+
+.background-falu {
+    background-color: $background-falu;
+}
+
+.background-eerie {
+    background-color: $background-eerie;
+}
+
+// Space 
+
+.flex-between {
+    display: $display-flex;
+    justify-content: $space-between;
+}

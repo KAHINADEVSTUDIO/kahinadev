@@ -1,16 +1,10 @@
-body {
-    font-family: $base;
-    font-weight: 400;
-}
+// Fonts 
 
-h1,
-h2,
-h3,
-h4 {
-    max-width: $max;
-    color: $primary;
-    word-wrap: break-word;
-}
+$font-title: "Italiana", serif;
+$font-subtitle: "Montaga", serif;
+$font-text: "Montserrat", sans-serif;
+
+// Titles 
 
 h1,
 h2,
@@ -18,64 +12,53 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $title;
-    font-weight: 500;
-}
-
-html {
-    font-size: 100%;
+    font-weight: 400;
+    width: $width-max;
+    word-wrap: break-word;
+    font-family: $font-title;
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 54px;
 
-    @media screen and (max-width: $tablet) {
-        font-size: 3rem !important;
+    @media screen and (max-width: $breakpoint-mobile) {
+        font-size: 34px !important;
     }
 }
 
 h2 {
-    font-size: 3.9rem;
+    font-size: 52px;
 
-    @media screen and (max-width: $tablet) {
-        font-size: 2.8rem !important;
+    @media screen and (max-width: $breakpoint-mobile) {
+        font-size: 33px !important;
     }
 }
 
 h3 {
-    font-size: 3.8rem;
+    font-size: 50px;
 
-    @media screen and (max-width: $tablet) {
-        font-size: 2.7rem !important;
+    @media screen and (max-width: $breakpoint-mobile) {
+        font-size: 32px !important;
     }
 }
 
 h4 {
-    font-size: 1.777rem;
+    font-size: 48px;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        font-size: 33px !important;
+    }
 }
 
-h5 {
-    font-size: 1.333rem;
-    /* 21.28px */
+.subtitle {
+    font-size: 15px !important;
+    font-weight: 700;
+    letter-spacing: $spacing-xs;
+    font-family: $font-subtitle;
+    text-transform: $text-transform-uppercase;
 }
 
-small {
-    font-size: 0.750rem;
-    /* 12px */
-}
-
-p,
-a {
-    font-size: 1.2rem;
-    font-weight: 300;
-    letter-spacing: 0.6px;
-    font-family: $base;
-}
-
-a {
-    text-decoration: $none;
-}
-
-strong {
-    font-weight: 600;
+p {
+    font-size: $font-size-text;
+    font-family: $font-text;
 }

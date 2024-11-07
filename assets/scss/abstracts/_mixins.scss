@@ -1,0 +1,38 @@
+// Title 
+
+@mixin title {
+    text-transform: $text-transform-uppercase;
+    font-family: $font-title;
+}
+
+// Brand 
+
+@mixin brand {
+    font-weight: 800;
+    font-size: $size-website-name-desktop;
+    @include title;
+}
+
+// Links 
+
+@mixin links {
+    font-size: 100px;
+    letter-spacing: $spacing-s;
+    @include title;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        font-size: 40px !important;
+    }
+
+    @media screen and (max-width: $breakpoint-tablet) {
+        font-size: 80px;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color-gold;
+        font-style: italic;
+        transition: $transition-ease-in-out !important;
+    }
+}
