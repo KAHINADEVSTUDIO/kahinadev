@@ -36,3 +36,11 @@
         transition: $transition-ease-in-out !important;
     }
 }
+
+// Languages 
+
+@mixin languages {
+    color: $color-smoke;
+    padding: 10px 15px;
+    border: 1px solid $color-smoke;
+}

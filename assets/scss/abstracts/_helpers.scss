@@ -1,3 +1,5 @@
+@import "../base/typography.scss";
+
 // Colors 
 
 .color-smoke {
@@ -23,7 +25,7 @@
 // Background 
 
 .background-smoke {
-    background-color: $background-smoke;
+    background-color: $background-smoke !important;
 }
 
 .background-gold {
@@ -47,4 +49,78 @@
 .flex-between {
     display: $display-flex;
     justify-content: $space-between;
+}
+
+// Line 
+
+.line-with-number {
+    font-size: 27px;
+    align-items: center;
+    text-align: center;
+    display: $display-flex;
+    color: $color-smoke;
+    font-family: $font-subtitle;
+
+    &::after {
+        content: "";
+        flex: 1;
+        margin: 0 10px;
+        border-bottom: 3px solid $color-gold;
+    }
+}
+
+// Margin 
+
+.margin-xs {
+    margin-top: $margin-xs;
+}
+
+.margin-s {
+    margin-top: $margin-s;
+}
+
+.margin-m {
+    margin-top: $margin-m;
+}
+
+// Padding 
+
+.padding-none {
+    padding: $padding-none !important;
+}
+
+.padding-text {
+    padding: $padding-text-desktop;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        padding: $padding-content-mobile !important;
+    }
+
+    @media screen and (max-width: $breakpoint-tablet) {
+        padding: $padding-content-tablet;
+    }
+}
+
+.padding-right {
+    padding-right: $padding-right;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        padding-right: $initial !important;
+    }
+}
+
+.padding-right-none-tablet {
+    @media screen and (max-width: $breakpoint-tablet) {
+        padding-right: $initial !important;
+    }
+}
+
+// Text 
+
+.justify-text {
+    text-align: $align-justify;
+}
+
+.left-text {
+    text-align: $align-left !important;
 }

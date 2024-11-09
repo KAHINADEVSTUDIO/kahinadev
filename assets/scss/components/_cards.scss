@@ -1,90 +1,109 @@
 .card {
-    border: $none;
-    border-radius: $zero !important;
+    border-radius: $initial !important;
+    background-color: $background-transparent;
 }
 
 .card-service {
-    height: 62vh;
-    background-color: transparent;
+    padding: 10rem 2rem;
+    border: $border-smoke;
 
-    img {
-        height: 62vh;
-
-        @media screen and (max-width: $mobile) {
-            height: 65vh !important;
-        }
-    }
-
-    .icon-service {
-        width: 20%;
-        padding: 20px;
-        margin-top: 1rem;
-        margin-left: 1rem;
-        text-align: $center;
-        position: $absolute;
-
-        .icon {
-            font-size: 25px;
-        }
-    }
-
-    &:hover,
-    &:focus,
-    &:active {
-        .text-content {
-            opacity: 1 !important;
-            transition: all 0.3s ease-in-out !important;
-        }
-    }
-
-    .content {
-        color: $background;
-        margin-top: -3rem;
-        margin-left: 1rem;
-
-        .text-content {
-            top: 0;
-            padding: 2rem;
-            height: 62vh;
-            opacity: 0;
-            position: $absolute;
-            transition: all 0.3s ease-in-out !important;
-            margin-left: -1rem !important;
-
-            @media screen and (max-width: $mobile) {
-                height: 73vh !important;
-
-                p {
-                    font-size: 1rem !important;
-                }
-            }
-        }
+    h3 {
+        color: $color-smoke;
+        font-size: 20px !important;
     }
 }
 
-.card-portfolio {
-    background-color: $transparent !important;
+.card-project {
+    border: $border-none !important;
 
-    .name {
-        color: $background;
-        position: $absolute;
-        padding: 20px;
-        margin-left: -1rem;
-        margin-top: 3rem;
-        background-color: $secondary;
-
-        @media screen and (max-width: $mobile) {
-            margin-left: -1rem !important;
-        }
+    h3 {
+        padding: 2rem;
+        background-color: $background-smoke;
     }
 }
 
-.card-goal {
-    padding: 2rem;
-}
+// .card-service {
+//     height: 62vh;
+//     background-color: transparent;
+
+//     img {
+//         height: 62vh;
+
+//         @media screen and (max-width: $mobile) {
+//             height: 65vh !important;
+//         }
+//     }
+
+//     .icon-service {
+//         width: 20%;
+//         padding: 20px;
+//         margin-top: 1rem;
+//         margin-left: 1rem;
+//         text-align: $center;
+//         position: $absolute;
+
+//         .icon {
+//             font-size: 25px;
+//         }
+//     }
+
+//     &:hover,
+//     &:focus,
+//     &:active {
+//         .text-content {
+//             opacity: 1 !important;
+//             transition: all 0.3s ease-in-out !important;
+//         }
+//     }
+
+//     .content {
+//         color: $background;
+//         margin-top: -3rem;
+//         margin-left: 1rem;
+
+//         .text-content {
+//             top: 0;
+//             padding: 2rem;
+//             height: 62vh;
+//             opacity: 0;
+//             position: $absolute;
+//             transition: all 0.3s ease-in-out !important;
+//             margin-left: -1rem !important;
+
+//             @media screen and (max-width: $mobile) {
+//                 height: 73vh !important;
+
+//                 p {
+//                     font-size: 1rem !important;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// .card-portfolio {
+//     background-color: $transparent !important;
+
+//     .name {
+//         color: $background;
+//         position: $absolute;
+//         padding: 20px;
+//         margin-left: -1rem;
+//         margin-top: 3rem;
+//         background-color: $secondary;
+
+//         @media screen and (max-width: $mobile) {
+//             margin-left: -1rem !important;
+//         }
+//     }
+// }
+
+// .card-goal {
+//     padding: 2rem;
+// }
 
 
-.card-logo {
-    text-align: $center;
-    background-color: $transparent !important;
-}
+// .card-logo {
+//     text-align: $center;
+//     background-color: $transparent !important;
+// }

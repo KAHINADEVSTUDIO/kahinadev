@@ -65,6 +65,10 @@ $margin-m: 3rem;
 
 $padding-none: 0px;
 $padding-s: 2rem;
+$padding-right: 5rem;
+$padding-content-mobile: 5rem 5rem 0rem 5rem;
+$padding-content-tablet: 6rem 5rem;
+$padding-text-desktop: 10rem 5rem 0rem 5rem;
 
 // Flexbox & Justification 
 
@@ -82,9 +86,10 @@ $padding-moving-text: 2rem 1rem;
 
 // Text 
 
+$align-left: left;
 $align-center: center;
 $align-justify: justify;
-$font-size-text: 15px;
+$font-size-text: 17px;
 $padding-content-mobile: 1rem;
 $padding-content-desktop: 3rem;
 $text-transform-uppercase: uppercase;
@@ -99,3 +104,8 @@ $transition-ease-in-out-animation: ease-in-out;
 
 $transition-ease: $transition-all $transition-duration-five $transition-ease-animation; 
 $transition-ease-in-out: $transition-all $transition-duration-three $transition-ease-in-out-animation; 
+
+// Border
+
+$border-none: none;
+$border-smoke: 1px solid $color-smoke;

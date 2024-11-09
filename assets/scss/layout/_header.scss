@@ -35,7 +35,7 @@
         &:hover,
         &:focus,
         &:active {
-            background-color: $background-gold;
+            background-color: $background-gold !important;
             transition: $transition-ease-in-out !important;
 
             .bars {
@@ -83,45 +83,7 @@
             border: 1px solid $color-smoke;
 
             @media screen and (max-width: $breakpoint-mobile) {
-                position: $position-fixed;
-                bottom: 10px;
-                left: 10px;
-            }
-
-            .flag {
-                @media screen and (max-width: $breakpoint-mobile) {
-                    display: $display-none;
-                }
-            }
-        }
-
-        .flag {
-            width: 20px;
-        }
-
-        .name-flag {
-            font-size: 15px;
-            margin-left: 5px;
-            margin-right: 2px;
-            text-transform: $text-transform-uppercase;
-            font-family: $font-text;
-        }
-
-        .dropdown-menu.show {
-            border: none;
-            border-radius: 0px;
-
-            .dropdown-item {
-
-                &:hover,
-                &:active,
-                &:focus {
-                    span {
-                        color: $color-gold !important;
-                    }
-
-                    background-color: $background-transparent;
-                }
+                display: $display-none !important;
             }
         }
     }

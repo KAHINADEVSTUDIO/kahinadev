@@ -17,10 +17,14 @@ body {
         object-fit: cover;
     }
 
+    a {
+        text-decoration: none !important;
+    }
+
     section {
         padding: 10rem 0rem;
 
-        @media screen and (max-width: $breakpoint-tablet-sm) {
+        @media screen and (max-width: $breakpoint-tablet) {
             padding: 5rem 1rem;
         }
     }
