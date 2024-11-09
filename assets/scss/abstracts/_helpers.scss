@@ -124,3 +124,21 @@
 .left-text {
     text-align: $align-left !important;
 }
+
+// Image 
+
+.img-presentation {
+    height: 600px;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        height: 380px !important;
+    }
+}
+
+// Direction 
+
+.column-reverse-tablet {
+    @media screen and (max-width: $breakpoint-tablet) {
+        flex-direction: column-reverse !important;
+    }
+}

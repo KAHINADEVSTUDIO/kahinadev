@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
 
     <title>Accueil ~ KahinaStudio</title>
 
@@ -40,7 +41,7 @@
     <header class="header" id="header" aria-label="Header du site">
         <nav class="navbar flex-between">
             <div class="container">
-                <div class="btn toggler-menu" onclick="openNav()" aria-label="Button du menu">
+                <div class="btn toggler-menu" onclick="openNav()">
                     <span class="toggler-bars">
                         <span class="bars second-bars"></span>
                         <span class="bars"></span>
@@ -53,19 +54,19 @@
                 <ul class="list-unstyled languages">
                     <li class="nav-item dropdown">
                         <a class="nav-link btn-languages btn color-smoke dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="assets/img/icon/flag/icon-french-flag.png" class="flag" alt="Drapeau français" aria-label="Drapeau français">
+                            <img src="assets/img/icon/flag/icon-french-flag.webp" class="flag" alt="Drapeau français" aria-label="Drapeau français">
                             <span class="name-flag">Fr</span>
                         </a>
                         <ul class="dropdown-menu background-eerie">
                             <li>
-                                <a class="dropdown-item" href="index.html">
-                                    <img src="assets/img/icon/flag/icon-french-flag.png" class="flag" alt="Drapeau français" aria-label="Drapeau français">
+                                <a class="dropdown-item" href="index.html" aria-label="Français">
+                                    <img src="assets/img/icon/flag/icon-french-flag.webp" class="flag" alt="Drapeau français" aria-label="Drapeau français">
                                     <span class="name-flag color-smoke">Fr</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="english/index.html">
-                                    <img src="assets/img/icon/flag/icon-american-flag.png" class="flag" alt="Drapeau americain" aria-label="Drapeau americain">
+                                <a class="dropdown-item" href="english/index.html" aria-label="Anglais">
+                                    <img src="assets/img/icon/flag/icon-american-flag.webp" class="flag" alt="Drapeau americain" aria-label="Drapeau americain">
                                     <span class="name-flag color-smoke">En</span>
                                 </a>
                             </li>
@@ -81,12 +82,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 col-sm-12 text-center">
-                        <img src="assets/img/moi/one-me.png" class="padding-right padding-right-none-tablet" alt="Femme sur une dune dans le désert la nuit" aria-label="Femme sur une dune dans le désert la nuit">
+                        <img src="assets/img/moi/one-me.webp" class="padding-right padding-right-none-tablet aos-init aos-animation" 
+                        data-aos="fade-right" data-aos-delay="300" alt="Femme sur une dune dans le désert la nuit" aria-label="Femme sur une dune dans le désert la nuit">
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12">
-                        <div class="line-with-number margin-s">01</div>
-                        <h1 class="color-smoke margin-m">Salut ! Je suis Kahina</h1>
-                        <div class="padding-text margin-m">
+                        <div class="line-with-number margin-s aos-init aos-animation" data-aos="fade-up" 
+                        data-aos-delay="300">01</div>
+                        <h1 class="color-smoke margin-m aos-init aos-animation" data-aos="fade-up" 
+                        data-aos-delay="400">Salut ! Je suis Kahina</h1>
+                        <div class="padding-text margin-m aos-init aos-animation" data-aos="fade-up" 
+                        data-aos-delay="500">
                             <h2 class="subtitle color-smoke">Développeuse web</h2>
                             <p class="color-smoke margin-xs justify-text">
                                 Je suis une développeuse web passionnée, animée par la créativité et le désir 
@@ -105,11 +110,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="line-with-number margin-xs">02</div>
-                        <h2 class="margin-m color-smoke text-center">Services</h2>
+                        <div class="line-with-number margin-xs aos-init aos-animation" data-aos="fade-down" 
+                        data-aos-delay="300">02</div>
+                        <h2 class="margin-m color-smoke text-center aos-init aos-animation" data-aos="fade-down" 
+                        data-aos-delay="300">Services</h2>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 margin-m">
-                        <a href="developpement-web.html" class="card card-service margin-s" aria-label="Card service de développement web">
+                        <a href="developpement-web.html" class="card card-service margin-s aos-init aos-animation" 
+                        data-aos="fade-down" data-aos-delay="400" aria-label="Card service de développement web">
                             <h3 class="text-center subtitle">Développement web</h3>
                             <p class="color-smoke margin-s justify-text">
                                 Le développement web est essentiel pour la création de site web, la maintenance, 
@@ -121,7 +129,8 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 margin-m">
-                        <a href="web-design.html" class="card card-service background-smoke margin-s" aria-label="Card service de web design">
+                        <a href="web-design.html" class="card card-service background-smoke margin-s aos-init aos-animation" 
+                        data-aos="fade-down" data-aos-delay="500" aria-label="Card service de web design">
                             <h3 class="text-center subtitle color-eerie">Web design</h3>
                             <p class="color-eerie margin-s justify-text">
                                 Le web design est l'art de concevoir des expériences visuelles et interactives sur le web. 
@@ -132,7 +141,8 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 margin-m">
-                        <a href="refonte-de-site.html" class="card card-service margin-s" aria-label="Card service de refonte de site">
+                        <a href="refonte-de-site.html" class="card card-service margin-s aos-init aos-animation" 
+                        data-aos="fade-down" data-aos-delay="600" aria-label="Card service de refonte de site">
                             <h3 class="text-center subtitle">Refonte de site</h3>
                             <p class="color-smoke margin-s justify-text">
                                 La refonte de site web consiste à actualiser, améliorer et optimiser un site internet existant
@@ -149,17 +159,22 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-12">
-                        <div class="line-with-number margin-xs">03</div>
-                        <h2 class="margin-m color-smoke text-center">Sélection de mes projets</h2>
-                        <p class="color-smoke text-center">( En  cours )</p>
+                        <div class="line-with-number margin-xs aos-init aos-animation" 
+                        data-aos="fade-up" data-aos-delay="300">03</div>
+                        <h2 class="margin-m color-smoke text-center aos-init aos-animation" 
+                        data-aos="fade-up" data-aos-delay="400">Sélection de mes projets</h2>
+                        <p class="color-smoke text-center aos-init aos-animation" 
+                        data-aos="fade-up" data-aos-delay="400">( En  cours )</p>
                     </div>
                     <div class="col-md-12 margin-m">
                         <div class="row align-items-center">
                             <div class="col-lg-6 col-md-12 col-sm-12">
-                                <img src="assets/img/projects/presentation/threedragons.png" alt="Image de présentation du projet ThreeDragons" aria-label="Image de présentation du projet ThreeDragons">
+                                <img src="assets/img/projects/presentation/threedragons.webp" class="img-presentation aos-init aos-animation" 
+                                data-aos="fade-in" data-aos-delay="500" alt="Image de présentation du projet ThreeDragons" aria-label="Image de présentation du projet ThreeDragons">
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12">
-                                <div class="card card-project padding-text margin-s">
+                                <div class="card card-project padding-text margin-s aos-init aos-animation" 
+                                data-aos="fade-down" data-aos-delay="500">
                                     <h3 class="subtitle color-eerie">ThreeDragons - Web design</h3>
                                     <p class="color-smoke margin-s">
                                         Grâce à mes compétences dans le développement et web design, j’ai pu réaliser 
@@ -173,9 +188,10 @@
                         </div>
                     </div>
                     <div class="col-md-12 margin-m">
-                        <div class="row align-items-center">
+                        <div class="row align-items-center column-reverse-tablet">
                             <div class="col-lg-6 col-md-12 col-sm-12">
-                                <div class="card card-project padding-text margin-s">
+                                <div class="card card-project padding-text margin-s aos-init aos-animation" 
+                                data-aos="fade-down" data-aos-delay="600">
                                     <h3 class="subtitle color-eerie">KanirGarden- Web design</h3>
                                     <p class="color-smoke margin-s">
                                         Grâce à mes compétences dans le développement et web design, j’ai pu réaliser 
@@ -187,7 +203,8 @@
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12">
-                                <img src="assets/img/projects/presentation/kanirgarden.png" alt="Image de présentation du projet KanirGarden" aria-label="Image de présentation du projet KanirGarden">
+                                <img src="assets/img/projects/presentation/kanirgarden.webp" class="img-presentation aos-init aos-animation" 
+                                data-aos="fade-down" data-aos-delay="600" alt="Image de présentation du projet KanirGarden" aria-label="Image de présentation du projet KanirGarden">
                             </div>
                         </div>
                     </div>
@@ -199,7 +216,7 @@
     <footer class="footer" aria-label="Footer du site">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center background-eerie shadow-sm">
+                <div class="col-md-12 text-center">
                     <h6 class="color-smoke"><strong>&copy;2023 KahinaDev - Tous droits réservés</strong></h6>
                 </div>
             </div>
@@ -207,38 +224,38 @@
     </footer>
 
     <div class="sidebar" id="sidebar">
-        <img src="assets/img/background/black-grunge.png" class="img-sidebar" alt="Black grunge" aria-label="Black grunge">
+        <img src="assets/img/background/black-grunge.webp" class="img-sidebar" alt="Black grunge" aria-label="Black grunge">
         <div class="close">
             <a href="javascript:void(0)" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
         </div>
         <div class="menu">
             <ul class="list-unstyled">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link">
+                    <a href="index.html" class="nav-link" aria-label="Accueil">
                         <span class="number">01 - </span>
                         <span class="name">Accueil</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="a-propos.html" class="nav-link">
+                    <a href="a-propos.html" class="nav-link" aria-label="À propos">
                         <span class="number">02 - </span>
                         <span class="name">À propos</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="services.html" class="nav-link">
+                    <a href="services.html" class="nav-link" aria-label="Services">
                         <span class="number">03 - </span>
                         <span class="name">Services</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="portfolio.html" class="nav-link">
+                    <a href="portfolio.html" class="nav-link" aria-label="Portfolio">
                         <span class="number">04 - </span>
                         <span class="name">Portfolio</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="contact.html" class="nav-link">
+                    <a href="contact.html" class="nav-link" aria-label="Contact">
                         <span class="number">05 - </span>
                         <span class="name">Contact</span>
                     </a>
@@ -249,19 +266,19 @@
 
     <div class="choose-languages dropup">
         <button type="button" class="btn btn-languages dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="assets/img/icon/flag/icon-french-flag.png" class="flag" alt="Drapeau français" aria-label="Drapeau français">
+            <img src="assets/img/icon/flag/icon-french-flag.webp" class="flag" alt="Drapeau français" aria-label="Drapeau français">
             <span class="name-flag">Fr</span>
         </button>
         <ul class="dropdown-menu background-eerie">
             <li>
-                <a class="dropdown-item" href="index.html">
-                    <img src="assets/img/icon/flag/icon-french-flag.png" class="flag" alt="Drapeau français" aria-label="Drapeau français">
+                <a class="dropdown-item" href="index.html" aria-label="Français">
+                    <img src="assets/img/icon/flag/icon-french-flag.webp" class="flag" alt="Drapeau français" aria-label="Drapeau français">
                     <span class="name-flag color-smoke">Fr</span>
                 </a>
             </li>
             <li>
-                <a class="dropdown-item" href="english/index.html">
-                    <img src="assets/img/icon/flag/icon-american-flag.png" class="flag" alt="Drapeau americain" aria-label="Drapeau americain">
+                <a class="dropdown-item" href="english/index.html" aria-label="Anglais">
+                    <img src="assets/img/icon/flag/icon-american-flag.webp" class="flag" alt="Drapeau americain" aria-label="Drapeau americain">
                     <span class="name-flag color-smoke">En</span>
                 </a>
             </li>
@@ -269,7 +286,7 @@
     </div>      
 
     <div class="background">
-        <img src="assets/img/background/grunge.png" class="img-background" alt="Background grunge" aria-label="Background grunge">
+        <img src="assets/img/background/grunge.webp" class="img-background" alt="Background grunge" aria-label="Background grunge">
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
