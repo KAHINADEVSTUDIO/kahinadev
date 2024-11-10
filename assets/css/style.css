@@ -90,11 +90,11 @@ p {
 }
 
 .background-turkey {
-  background-color: #A30000;
+  background-color: #A30000 !important;
 }
 
 .background-falu {
-  background-color: #751A1A;
+  background-color: #751A1A !important;
 }
 
 .background-eerie {
@@ -115,6 +115,16 @@ p {
   font-family: "Montaga", serif;
 }
 .line-with-number::after {
+  content: "";
+  flex: 1;
+  margin: 0 10px;
+  border-bottom: 3px solid #E4BA4E;
+}
+
+.line-before::after {
+  flex: 0 !important;
+}
+.line-before::before {
   content: "";
   flex: 1;
   margin: 0 10px;
@@ -186,6 +196,12 @@ p {
 @media screen and (max-width: 1024px) {
   .column-reverse-tablet {
     flex-direction: column-reverse !important;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .none-mobile {
+    display: none !important;
   }
 }
 
@@ -495,21 +511,40 @@ p {
   background-color: transparent;
 }
 
-.card-service {
+.card-service,
+.card-value {
   padding: 10rem 2rem;
   border: 1px solid #f5f5f5;
 }
-.card-service h3 {
+.card-service h2,
+.card-service h3,
+.card-value h2,
+.card-value h3 {
   color: #f5f5f5;
   font-size: 20px !important;
 }
 
+.card-value .icon-value {
+  font-size: 20px;
+}
+.card-value h2 {
+  font-weight: 600 !important;
+}
+
 .card-project {
   border: none !important;
+  background-color: transparent !important;
 }
-.card-project h3 {
-  padding: 2rem;
-  background-color: #f5f5f5;
+.card-project img {
+  opacity: 0.8 !important;
+}
+.card-project .content-project {
+  position: absolute;
+  margin-top: -10%;
+  margin-left: 5%;
+}
+.card-project .content-project h3 {
+  font-weight: 800 !important;
 }
 
 .background .img-background {
@@ -585,6 +620,66 @@ p {
     bottom: 20px;
     left: 10px;
     display: block !important;
+  }
+}
+
+.passion img,
+.realization img {
+  height: 700px;
+}
+@media screen and (max-width: 567px) {
+  .passion img,
+.realization img {
+    height: 417px !important;
+  }
+}
+
+.passion {
+  margin-bottom: 10rem;
+}
+.passion .img-woman {
+  width: 35%;
+  left: 35%;
+  z-index: -9;
+  position: absolute;
+}
+@media screen and (max-width: 567px) {
+  .passion .img-woman {
+    width: 70% !important;
+    left: 17% !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .passion .img-woman {
+    height: 500px;
+    width: 56%;
+  }
+}
+.passion h1 {
+  margin-top: 8rem;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #E4BA4E;
+}
+
+.realization img {
+  position: relative;
+  margin-top: -12%;
+  z-index: -8;
+  margin-left: 5%;
+}
+@media screen and (max-width: 567px) {
+  .realization img {
+    width: 100% !important;
+    margin-top: -41% !important;
+    margin-left: 5% !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .realization img {
+    height: 550px;
+    width: 84%;
+    margin-top: -17%;
+    margin-left: 8%;
   }
 }
 

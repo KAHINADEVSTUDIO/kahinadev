@@ -33,11 +33,11 @@
 }
 
 .background-turkey {
-    background-color: $background-turkey;
+    background-color: $background-turkey !important;
 }
 
 .background-falu {
-    background-color: $background-falu;
+    background-color: $background-falu !important;
 }
 
 .background-eerie {
@@ -62,6 +62,19 @@
     font-family: $font-subtitle;
 
     &::after {
+        content: "";
+        flex: 1;
+        margin: 0 10px;
+        border-bottom: 3px solid $color-gold;
+    }
+}
+
+.line-before {
+    &::after {
+        flex: 0 !important;
+    }
+
+    &::before {
         content: "";
         flex: 1;
         margin: 0 10px;
@@ -140,5 +153,13 @@
 .column-reverse-tablet {
     @media screen and (max-width: $breakpoint-tablet) {
         flex-direction: column-reverse !important;
+    }
+}
+
+// Display 
+
+.none-mobile {
+    @media screen and (max-width: $breakpoint-mobile) {
+        display: $display-none !important;
     }
 }
