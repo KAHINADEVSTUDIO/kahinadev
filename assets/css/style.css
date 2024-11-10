@@ -513,8 +513,14 @@ p {
 
 .card-service,
 .card-value {
-  padding: 10rem 2rem;
+  padding: 8rem 2rem;
   border: 1px solid #f5f5f5;
+}
+@media screen and (max-width: 567px) {
+  .card-service,
+.card-value {
+    padding: 3rem 2rem !important;
+  }
 }
 .card-service h2,
 .card-service h3,
@@ -543,8 +549,18 @@ p {
   margin-top: -10%;
   margin-left: 5%;
 }
+@media screen and (max-width: 567px) {
+  .card-project .content-project {
+    margin-top: -15% !important;
+  }
+}
 .card-project .content-project h3 {
   font-weight: 800 !important;
+}
+@media screen and (max-width: 567px) {
+  .card-project .content-project h3 {
+    font-size: 16px !important;
+  }
 }
 
 .background .img-background {

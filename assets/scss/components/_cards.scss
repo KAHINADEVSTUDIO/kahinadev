@@ -5,8 +5,12 @@
 
 .card-service,
 .card-value {
-    padding: 10rem 2rem;
+    padding: 8rem 2rem;
     border: $border-smoke;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        padding: 3rem 2rem !important;
+    }
 
     h2,
     h3 {
@@ -38,8 +42,16 @@
         margin-top: -10%;
         margin-left: 5%;
 
+        @media screen and (max-width: $breakpoint-mobile) {
+            margin-top: -15% !important;
+        }
+
         h3 {
             font-weight: 800 !important;
+
+            @media screen and (max-width: $breakpoint-mobile) {
+                font-size: 16px !important;
+            }
         }
     }
 }
