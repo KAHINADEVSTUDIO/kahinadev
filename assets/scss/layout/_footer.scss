@@ -1,3 +1,37 @@
 .footer {
     padding: 5rem 0rem;
+    background-color: $background-night;
+
+    .flex-between {
+        padding-bottom: 20px;
+        border-bottom: $border-smoke;
+
+        .brand {
+            font-size: 22px;
+
+            @media screen and (max-width: $breakpoint-mobile) {
+                font-size: 20.5px !important;
+            }
+        }
+
+        .reseaux {
+            padding-bottom: 0px !important;
+            border-bottom: none !important;
+
+            a {
+                font-size: 18px;
+
+                &:not(:last-child) {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+
+    h6 {
+        margin-top: 2rem;
+        font-style: italic;
+        font-size: 13px;
+        text-transform: $text-transform-uppercase;
+    }
 }

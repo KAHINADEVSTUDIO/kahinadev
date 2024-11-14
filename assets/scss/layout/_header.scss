@@ -1,89 +1,122 @@
 .header {
-    padding: 20px 0px;
+    padding: 15px 0px;
+    border-bottom: $border-smoke;
 
     @media screen and (max-width: $breakpoint-mobile) {
-        padding: 10px 0px !important;
-    }
-
-    // Container
-
-    .container {
-        @media screen and (max-width: $breakpoint-mobile) {
-            flex-direction: row-reverse !important;
-        }
+        padding: 5rpx 0px !important;
     }
 
     // Brand 
 
     .brand {
-        @media screen and (max-width: $breakpoint-mobile) {
-            width: 86%;
-        }
+        font-size: 24.6px;
+        @include brand;
 
-        .website-name {
-            margin-top: 8%;
-            @include brand;
+        @media screen and (max-width: $breakpoint-mobile) {
+            font-size: 20px !important;
         }
     }
 
-    // Toggler 
+    // Languages & Toggler 
 
-    .toggler-menu {
-        padding: 10px;
-        background-color: $background-smoke;
-
-        &:hover,
-        &:focus,
-        &:active {
-            background-color: $background-gold !important;
-            transition: $transition-ease-in-out !important;
-
-            .bars {
-                background-color: $background-smoke !important;
-            }
-
-            .second-bars {
-                width: $width-bars-menu !important;
-                transition: $transition-ease-in-out !important;
-            }
-        }
+    .lang-bar {
+        display: $display-flex;
+        margin-top: 1%;
 
         @media screen and (max-width: $breakpoint-mobile) {
-            margin-right: 5px;
+            margin-top: 5% !important;
         }
 
-        .toggler-bars {
-            width: $width-bars-menu;
+        @media screen and (max-width: $breakpoint-tablet) {
+            margin-top: 2%;
+        }
 
-            .bars {
-                height: 2px;
-                width: $width-bars-menu;
-                display: $display-flex;
-                flex-direction: $direction-column;
-                background-color: $background-eerie;
+        // Languages 
 
-                &:not(:last-child) {
-                    margin-bottom: 5px;
+        .btn-languages {
+            margin-right: 15px;
+            color: $color-smoke;
+            padding: $initial !important;
+            letter-spacing: $spacing-text;
+
+            @media screen and (max-width: $breakpoint-mobile) {
+                margin-right: 8px !important;
+            }
+        }
+
+        .flag {
+            height: $height-flag;
+            width: $width-flag;
+        }
+
+        .name-flag {
+            margin: 0 5px;
+            font-weight: 300;
+            text-transform: $text-transform-uppercase;
+            font-family: $font-text;
+        }
+
+        // Dropdown of the languages 
+
+        .dropdown-menu.show {
+            margin-top: 10px;
+            border: $border-none !important;
+            border-radius: $initial !important;
+
+            .dropdown-item {
+                font-size: 13px;
+
+                &:hover,
+                &:focus,
+                &:active {
+                    padding: 10px 25px;
+                    color: $color-smoke !important;
+                    background-color: $background-coffee;
+                    transition: $transition-ease-in-out !important;
+                }
+            }
+        }
+
+        // Toggler 
+
+        .toggler-menu {
+            padding: $initial !important;
+            margin-top: 3px !important;
+
+            @media screen and (max-width: $breakpoint-tablet) {
+                margin-top: 3px !important;
+            }
+
+            &:hover,
+            &:focus,
+            &:active {
+                transition: $transition-ease-in-out !important;
+
+                .bars {
+                    background-color: $background-sugar !important;
+
+                    &:not(:last-child) {
+                        width: $width-bars-menu !important;
+                        transition: $transition-ease-in-out !important;
+                    }
                 }
             }
 
-            .second-bars {
-                width: $width-bars-second;
-            }
-        }
-    }
+            .toggler-bars {
+                width: $width-bars-menu;
 
-    // Languages 
+                .bars {
+                    height: 2px;
+                    width: $width-bars-menu;
+                    display: $display-flex;
+                    flex-direction: $direction-column;
+                    background-color: $background-smoke;
 
-    .languages {
-        margin-top: 1%;
-
-        .btn-languages {
-            padding: 10px 15px;
-            border: 1px solid $color-smoke;
-
-            @media screen and (max-width: $breakpoint-mobile) {
-                display: $display-none !important;
+                    &:not(:last-child) {
+                        margin-bottom: 5px;
+                        width: 20px;
+                    }
+                }
             }
         }
     }
@@ -94,55 +127,51 @@
     left: $initial;
     height: $width-max;
     width: 0;
+    z-index: 99;
     position: $position-fixed;
     overflow-x: $overflow-hidden;
     transition: width 0.3s ease;
     background-color: $background-smoke;
 
-    .img-sidebar {
-        z-index: -99;
-        min-height: 100vh;
-        position: $position-absolute;
-    }
-
     .close {
-        font-size: 20px;
-        margin-top: 2rem;
-        margin-left: 2rem;
-        padding: 10px;
+        top: 1rem;
+        right: 5rem;
         position: $position-absolute;
-        background-color: $background-eerie;
+        background-color: $background-night;
 
         &:hover,
         &:focus,
         &:active {
-            background-color: $background-gold;
-            transition: $transition-ease-in-out !important;
-
-            i {
-                color: $color-smoke;
-            }
+            color: $color-smoke;
+            background-color: $background-night;
         }
 
-        i {
+        @media screen and (max-width: $breakpoint-tablet) {
+            right: 1rem !important;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
             color: $color-smoke;
         }
     }
 
     .menu {
-        padding: 5rem 5rem;
-        text-align: center;
-
-        @media screen and (max-width: $breakpoint-mobile) {
-            padding: 10rem 1rem !important;
-        }
+        padding: 8rem 5rem;
 
         @media screen and (max-width: $breakpoint-tablet) {
-            padding: 10rem 2rem;
+            padding: 14rem 2rem;
         }
 
-        .nav-link {
-            @include links;
+        .nav-item {
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+
+            .nav-link {
+                @include links;
+            }
         }
     }
 }

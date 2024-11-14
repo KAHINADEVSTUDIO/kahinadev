@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
+    <meta name="description" content="Développeuse web passionnée par la création de sites sur mesure, je 
+    conçois des expériences numériques uniques qui reflètent votre identité. Découvrez mes services en 
+    développement, design web et refonte pour une présence en ligne professionnelle et captivante.">
+    <meta name="keywords" content="Développeuse web, Création de site web, Design web, Développement sur mesure, 
+    Refonte de site, Expériences numériques, Présence en ligne, Développement responsive, Site professionnel, 
+    Web design personnalisé, Développeuse web freelance, Conception de sites web, Site vitrine, Création de portfolio, 
+    Sites modernes et fonctionnels">
 
-    <title>Accueil ~ KahinaStudio</title>
+    <title>Ensemble, créons un projet qui vous ressemble ~ KahinaStudio</title>
 
     <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
@@ -28,51 +34,90 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Montaga&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Montaga&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" 
+    rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="header" id="header" aria-label="Header du site">
-        <nav class="navbar flex-between">
+        <nav class="navbar">
             <div class="container">
-                <div class="btn toggler-menu" onclick="openNav()">
-                    <span class="toggler-bars">
-                        <span class="bars second-bars"></span>
-                        <span class="bars"></span>
-                        <span class="bars second-bars"></span>
-                    </span>
-                </div>
-                <a href="index.html" class="brand text-decoration-none" aria-label="Nom du site">
-                    <p class="website-name color-smoke">Kahina Studio</p>
+                <a href="index.html" class="brand color-smoke">
+                    KahinaStudio
                 </a>
-                <ul class="list-unstyled languages">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link btn-languages btn color-smoke dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="assets/img/icon/flag/icon-french-flag.webp" class="flag" alt="Drapeau français" aria-label="Drapeau français">
-                            <span class="name-flag">Fr</span>
-                        </a>
-                        <ul class="dropdown-menu background-eerie">
-                            <li>
-                                <a class="dropdown-item" href="index.html" aria-label="Français">
-                                    <img src="assets/img/icon/flag/icon-french-flag.webp" class="flag" alt="Drapeau français" aria-label="Drapeau français">
-                                    <span class="name-flag color-smoke">Fr</span>
+                <div class="lang-bar">
+                    <ul class="list-unstyled languages">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link btn-languages btn color-smoke drop-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/img/icon/flag/icon-french-flag.webp" class="flag" alt="Drapeau français" aria-label="Drapeau français">
+                                <span class="name-flag">Fr</span>
+                                <span class="icon-drop"><i class="fa-solid fa-angle-down"></i></span>
+                            </a>
+                            <ul class="dropdown-menu background-night">
+                                <li>
+                                    <a class="dropdown-item" href="english/index.html" aria-label="Anglais">
+                                        <img src="assets/img/icon/flag/icon-american-flag.webp" class="flag" alt="Drapeau americain" aria-label="Drapeau americain">
+                                        <span class="name-flag color-smoke">En</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="btn toggler-menu" onclick="openNav()">
+                        <span class="toggler-bars">
+                            <span class="bars"></span>
+                            <span class="bars"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="sidebar" id="sidebar">
+                    <a href="javascript:void(0)" class="btn close color-smoke" onclick="closeNav()"><i class="fa-solid fa-xmark"></i> Fermer</a>
+                    <div class="menu">
+                        <ul class="list-unstyled">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link flex-between" aria-label="Accueil">
+                                    <span class="number">( 01 )</span>
+                                    <span class="name">Accueil</span>
+                                    <span class="icon-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
                                 </a>
                             </li>
-                            <li>
-                                <a class="dropdown-item" href="english/index.html" aria-label="Anglais">
-                                    <img src="assets/img/icon/flag/icon-american-flag.webp" class="flag" alt="Drapeau americain" aria-label="Drapeau americain">
-                                    <span class="name-flag color-smoke">En</span>
+                            <li class="nav-item">
+                                <a href="a-propos.html" class="nav-link flex-between" aria-label="À propos">
+                                    <span class="number">( 02 )</span>
+                                    <span class="name">À propos</span>
+                                    <span class="icon-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="services.html" class="nav-link flex-between" aria-label="Services">
+                                    <span class="number">( 03 )</span>
+                                    <span class="name">Services</span>
+                                    <span class="icon-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="portfolio.html" class="nav-link flex-between" aria-label="Portfolio">
+                                    <span class="number">( 04 )</span>
+                                    <span class="name">Portfolio</span>
+                                    <span class="icon-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link flex-between" aria-label="Contact">
+                                    <span class="number">( 05 )</span>
+                                    <span class="name">Contact</span>
+                                    <span class="icon-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
                                 </a>
                             </li>
                         </ul>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -81,191 +126,241 @@
         <section class="introduction" aria-label="Introduction">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12 col-sm-12 text-center">
-                        <img src="assets/img/moi/one-me.webp" class="padding-right padding-right-none-tablet aos-init aos-animation" 
-                        data-aos="fade-right" data-aos-delay="300" alt="Femme sur une dune dans le désert la nuit" aria-label="Femme sur une dune dans le désert la nuit">
+                    <div class="col-md-12">
+                        <img src="assets/img/background/landscape-woman-desert.webp" alt="Femme sur une dune dans le désert une" aria-label="Femme sur une dune dans le désert une">
                     </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12">
-                        <div class="line-with-number margin-s aos-init aos-animation" data-aos="fade-up" 
-                        data-aos-delay="300">01</div>
-                        <h1 class="color-smoke margin-m aos-init aos-animation" data-aos="fade-up" 
-                        data-aos-delay="400">Salut ! Je suis Kahina</h1>
-                        <div class="padding-text margin-m aos-init aos-animation" data-aos="fade-up" 
-                        data-aos-delay="500">
-                            <h2 class="subtitle color-smoke">Développeuse web</h2>
-                            <p class="color-smoke margin-xs justify-text">
-                                Je suis une développeuse web passionnée, animée par la créativité et le désir 
-                                de transformer des idées en réalité. Depuis que je suis dans le monde du développement, 
-                                j'ai su que c'était plus qu'un simple métier pour moi, c'est une véritable vocation. 
+                    <div class="col-lg-8 col-md-10">
+                        <h1 class="color-smoke aos-init aos-animation" data-aos="fade-down" data-aos-delay="300">
+                            Ensemble, créons un projet qui vous ressemble
+                        </h1>
+                    </div>
+                    <div class="col-lg-6 col-md-4"></div>
+                    <div class="col-lg-6 col-md-8">
+                        <div class="padding-text margin-xs">
+                            <h2 class="subtitle color-sugar aos-init aos-animation" data-aos="fade-down" data-aos-delay="400">Basée à paris</h2>
+                            <p class="color-smoke margin-s justify-text aos-init aos-animation" data-aos="fade-down" data-aos-delay="500">
+                                Développeuse web passionnée par le design, j’aime transformer des idées en expériences numériques 
+                                sur mesure. Grâce à mon expertise et ma créativité, je crée des projets qui vous ressemblent.
                             </p>
-                            <a href="a-propos.html" class="btn btn-arrow color-smoke">
-                                Me découvrir <i class="fa-solid fa-arrow-right-long arrow"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-12 margin-m">
+                        <a href="#qui" class="color-smoke uppercase margin-m">
+                            <p>Scroll</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="moving background-night margin-m" aria-label="Salutations">
+            <div class="moving-inner">
+                <span class="moving-text color-smoke">
+                    Salut <i class="fa-solid fa-hand-peace"></i> Hello <i class="fa-solid fa-hand-peace"></i> Hola <i class="fa-solid fa-hand-peace"></i> 안녕하세요 <i class="fa-solid fa-hand-peace"></i>
+                </span>
+                <span class="moving-text color-smoke">
+                    Salut <i class="fa-solid fa-hand-peace"></i> Hello <i class="fa-solid fa-hand-peace"></i> Hola <i class="fa-solid fa-hand-peace"></i> 안녕하세요 <i class="fa-solid fa-hand-peace"></i>
+                </span>
+                <span class="moving-text color-smoke">
+                    Salut <i class="fa-solid fa-hand-peace"></i> Hello <i class="fa-solid fa-hand-peace"></i> Hola <i class="fa-solid fa-hand-peace"></i> 안녕하세요 <i class="fa-solid fa-hand-peace"></i>
+                </span>
+                <span class="moving-text color-smoke">
+                    Salut <i class="fa-solid fa-hand-peace"></i> Hello <i class="fa-solid fa-hand-peace"></i> Hola <i class="fa-solid fa-hand-peace"></i> 안녕하세요 <i class="fa-solid fa-hand-peace"></i>
+                </span>
+                <span class="moving-text color-smoke">
+                    Salut <i class="fa-solid fa-hand-peace"></i> Hello <i class="fa-solid fa-hand-peace"></i> Hola <i class="fa-solid fa-hand-peace"></i> 안녕하세요 <i class="fa-solid fa-hand-peace"></i>
+                </span>
+                <span class="moving-text color-smoke">
+                    Salut <i class="fa-solid fa-hand-peace"></i> Hello <i class="fa-solid fa-hand-peace"></i> Hola <i class="fa-solid fa-hand-peace"></i> 안녕하세요 <i class="fa-solid fa-hand-peace"></i>
+                </span>
+                <span class="moving-text color-smoke">
+                    Salut <i class="fa-solid fa-hand-peace"></i> Hello <i class="fa-solid fa-hand-peace"></i> Hola <i class="fa-solid fa-hand-peace"></i> 안녕하세요 <i class="fa-solid fa-hand-peace"></i>
+                </span>
+                <span class="moving-text color-smoke">
+                    Salut <i class="fa-solid fa-hand-peace"></i> Hello <i class="fa-solid fa-hand-peace"></i> Hola <i class="fa-solid fa-hand-peace"></i> 안녕하세요 <i class="fa-solid fa-hand-peace"></i>
+                </span>
+            </div>
+        </section>
+        <section class="who background-night" id="qui" aria-label="Qui suis-je ?">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <img src="assets/img/moi/me-one.webp" class="woman aos-init aos-animation" data-aos="fade-in" data-aos-delay="300"  
+                        alt="Femme sur une dune dans le désert deux" aria-label="Femme sur une dune dans le désert deux">
+                    </div>
+                    <div class="col-lg-6 col-md-10 col-sm-12">
+                        <div class="padding-text">
+                            <h2 class="color-smoke margin-xs aos-init aos-animation" data-aos="fade-in" data-aos-delay="400">Salut ! Je suis Kahina</h2>
+                            <p class="color-smoke justify-text margin-m aos-init aos-animation" data-aos="fade-in" data-aos-delay="500">
+                                Créatrice de solutions web passionnée, j’aime créer des sites qui allient beauté et performance. Donner vie à vos idées et bâtir 
+                                des projets qui vous ressemblent vraiment, c'est ce qui m’anime. 
+                                <br>
+                                Chaque nouveau projet est une aventure où je mets tout mon cœur dans les moindres détails pour que votre présence en ligne soit 
+                                à la hauteur de vos attentes.
+                                <br>
+                                <br>
+                                <strong>
+                                    Envie de découvrir qui se cache derrière cette passion pour le web ? Je vous invite à en savoir plus sur 
+                                    mon parcours et mes inspirations.
+                                </strong>
+                            </p>
+                            <a href="a-propos.html" class="btn btn-light margin-xs aos-init aos-animation" data-aos="fade-in" data-aos-delay="600"> 
+                                Découvrir plus sur moi 
                             </a>
+                        </div>
+                        <div class="col-md-12">
+                            <img src="assets/img/decor/decor-home-one.webp" class="decor" alt="Décor un" aria-label="Décor un">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="services" aria-label="Services">
+        <section class="services background-night" aria-label="Services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-7">
+                        <h3 class="color-smoke aos-init aos-animation" data-aos="fade-down" data-aos-delay="300">
+                            Faites vivre votre projet
+                        </h3>
+                    </div>
+                    <div class="col-lg-7 col-md-8">
+                        <p class="margin-m color-smoke justify-text aos-init aos-animation" data-aos="fade-down" data-aos-delay="400">
+                            Je réalise chaque projet avec l’ambition de créer des expériences numériques sur mesure, 
+                            pensées pour captiver et engager. Au-delà de l’apparence, chaque détail est conçu pour 
+                            refléter votre identité et renforcer votre présence en ligne. 
+                            <br>
+                            <br>
+                            <strong>Ensemble, construisons une expérience unique qui vous ressemble.</strong>
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-5"></div>
+                    <div class="col-lg-6 col-md-7 col-sm-12 margin-m">
+                        <div class="list margin-m">
+                            <ul class="list-unstyled">
+                                <li class="nav-item margin-m aos-init aos-animation" data-aos="fade-up" data-aos-delay="500">
+                                    <a href="services.html#developpement" class="nav-link link-service flex-between subtitle color-smoke">
+                                        <span class="number">01 - Développement web</span>
+                                        <span class="arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item aos-init aos-animation" data-aos="fade-up" data-aos-delay="600">
+                                    <a href="services.html#webdesign" class="nav-link link-service margin-xs flex-between subtitle color-smoke">
+                                        <span class="number">02 - Web design</span>
+                                        <span class="arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item aos-init aos-animation" data-aos="fade-up" data-aos-delay="700">
+                                    <a href="services.html#refonte" class="nav-link link-service margin-xs flex-between subtitle color-smoke">
+                                        <span class="number">03 - Refonte de site</span>
+                                        <span class="arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projects background-night" aria-label="Projets">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="line-with-number margin-xs aos-init aos-animation" data-aos="fade-down" 
-                        data-aos-delay="300">02</div>
-                        <h2 class="margin-m color-smoke text-center aos-init aos-animation" data-aos="fade-down" 
-                        data-aos-delay="300">Services</h2>
+                        <img src="assets/img/decor/decor-home-deux.webp" class="decor decor-two" alt="Décor deux" aria-label="Décor deux">
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 margin-m">
-                        <a href="developpement-web.html" class="card card-service margin-s aos-init aos-animation" 
-                        data-aos="fade-down" data-aos-delay="400" aria-label="Card service de développement web">
-                            <h3 class="text-center subtitle">Développement web</h3>
-                            <p class="color-smoke margin-s justify-text">
-                                Le développement web est essentiel pour la création de site web, la maintenance, 
-                                et l'amélioration des sites internet.
-                            </p>
-                            <button class="btn btn-arrow color-smoke">
-                                En savoir plus <i class="fa-solid fa-arrow-right-long arrow"></i>
-                            </button>
-                        </a>
+                    <div class="col-md-12 text-center">
+                        <h3 class="color-smoke aos-init aos-animation" data-aos="fade-in" data-aos-delay="500">Sélection de mes projets</h3>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 margin-m">
-                        <a href="web-design.html" class="card card-service background-smoke margin-s aos-init aos-animation" 
-                        data-aos="fade-down" data-aos-delay="500" aria-label="Card service de web design">
-                            <h3 class="text-center subtitle color-eerie">Web design</h3>
-                            <p class="color-eerie margin-s justify-text">
-                                Le web design est l'art de concevoir des expériences visuelles et interactives sur le web. 
-                            </p>
-                            <button class="btn btn-arrow color-eerie">
-                                En savoir plus <i class="fa-solid fa-arrow-right-long arrow"></i>
-                            </button>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 margin-m">
-                        <a href="refonte-de-site.html" class="card card-service margin-s aos-init aos-animation" 
-                        data-aos="fade-down" data-aos-delay="600" aria-label="Card service de refonte de site">
-                            <h3 class="text-center subtitle">Refonte de site</h3>
-                            <p class="color-smoke margin-s justify-text">
-                                La refonte de site web consiste à actualiser, améliorer et optimiser un site internet existant
-                            </p>
-                            <button class="btn btn-arrow color-smoke">
-                                En savoir plus <i class="fa-solid fa-arrow-right-long arrow"></i>
-                            </button>
-                        </a>
+                    <div class="col-md-12 margin-m">
+                        <div class="list">
+                            <ul class="list-unstyled margin-m">
+                                <li class="nav-item aos-init aos-animation" data-aos="fade-in" data-aos-delay="600">
+                                    <a href="aleyra-dani.html" class="link-project flex-between margin-s">
+                                        <span class="infos">
+                                            <span class="title">Aleyra Dani</span>
+                                            <br>
+                                            <span class="type subtitle color-sugar">Site pour un auteur - En cours</span>
+                                        </span>
+                                        <span class="arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                                        <img src="assets/img/projects/presentation/aleyra-dani.webp" class="img-project" alt="Projet Aleyra Dani" aria-label="Projet Aleyra Dani">
+                                    </a>
+                                </li>
+                                <li class="nav-item aos-init aos-animation" data-aos="fade-in" data-aos-delay="700">
+                                    <a href="threedragons.html" class="link-project flex-between margin-s">
+                                        <span class="infos">
+                                            <span class="title">ThreeDragons</span>
+                                            <br>
+                                            <span class="type subtitle color-sugar">Site pour restaurant - En cours</span>
+                                        </span>
+                                        <span class="arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                                        <img src="assets/img/projects/presentation/threedragons.webp" class="img-project" alt="Projet ThreeDragons" aria-label="Projet ThreeDragons">
+                                    </a>
+                                </li>
+                                <li class="nav-item aos-init aos-animation" data-aos="fade-in" data-aos-delay="800">
+                                    <a href="kanirgarden.html" class="link-project flex-between margin-s">
+                                        <span class="infos">
+                                            <span class="title">KanirGarden</span>
+                                            <br>
+                                            <span class="type subtitle color-sugar">Site E-commerce pour un spa</span>
+                                        </span>
+                                        <span class="arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                                        <img src="assets/img/projects/presentation/kanirgarden.webp" class="img-project" alt="Projet KanirGarden" aria-label="Projet KanirGarden">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="projects" aria-label="Projets">
+        <section class="contact background-night" aria-label="Contact">
             <div class="container">
-                <div class="row align-items-center">
+                <div class="row">
                     <div class="col-md-12">
-                        <div class="line-with-number margin-xs aos-init aos-animation" 
-                        data-aos="fade-up" data-aos-delay="300">03</div>
-                        <h2 class="margin-m color-smoke text-center aos-init aos-animation" 
-                        data-aos="fade-up" data-aos-delay="400">Sélection de mes projets</h2>
-                        <p class="color-smoke subtitlen text-center aos-init aos-animation" 
-                        data-aos="fade-up" data-aos-delay="400">( En  cours )</p>
+                        <img src="assets/img/decor/decor-home-one.webp" class="decor" alt="Décor un" aria-label="Décor un">
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="card card-project margin-m aos-init aos-animation" data-aos="fade-in" data-aos-delay="500">
-                            <a href="threedragons.html">
-                                <img src="assets/img/projects/presentation/threedragons.webp" alt="Image de présentation du projet ThreeDragons" aria-label="Image de présentation du projet ThreeDragons">
-                                <div class="content-project">
-                                    <h3 class="color-smoke subtitle">01 - ThreeDragons / Web design <i class="fa-solid fa-arrow-right-long arrow"></i></h3>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="card card-project margin-m aos-init aos-animation" data-aos="fade-in" data-aos-delay="600">
-                            <a href="kanirgarden.html">
-                                <img src="assets/img/projects/presentation/kanirgarden.webp" alt="Image de présentation du projet KanirGarden" aria-label="Image de présentation du projet KanirGarden">
-                                <div class="content-project">
-                                    <h3 class="color-smoke subtitle">02 - KanirGarden / Web design <i class="fa-solid fa-arrow-right-long arrow"></i></h3>
-                                </div>
-                            </a>
-                        </div>
+                    <div class="col-md-6">
+                        <h4 class="color-smoke aos-init aos-animation" data-aos="fade-down" data-aos-delay="300">Discutons de votre projet</h4>
+                        <p class="margin-m color-smoke aos-init aos-animation" data-aos="fade-down" data-aos-delay="400">
+                            Prêt(e) à transformer vos idées en réalité ? Parlons de votre projet ! Ensemble, 
+                            nous explorerons vos besoins, vos envies, et les meilleures solutions pour donner 
+                            vie à une expérience numérique qui vous ressemble. 
+                            <br>
+                            <br>
+                            <strong>
+                                Je suis là pour vous accompagner à chaque étape. Discutons et créons quelque chose d’unique !
+                            </strong>
+                        </p>
+                        <a href="contact.html" class="btn btn-light margin-xs aos-init aos-animation" data-aos="fade-down" data-aos-delay="500">
+                            Les moyens de me contacter
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-
+    
     <footer class="footer" aria-label="Footer du site">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center">
-                    <h6 class="color-smoke"><strong>&copy;2023 KahinaDev - Tous droits réservés</strong></h6>
+                <div class="col-md-12">
+                    <div class="flex-between">
+                        <h5 class="brand color-smoke">KahinaStudio</h5>
+                        <div class="reseaux flex-between">
+                            <a href="" class="color-smoke" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="" class="color-smoke" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+                            <a href="www.pinterest.com/kahinastudiio" class="color-smoke" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+                    <h6 class="color-smoke">
+                        &copy; 2020 - Kahinastudio - tous droits réservés
+                    </h6>
                 </div>
             </div>
         </div>
     </footer>
 
-    <div class="sidebar" id="sidebar">
-        <img src="assets/img/background/black-grunge.webp" class="img-sidebar" alt="Black grunge" aria-label="Black grunge">
-        <div class="close">
-            <a href="javascript:void(0)" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
-        </div>
-        <div class="menu">
-            <ul class="list-unstyled">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link" aria-label="Accueil">
-                        <span class="number">01 - </span>
-                        <span class="name">Accueil</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="a-propos.html" class="nav-link" aria-label="À propos">
-                        <span class="number">02 - </span>
-                        <span class="name">À propos</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="services.html" class="nav-link" aria-label="Services">
-                        <span class="number">03 - </span>
-                        <span class="name">Services</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="portfolio.html" class="nav-link" aria-label="Portfolio">
-                        <span class="number">04 - </span>
-                        <span class="name">Portfolio</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link" aria-label="Contact">
-                        <span class="number">05 - </span>
-                        <span class="name">Contact</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="choose-languages dropup">
-        <button type="button" class="btn btn-languages dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="assets/img/icon/flag/icon-french-flag.webp" class="flag" alt="Drapeau français" aria-label="Drapeau français">
-            <span class="name-flag">Fr</span>
-        </button>
-        <ul class="dropdown-menu background-eerie">
-            <li>
-                <a class="dropdown-item" href="index.html" aria-label="Français">
-                    <img src="assets/img/icon/flag/icon-french-flag.webp" class="flag" alt="Drapeau français" aria-label="Drapeau français">
-                    <span class="name-flag color-smoke">Fr</span>
-                </a>
-            </li>
-            <li>
-                <a class="dropdown-item" href="english/index.html" aria-label="Anglais">
-                    <img src="assets/img/icon/flag/icon-american-flag.webp" class="flag" alt="Drapeau americain" aria-label="Drapeau americain">
-                    <span class="name-flag color-smoke">En</span>
-                </a>
-            </li>
-        </ul>
-    </div>      
-
-    <div class="background">
-        <img src="assets/img/background/grunge.webp" class="img-background" alt="Background grunge" aria-label="Background grunge">
-    </div>
+    <button class="btn btn-return" id="button-return">
+        <span class="icon"><i class="fa-solid fa-arrow-up-long"></i></span>
+    </button>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

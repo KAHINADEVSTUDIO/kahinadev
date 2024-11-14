@@ -8,9 +8,11 @@
 @import "layout/header.scss";
 @import "layout/footer.scss";
 
-@import "components/cards.scss";
-@import "components/background.scss";
 @import "components/buttons.scss";
-@import "components/languages.scss";
+@import "components/moving.scss";
+@import "components/list.scss";
+@import "components/return.scss";
 
+@import "pages/home.scss";
 @import "pages/about.scss";
+@import "pages/services.scss";

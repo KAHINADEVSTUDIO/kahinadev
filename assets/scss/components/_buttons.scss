@@ -1,122 +1,40 @@
 .btn {
     font-size: 13px;
-    font-weight: 800 !important;
+    border-radius: 20px !important;
+    padding: 14px 20px;
+    letter-spacing: $spacing-button;
     text-transform: $text-transform-uppercase;
     font-family: $font-text;
-}
-
-.btn-arrow {
-    padding: $padding-none;
-    border: $border-none !important;
-
-    .arrow {
-        margin-left: 10px;
-    }
+    transition: $transition-ease-in-out !important;
 
     &:hover,
     &:focus,
     &:active {
-        color: $color-turkey !important;
+        padding: 20px;
+        color: $color-smoke !important;
+        border: $border-none !important;
+        transition: $transition-ease-in-out !important;
     }
 }
 
-// .btn {
-//     font-size: 19px;
-//     font-weight: 600;
-//     font-family: $base;
-//     padding: 15px 30px;
-//     border: $none !important;
-//     border-radius: $zero !important;
-//     transition: all 0.3s ease-in-out !important;
-// }
+.btn-light {
+    color: $color-caput;
+    background-color: $color-smoke !important;
 
-// .btn-round {
-//     color: $secondary;
-//     padding: 20px !important;
-//     border: 2px solid $secondary !important;
-//     border-radius: 50% !important;
+    &:hover,
+    &:focus,
+    &:active{
+        background-color: $background-caput !important;
+    }
+}
 
-//     &:hover,
-//     &:focus,
-//     &:active {
-//         color: $background;
-//         background-color: $secondary;
-//     }
-// }
+.btn-dark {
+    color: $color-smoke;
+    background-color: $background-night !important;
 
-// .btn-dark {
-//     color: $background;
-//     background-color: $second-bg;
-
-//     &:hover,
-//     &:focus,
-//     &:active {
-//         color: $primary;
-//         background-color: $accent;
-//     }
-// }
-
-// .btn--secondary {
-//     color: $text;
-//     background-color: $secondary;
-
-//     &:hover,
-//     &:focus,
-//     &:active {
-//         color: $accent;
-//         background-color: $primary;
-//     }
-// }
-
-// .btn--primary {
-//     color: $accent;
-//     background-color: $primary;
-
-//     &:hover,
-//     &:focus,
-//     &:active {
-//         color: $text;
-//         background-color: $secondary;
-//     }
-// }
-
-// .btn-span {
-//     color: $background;
-//     background-color: $span;
-
-//     &:hover,
-//     &:focus,
-//     &:active {
-//         color: $accent;
-//         background-color: $second-bg;
-//     }
-// }
-
-// .btn-accent {
-//     color: $primary;
-//     background-color: $accent;
-
-
-//     &:hover,
-//     &:focus,
-//     &:active {
-//         color: $background;
-//         background-color: $text;
-//     }
-// }
-
-// .btn-max {
-//     width: $max;
-// }
-
-// .btn-border-light {
-//     color: $secondary;
-//     border: 2px solid $secondary !important;
-
-//     &:hover,
-//     &:focus,
-//     &:active {
-//         color: $text;
-//         background-color: $secondary;
-//     }
-// }
+    &:hover,
+    &:focus,
+    &:active{
+        background-color: $background-coffee !important;
+    }
+}

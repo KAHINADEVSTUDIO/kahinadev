@@ -1,0 +1,35 @@
+.moving {
+    width: $width-max;
+    white-space: $no-wrap;
+    overflow: $overflow-hidden;
+    box-sizing: $border-box;
+    position: $position-relative;
+    padding: $padding-moving-text !important;
+    border-top: $border-smoke;
+    border-bottom: $border-smoke;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        padding: 1rem !important;
+    }
+
+    .moving-inner {
+        white-space: $no-wrap;
+        display: $display-flex;
+        animation: moving 18s linear infinite;
+
+        .moving-text {
+            letter-spacing: $spacing-button;
+            font-family: $font-title;
+        }
+    }
+}
+
+@keyframes moving {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}

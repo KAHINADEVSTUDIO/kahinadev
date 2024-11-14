@@ -1,46 +1,48 @@
-// Title 
-
-@mixin title {
-    text-transform: $text-transform-uppercase;
-    font-family: $font-title;
-}
+@import "../base/typography.scss";
 
 // Brand 
 
 @mixin brand {
-    font-weight: 800;
-    font-size: $size-website-name-desktop;
-    @include title;
+    letter-spacing: $spacing-name;
+    text-transform: $text-transform-uppercase;
+    font-family: $font-title;
 }
 
-// Links 
+// Link 
 
 @mixin links {
-    font-size: 100px;
-    letter-spacing: $spacing-s;
-    @include title;
+    font-size: 90px;
+    letter-spacing: 1.3px;
+    text-transform: $text-transform-uppercase;
+    font-family: $font-title;
+    transition: $transition-ease-in-out !important;
 
     @media screen and (max-width: $breakpoint-mobile) {
-        font-size: 40px !important;
+        font-size: 30px !important;
     }
 
     @media screen and (max-width: $breakpoint-tablet) {
-        font-size: 80px;
+        font-size: 62px;
+    }
+
+    .number,
+    .icon-arrow {
+        font-size: 28px;
+        font-weight: 300;
+
+        @media screen and (max-width: $breakpoint-mobile) {
+            font-size: 20px !important;
+        }
+
+        @media screen and (max-width: $breakpoint-tablet) {
+            font-size: 25px;
+        }
     }
 
     &:hover,
     &:focus,
     &:active {
-        color: $color-gold;
+        color: $color-sugar;
         font-style: italic;
-        transition: $transition-ease-in-out !important;
     }
-}
-
-// Languages 
-
-@mixin languages {
-    color: $color-smoke;
-    padding: 10px 15px;
-    border: 1px solid $color-smoke;
 }

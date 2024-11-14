@@ -1,0 +1,22 @@
+.btn-return {
+    right: 1rem;
+    bottom: 1rem;
+    display: $display-none;
+    position: $position-fixed;
+    background: $background-caput;
+    transition: opacity 0.3s;
+
+    &:hover,
+    &:focus,
+    &:active {
+        i {
+            color: $color-smoke !important;
+        }
+        background-color: $background-caput !important;
+    }
+
+    i {
+        font-size: 17.5px;
+        color: $color-smoke;
+    }
+}

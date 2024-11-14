@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Learn more about me, a passionate web developer dedicated to creating custom digital solutions. 
+    With a unique blend of technical expertise, creativity, and values like respect, dedication, and kindness, I’m committed to delivering 
+    projects that truly represent you.">
+    <meta name="keywords" content="Web developer, Website creation, Web design, Custom development, Website redesign, Digital experiences, Online presence, 
+    Responsive development, Professional website, Personalized web design, Freelance web developer, Website design, Portfolio creation, 
+    Modern and functional websites, Tailored web solutions">
+
+    <title>About me ~ KahinaStudio</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../assets/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../assets/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Montaga&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header background-smoke border-night" id="header" aria-label="Header of the website">
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="brand color-night">
+                    KahinaStudio
+                </a>
+                <div class="lang-bar">
+                    <ul class="list-unstyled languages">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link btn-languages btn color-night drop-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../assets/img/icon/flag/icon-american-flag.webp" class="flag" alt="American flag" aria-label="American flag">
+                                <span class="name-flag">En</span>
+                                <span class="icon-drop"><i class="fa-solid fa-angle-down"></i></span>
+                            </a>
+                            <ul class="dropdown-menu background-night">
+                                <li>
+                                    <a class="dropdown-item" href="../index.html" aria-label="Français">
+                                        <img src="../assets/img/icon/flag/icon-french-flag.webp" class="flag" alt="French flag" aria-label="French flag">
+                                        <span class="name-flag color-night">Fr</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="btn toggler-menu" onclick="openNav()">
+                        <span class="toggler-bars">
+                            <span class="bars background-night"></span>
+                            <span class="bars background-night"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="sidebar" id="sidebar">
+                    <a href="javascript:void(0)" class="btn close color-smoke" onclick="closeNav()"><i class="fa-solid fa-xmark"></i> Fermer</a>
+                    <div class="menu">
+                        <ul class="list-unstyled">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link flex-between" aria-label="Home">
+                                    <span class="number">( 01 )</span>
+                                    <span class="name">Home</span>
+                                    <span class="icon-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="a-propos.html" class="nav-link flex-between" aria-label="About me">
+                                    <span class="number">( 02 )</span>
+                                    <span class="name">About me</span>
+                                    <span class="icon-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="services.html" class="nav-link flex-between" aria-label="Services">
+                                    <span class="number">( 03 )</span>
+                                    <span class="name">Services</span>
+                                    <span class="icon-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="portfolio.html" class="nav-link flex-between" aria-label="Portfolio">
+                                    <span class="number">( 04 )</span>
+                                    <span class="name">Portfolio</span>
+                                    <span class="icon-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link flex-between" aria-label="Contact">
+                                    <span class="number">( 05 )</span>
+                                    <span class="name">Contact</span>
+                                    <span class="icon-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main" aria-label="Main of the website">
+        <section class="passion background-smoke" aria-label="Passion">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <img src="../assets/img/moi/me-two.webp" class="woman aos-init aos-animation" 
+                        data-aos="fade-left" data-aos-delay="300" alt="A woman is standing on a dune in the desert" aria-label="A woman is standing on a dune in the desert">
+                        <h1 class="color-sugar border-sugar aos-init aos-animation" data-aos="fade-right" data-aos-delay="300">
+                            A Journey of Passion and Determination
+                        </h1>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="padding-text text-center">
+                            <h2 class="subtitle color-night text-center aos-init aos-animation" data-aos="fade-up" data-aos-delay="300">From Passion to Realization</h2>
+                            <p class="margin-m color-night justify-text aos-init aos-animation" data-aos="fade-up" data-aos-delay="400">
+                                I am a passionate web developer, driven by creativity and the desire to turn ideas into reality. 
+                                Since entering the world of development, I’ve known that it’s more than just a job for me; it’s a true calling.
+                                <br>
+                                My specialized studies in this field gave me a strong technical foundation, but it was through my professional 
+                                experiences that I truly developed my expertise. Every project, whether professional or personal, is a unique 
+                                adventure where I bring together technique, design, and innovation.
+                            </p>
+                            <a href="#values" class="btn btn-dark margin-xs aos-init aos-animation" data-aos="fade-up" data-aos-delay="500">
+                                What matters to me 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="values background-smoke" id="values" aria-label="Values">
+            <div class="container">
+                <div class="row">   
+                    <div class="col-md-12">
+                        <img src="../assets/img/decor/decor-about-one.webp" class="decor decor-one" alt="Decor one" aria-label="Decor one">
+                        <img src="../assets/img/decor/decor-about-two.webp" class="decor decor-two" alt="Decor two" aria-label="Decor two">
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <h2 class="color-night aos-init aos-animation" data-aos="fade-down" data-aos-delay="300">What matters to me </h2>
+                        <h3 class="subtitle margin-xs aos-init aos-animation" data-aos="fade-down" data-aos-delay="400">My values</h3>
+                    </div>
+                    <div class="col-md-12 margin-m">
+                        <h4 class="line-with-text margin-m aos-init aos-animation" data-aos="fade-down" data-aos-delay="500">Respect</h4>
+                        <div class="padding-text aos-init aos-animation" data-aos="fade-down" data-aos-delay="500">
+                            <p class="color-night">
+                                Respect is a fundamental value for me, both personally and professionally. In the world of web development, 
+                                this means carefully listening to your needs, communicating clearly and transparently, and committing to respecting 
+                                your ideas, timelines, and expectations. I believe that successful collaboration is built on mutual trust, and respect 
+                                is key to creating strong relationships with my clients. By understanding your goals and honoring your vision, 
+                                I strive to deliver projects that reflect who you are and meet your standards, while fostering a harmonious and 
+                                respectful work environment.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <h4 class="line-with-text aos-init aos-animation" data-aos="fade-down" data-aos-delay="500">Implication</h4>
+                        <div class="padding-text aos-init aos-animation" data-aos="fade-down" data-aos-delay="500">
+                            <p class="color-night">
+                                Dedication is at the core of my work approach. Each project is an opportunity for me to fully commit, 
+                                exceed expectations, and provide solutions that make a difference
+                                <br>
+                                To me, dedication means being passionate, proactive, and determined to deliver high-quality results, 
+                                respecting deadlines, and ensuring smooth communication. Every detail matters, and I’m here to bring 
+                                your vision to life in the best way possible.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <h4 class="line-with-text aos-init aos-animation" data-aos="fade-down" data-aos-delay="500">Listening</h4>
+                        <div class="padding-text aos-init aos-animation" data-aos="fade-down" data-aos-delay="500">
+                            <p class="color-night">
+                                Listening is an essential value in my professional practice. For me, truly understanding your needs and 
+                                expectations is the first step in creating a project that reflects you. I place great importance on open communication 
+                                and mutual understanding because it’s through attentively hearing your ideas and goals that I can propose solutions that 
+                                fit perfectly.
+                                <br>
+                                Each client is unique, and I work to tailor my approach to your specific needs. Being a good listener means 
+                                creating a dialogue where your needs are heard, respected, and considered at every stage of the project.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <h4 class="line-with-text aos-init aos-animation" data-aos="fade-down" data-aos-delay="500">Kindness</h4>
+                        <div class="padding-text aos-init aos-animation" data-aos="fade-down" data-aos-delay="500">
+                            <p class="color-night">
+                                For me, being kind means being attentive to my clients needs, offering steady support, and encouraging 
+                                a climate of trust. I approach each project with care, not only to provide tailored technical solutions 
+                                but also to ensure that you feel supported and understood throughout the process. Kindness is about building 
+                                sincere and lasting human connections based on mutual respect and support.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact background-smoke" aria-label="Contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="../assets/img/decor/decor-about-one.webp" class="decor decor-one" alt="Decor one" aria-label="Decor one">
+                        <img src="../assets/img/decor/decor-about-two.webp" class="decor decor-two" alt="Decor two" aria-label="Decor two">
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="color-night aos-init aos-animation" data-aos="fade-down" data-aos-delay="300">Let's talk about your project</h4>
+                        <p class="margin-m color-night aos-init aos-animation" data-aos="fade-down" data-aos-delay="400">
+                            Ready to turn your ideas into reality? Let’s talk about your project! Together, we’ll explore your needs, desires, 
+                            and the best solutions to bring a digital experience to life that truly reflects you.
+                            <br>
+                            <br>
+                            <strong>
+                                I’m here to support you at every step. Let’s connect and create something unique!
+                            </strong>
+                        </p>
+                        <a href="contact.html" class="btn btn-dark margin-xs aos-init aos-animation" data-aos="fade-down" data-aos-delay="500">
+                            Ways to contact me
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" aria-label="Footer of the website">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="flex-between">
+                        <h5 class="brand color-smoke">KahinaStudio</h5>
+                        <div class="reseaux flex-between">
+                            <a href="" class="color-smoke" aria-label="Instagram"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="" class="color-smoke" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+                            <a href="www.pinterest.com/kahinastudiio" class="color-smoke" aria-label="Pinterest"><i
+                                    class="fa-brands fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+                    <h6 class="color-smoke">
+                        &copy; 2020 - Kahinastudio - All rights reserved
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="btn btn-return" id="button-return">
+        <span class="icon"><i class="fa-solid fa-arrow-up-long"></i></span>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/93f593ecee.js" crossorigin="anonymous"></script>
+    <script src="../assets/js/website.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 600,
+            easing: 'ease-in-sine',
+            delay: 100,
+        });
+    </script>
+</body>
+</html>

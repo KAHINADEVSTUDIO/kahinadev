@@ -3,39 +3,29 @@
 const sidenav = document.getElementById("sidebar");
 
 const openNav = () => {
-  sidenav.style.width = "100%";
+    sidenav.style.width = "100%";
 };
 
 const closeNav = () => {
-  sidenav.style.width = "0";
+    sidenav.style.width = "0";
 };
 
 
 // BUTTON FIXED & TOP
 
-let topButton = document.getElementById("top");
-let sidebarButton = document.getElementById("button-menu"); 
-
-let sidebarOffsetTop = sidebarButton.offsetTop; 
-
-function handleScroll() {
+window.onscroll = function () {
+    const btnTop = document.getElementById("button-return");
     
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        topButton.style.display = "block";
+        btnTop.style.display = "block";
     } else {
-        topButton.style.display = "none";
+        btnTop.style.display = "none";
     }
+};
 
-    if (window.pageYOffset >= sidebarOffsetTop) {
-        sidebarButton.style.position = "fixed";
-        sidebarButton.style.top = "10px";
-        sidebarButton.classList.add("button-fixed");
-
-    } else {
-        sidebarButton.style.position = "relative";
-        sidebarButton.style.top = "";
-        sidebarButton.classList.remove("button-fixed");
-    }
-}
-
-window.onscroll = handleScroll;
+document.getElementById("button-return").addEventListener("click", function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
