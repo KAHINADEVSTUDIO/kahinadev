@@ -5,6 +5,7 @@
     letter-spacing: $spacing-button;
     text-transform: $text-transform-uppercase;
     font-family: $font-text;
+    border: $border-none !important;
     transition: $transition-ease-in-out !important;
 
     &:hover,
@@ -36,5 +37,17 @@
     &:focus,
     &:active{
         background-color: $background-coffee !important;
+    }
+}
+
+.btn-secondary {
+    color: $color-smoke;
+    background-color: $background-caput !important;
+
+    &:hover,
+    &:focus,
+    &:active{
+        color: $color-caput !important;
+        background-color: $background-smoke !important;
     }
 }

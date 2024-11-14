@@ -679,6 +679,7 @@ p strong {
   letter-spacing: 1px;
   text-transform: uppercase;
   font-family: "Nunito Sans", serif;
+  border: none !important;
   transition: all 0.3s ease-in-out !important;
 }
 .btn:hover, .btn:focus, .btn:active {
@@ -702,6 +703,15 @@ p strong {
 }
 .btn-dark:hover, .btn-dark:focus, .btn-dark:active {
   background-color: #624434 !important;
+}
+
+.btn-secondary {
+  color: #F5F5F5;
+  background-color: #593729 !important;
+}
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+  color: #593729 !important;
+  background-color: #F5F5F5 !important;
 }
 
 .moving {
